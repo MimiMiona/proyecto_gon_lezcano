@@ -5,7 +5,7 @@
         <title>Proyecto</title>
     </head>
     <body>
-    <h1 class="display-1">Titulo</h1> <!-- titulo por si no te diste cuenta -->
+    <h1 class="display-1">Pepepelis</h1> <!-- titulo por si no te diste cuenta -->
         <section class="conteiner-fluid"> <!-- barra de nav -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">

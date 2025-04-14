@@ -2,7 +2,7 @@
     <head>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <title>Ejemplo 1</title>
+        <title>Proyecto</title>
     </head>
     <body>
     <h1 class="display-1">Titulo 100% original</h1> <!-- titulo por si no te diste cuenta -->

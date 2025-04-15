@@ -5,14 +5,14 @@
         <title>Proyecto</title>
     </head>
     <body>
-    <h1 class="display-1">Pepepelis</h1> <!-- titulo por si no te diste cuenta -->
+    <h1 class="display-1">Pepepelis</h1> <!-- titulo -->
         <section class="conteiner-fluid"> <!-- barra de nav -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">

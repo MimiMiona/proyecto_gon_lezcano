@@ -1,25 +1,28 @@
 <html>
     <head>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url('assets/css/miestilo.css') ?>" rel="stylesheet">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
         <title>Proyecto</title>
     </head>
     <body>
-    <h1 class="display-1">Pepepelis</h1> <!-- titulo -->
-        <section class="conteiner-fluid"> <!-- barra de nav -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- <h1 class="display-1">Pepepelis</h1> titulo -->
+        <section class="container-fluid"> <!-- barra de nav -->
+        <nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="nav-link active" aria-current="page" href="<?= base_url('inicio') ?>">
+                    <img src="assets/img/logo.png" alt="" width="77" height="77" class="img-fluid">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button> 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="<?= base_url('catalogo') ?>">Catalogo</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link active" href="<?= base_url('quienes_somos') ?>">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

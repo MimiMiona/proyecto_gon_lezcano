@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <title>Ejemplo 1</title>
-    </head>
-    <body>
+<body>
         <!-- Carrusel -->
         <section class="container" style="width: 50%">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -123,6 +116,25 @@
                          </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class"row">
+                    <div class="col-sm-6 mb-4 bg-primary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestias, nulla beatae recusandae ratione error ipsam necessitatibus consequatur voluptates aliquid facilis doloribus est nesciunt, temporibus illo? Blanditiis error laboriosam accusamus.
+                    </div>
+                    <div class="col-sm-6 mb-4 bg-danger">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt velit ratione atque ab enim repudiandae perspiciatis, tenetur aliquam minus aut neque doloribus adipisci consectetur. Tempore reprehenderit in aperiam voluptatum temporibus.
+                    </div>
+                    <div class="col-sm-6 mb-4 bg-warning">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quisquam. Ducimus recusandae, eum earum fuga nesciunt, nobis at repellat sint, sunt dolor vel. Quas, expedita tempora id aperiam laudantium facere?
+                    </div>
+                    <div class="col-sm-6 mb-4 bg-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa ipsam unde reprehenderit similique incidunt consequatur eos repellendus hic aperiam minus culpa, modi sequi nesciunt animi nostrum, numquam quasi expedita!
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </body>

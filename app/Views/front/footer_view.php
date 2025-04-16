@@ -5,7 +5,7 @@
     </head>
     <body>
       <!-- Footer -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+<footer class="text-center text-lg-start custom-footer text-muted">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
@@ -48,7 +48,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
+            <i class="fas fa-gem me-3"></i>PepePelis
           </h6>
           <p>
             Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -65,15 +65,6 @@
           </h6>
           <p>
             <a href="https://www.instagram.com/" class="text-reset">Instagram</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -118,13 +109,13 @@
   </section>
   <!-- Section: Links  -->
 
-  <!-- Copyright -->
+  <!-- Copyright 
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2021 Copyright:
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
-  <!-- Copyright -->
+  -->
 </footer>
 <!-- Footer -->
     </body>
-</htme>
+</html>

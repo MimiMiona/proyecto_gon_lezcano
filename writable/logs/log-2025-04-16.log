@@ -1,0 +1,4 @@
+CRITICAL - 2025-04-16 02:57:48 --> ErrorException: Cannot redeclare App\Controllers\Home::quienes_somos()
+[Method: GET, Route: quienes_somos]
+in APPPATH\Controllers\Home.php on line 25.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

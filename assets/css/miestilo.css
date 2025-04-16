@@ -4,9 +4,6 @@ text-align: justufy;
 color: rgb(136, 214, 20);
 font-size:24 px;
 }
-body {
-background-color: lightblue;
-}
 
 h1 { color: white;
 font-weight: bold;
@@ -25,6 +22,10 @@ font-style: normal;
 color: brown;
 }
 */
+body {
+    background-color: lightblue;
+}
+
 *{  margin:0;
     padding:0;
 }
@@ -45,10 +46,10 @@ footer{
     margin: 10px 200px;
 }
 
-.navBarr{
-    background-color: rgb(9, 41, 109);
-    padding-top:50px;
-    padding-left: 10px;
-    padding-bottom: 60px;
-    padding-right: 300px;
+.custom-navbar {
+    background-color: #c4a561 !important;
+}
+
+.custom-footer {
+    background-color: #c4a561 !important;
 }

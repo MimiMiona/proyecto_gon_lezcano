@@ -65,7 +65,7 @@
 </div>
 
 <div>
-<p class="fs-3" id="terror">Comedia</p>
+<p class="fs-3" id="comedia">Comedia</p>
 </div>
 <div class="row row-cols-1 row-cols-md-4 g-4">
   <div class="col">

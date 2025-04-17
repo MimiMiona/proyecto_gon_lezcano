@@ -23,7 +23,7 @@ class Home extends BaseController
 
     public function catalogo()
     {
-        $data['titulo'] = 'Catalogo';
+        $data['titulo'] = 'catalogo';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('front/catalogo', $data);

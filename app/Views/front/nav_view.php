@@ -29,9 +29,9 @@
                         Generos
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#terror">Terror</a></li>
-                        <li><a class="dropdown-item" href="#ciencia_ficcion">Ciencia Ficcion</a></li>
-                        <li><a class="dropdown-item" href="#comedia">Comedia</a></li>
+                        <li><a class="dropdown-item" href="catalogo#terror">Terror</a></li>
+                        <li><a class="dropdown-item" href="catalogo#ciencia_ficcion">Ciencia Ficcion</a></li>
+                        <li><a class="dropdown-item" href="catalogo#comedia">Comedia</a></li>
                     </ul>
                     </li>
                     <li class="nav-item">

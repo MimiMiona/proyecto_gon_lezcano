@@ -16,17 +16,17 @@ class Home extends BaseController
     {
         $data['titulo'] = '¿Quiénes Somos?';
         echo view('front/head_view',$data);
-        echo view('front/nav_view');
-        echo view('front/quienes_somos');
-        echo view('front/footer_view');
+        echo view('front/nav_view', $data);
+        echo view('front/quienes_somos', $data);
+        echo view('front/footer_view', $data);
     }
 
     public function catalogo()
     {
-        $data['titulo'] = '¿Quiénes Somos?';
+        $data['titulo'] = 'Catalogo';
         echo view('front/head_view',$data);
-        echo view('front/nav_view');
-        echo view('front/catalogo');
-        echo view('front/footer_view');
+        echo view('front/nav_view', $data);
+        echo view('front/catalogo', $data);
+        echo view('front/footer_view', $data);
     }
 }

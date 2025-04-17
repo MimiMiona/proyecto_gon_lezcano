@@ -1,4 +1,17 @@
-<body>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section custom-hero">
+            <div class="container-fluid">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-lg-4 order-lg-last hero-img">
+                        <img src="assets/img/peliculas_muestra.png" class="img-fluid animate__animated animate__zoomIn" alt="">
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-center text-center">
+                        <h1 class="animate__animated animate__fadeInUp">¡Reviviendo los inicios de un arte que nos une!</h1>
+                        <p class="animate__animated animate__fadeInUp animate__delay-1s">We are team of talented designers making websites with Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Carrusel -->
         <section class="container" style="width: 50%">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -118,24 +131,4 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container">
-                <div class"row">
-                    <div class="col-sm-6 mb-4 bg-primary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestias, nulla beatae recusandae ratione error ipsam necessitatibus consequatur voluptates aliquid facilis doloribus est nesciunt, temporibus illo? Blanditiis error laboriosam accusamus.
-                    </div>
-                    <div class="col-sm-6 mb-4 bg-danger">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt velit ratione atque ab enim repudiandae perspiciatis, tenetur aliquam minus aut neque doloribus adipisci consectetur. Tempore reprehenderit in aperiam voluptatum temporibus.
-                    </div>
-                    <div class="col-sm-6 mb-4 bg-warning">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quisquam. Ducimus recusandae, eum earum fuga nesciunt, nobis at repellat sint, sunt dolor vel. Quas, expedita tempora id aperiam laudantium facere?
-                    </div>
-                    <div class="col-sm-6 mb-4 bg-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa ipsam unde reprehenderit similique incidunt consequatur eos repellendus hic aperiam minus culpa, modi sequi nesciunt animi nostrum, numquam quasi expedita!
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-    </body>
 </html>

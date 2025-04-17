@@ -7,7 +7,7 @@
     </head>
     <body>
     <!-- <h1 class="display-1">Pepepelis</h1> titulo -->
-        <section class="container-fluid"> <!-- barra de nav -->
+    <section class="w-100 m-0 p-0">    <!-- barra de nav -->
         <nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
             <div class="container-fluid">
                 <a class="nav-link active" aria-current="page" href="<?= base_url('inicio') ?>">

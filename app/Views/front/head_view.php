@@ -1,6 +1,3 @@
-<!--cabecera
-<title><?php echo($titulo);?></title>
--->
 <!DOCTYPE html>
 <html>
     <head>

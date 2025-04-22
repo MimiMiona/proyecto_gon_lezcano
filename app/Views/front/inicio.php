@@ -25,6 +25,9 @@
             </div>
 </section>
 <section> <!--cards-->
+    <div>
+    <p class="fs-3">Recomendados</p>
+    </div>
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <!-- Primer slide -->

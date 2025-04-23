@@ -34,6 +34,10 @@
                     <li class="nav-item">
                     <a class="nav-link active" href="<?= base_url('comercializacion') ?>">Comercializacion</a>
                     </li>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

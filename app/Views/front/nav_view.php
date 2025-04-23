@@ -6,7 +6,6 @@
         <title>Proyecto</title>
     </head>
     <body>
-    <!-- <h1 class="display-1">Pepepelis</h1> titulo -->
     <section class="w-100 m-0 p-0">    <!-- barra de nav -->
         <nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
             <div class="container-fluid">
@@ -34,12 +33,16 @@
                     <li class="nav-item">
                     <a class="nav-link active" href="<?= base_url('comercializacion') ?>">Comercializacion</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
+                    </li>
                 </ul>
-                <form class="d-flex" role="search">
+               <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
                 </div>
+                -->
             </div>
         </nav>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

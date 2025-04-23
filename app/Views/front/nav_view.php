@@ -24,7 +24,7 @@
                     <li class="nav-item">
                     <a class="nav-link active" href="<?= base_url('quienes_somos') ?>">Nosotros</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <!--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Generos
                     </a>
@@ -32,10 +32,10 @@
                         <li><a class="dropdown-item" href="catalogo#terror">Terror</a></li>
                         <li><a class="dropdown-item" href="catalogo#ciencia_ficcion">Ciencia Ficcion</a></li>
                         <li><a class="dropdown-item" href="catalogo#comedia">Comedia</a></li>
-                    </ul>
+                    </ul>-->
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link active" href="<?= base_url('comercializacion') ?>">Comercializacion</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">

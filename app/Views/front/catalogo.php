@@ -85,11 +85,3 @@
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-      <img src="assets/img/duckSoup.jpg" class="card-img-top">
-        <h5 class="card-title">Duck Soup</h5>
-        <p class="card-text">Rufus T. Firefly es embestido presidente dictatorial de la nación en bancarrota Libertonia y declara la guerra a la vecina Sylvania por el amor de la rica viuda Gloria Teasdale.</p>
-     </div>
-    </div>
-  </div>

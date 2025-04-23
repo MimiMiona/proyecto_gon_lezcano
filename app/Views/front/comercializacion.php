@@ -9,14 +9,14 @@
             </p>
         </div>
         <div style="max-width: 400px; width: 100%; height: auto;">
-            <img src="assets/img/nosotros.jpg" alt="Cine clásico" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
+            <img src="assets/img/trabajando.jpeg" alt="Cine clásico" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
         </div>
     </div>
 </section>
 <section class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;"> <!-- primera seccion-->
     <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
         <div style="max-width: 400px; width: 100%; height: auto;">
-            <img src="assets/img/nosotros.jpg" alt="Cine clásico" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
+            <img src="assets/img/correoEjemplo.png" alt="Cine clásico" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
         </div>
         <div style="width: 60%; padding-right: 20px;">
             <h2>🎬 ¿Cómo consigo una película?</h2>
@@ -41,7 +41,7 @@
             </p>
         </div>
         <div style="max-width: 400px; width: 100%; height: auto;">
-            <img src="assets/img/nosotros.jpg" alt="Cine clásico" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
+            <img src="assets/img/trabajando.jpeg" alt="Cine clásico" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
         </div>
     </div>
 </section>

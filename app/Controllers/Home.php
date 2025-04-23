@@ -47,4 +47,13 @@ class Home extends BaseController
         echo view('front/comercializacion', $data);
         echo view('front/footer_view', $data);
     }
+
+    public function terminos()
+    {
+        $data['titulo'] = 'terminos';
+        echo view('front/head_view',$data);
+        echo view('front/nav_view', $data);
+        echo view('front/terminos', $data);
+        echo view('front/footer_view', $data);
+    }
 }

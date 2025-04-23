@@ -4,36 +4,32 @@
         <div class="well well-sm">
           <form class="form-horizontal" action="" method="post">
           <fieldset>
-            <legend class="text-center">Contact us</legend>
-    
-            <!-- Name input-->
+            <legend class="text-center">¡Contactanos!</legend>
             <div class="form-group">
-              <label class="col-md-3 control-label" for="name">Name</label>
+              <label class="col-md-3 control-label" for="name">Nombre completo</label>
               <div class="col-md-9">
-                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                <input id="name" name="name" type="text" placeholder="Tu nombre" class="form-control">
               </div>
             </div>
-    
-            <!-- Email input-->
             <div class="form-group">
-              <label class="col-md-3 control-label" for="email">Your E-mail</label>
+              <label class="col-md-3 control-label" for="email">Gmail</label>
               <div class="col-md-9">
-                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                <input id="email" name="email" type="text" placeholder="Tu Gmail" class="form-control">
               </div>
             </div>
     
             <!-- Message body -->
             <div class="form-group">
-              <label class="col-md-3 control-label" for="message">Your message</label>
+              <label class="col-md-3 control-label" for="message">Tu Mensaje</label>
               <div class="col-md-9">
-                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                <textarea class="form-control" id="message" name="message" placeholder="Por favor, ingresa tu mensaje aqui..." rows="5"></textarea>
               </div>
             </div>
     
             <!-- Form actions -->
             <div class="form-group">
-              <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Subir</button>
               </div>
             </div>
           </fieldset>

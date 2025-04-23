@@ -43,7 +43,7 @@
             Products
           </h6>
           <p>
-            <a href="https://www.instagram.com/" class="text-reset">Instagram</a>
+            <a href="<?= base_url('contacto') ?>" class="text-reset">Contacto</a>
           </p>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

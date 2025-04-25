@@ -1,6 +1,6 @@
 <section class="container py-5">
     <div class="mb-4">
-        <h1 class="display-4 text-center text-md-start">Términos y Condiciones</h1>
+        <h1 class="display-4 text-center">Términos y Condiciones</h1>
     </div>
 
     <p class="mb-4">

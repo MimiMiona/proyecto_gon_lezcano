@@ -7,7 +7,7 @@ body {
 }
 .custom-navbar {
     width: 100%;
-        background-size: cover;
+    background-size: cover;
     background-color: #ddd2a6 !important;
 }
 
@@ -36,9 +36,28 @@ body {
 
 .fs-3{
     text-align: center;
-    color: #ffffff;
+    color: #ddd2a6;
 }
 
 .custom-footer {
     background-color: #ddd2a6;
+}
+
+.custom-card {
+    font-size: larger;
+    background-color: #f4efdb;
+    text-align: center;
+    color: #777157;
+}
+
+#terror{
+    color: #777157;
+}
+
+#ciencia-ficcion{
+    color: #777157;
+}
+
+#comedia{
+    color: #777157;
 }

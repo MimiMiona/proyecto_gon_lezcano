@@ -32,7 +32,7 @@
 </div>
 
 <div>
-<p class="fs-3" id="ciencia_ficcion">Ciencia Ficcion</p>
+<p class="fs-3" id="ciencia-ficcion">Ciencia Ficcion</p>
 </div>
 <div class="row row-cols-1 row-cols-md-4 g-4">
   <div class="col">

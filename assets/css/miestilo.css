@@ -1,5 +1,6 @@
 body {
-    background-color: #c29763;
+    background-color: #ebdfaf;
+    color: #5e5e4f;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -7,7 +8,7 @@ body {
 .custom-navbar {
     width: 100%;
         background-size: cover;
-    background-color: #d5a468 !important;
+    background-color: #ddd2a6 !important;
 }
 
 .navbar form[role="search"] .form-control {
@@ -22,13 +23,17 @@ body {
 
 
 .custom-hero{
-    background-color: #d8b362 !important;
+    background-color: #ddd2a6;
 }
 
 .custom-hero .h1 {
     font-family: verdana;
 }
 
+.fs-3{
+    text-align: center;
+}
+
 .custom-footer {
-    background-color: #d5a468 !important;
+    background-color: #ddd2a6;
 }

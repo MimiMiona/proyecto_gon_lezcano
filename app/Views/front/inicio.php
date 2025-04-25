@@ -43,6 +43,20 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<section id="hero" class="hero section custom-hero">
+    <div class="container-fluid">
+        <div class="row gy-4 justify-content-between">
+            <div class="col-lg-4 order-lg-last hero-img">
+                <img src="assets/img/logo.png" class="img-fluid animate__animated animate__zoomIn" alt="">
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center text-center">
+                <h1 class="animate__animated animate__fadeInUp">¡Reviviendo los inicios de un arte que nos une!</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Encontrando la belleza y siguiendo el encanto de pasado</p>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Acompañanos a descubir </p>
+            </div>
+        </div>
+    </div>
+</section>
 <section> <!--cards-->
     <div>
     <p class="fs-3">Recomendados</p>

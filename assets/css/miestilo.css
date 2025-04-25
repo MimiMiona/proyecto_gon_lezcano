@@ -50,6 +50,14 @@ body {
     color: #777157;
 }
 
+.container-fluid .p{   
+    text-align: center;
+}
+
+.titulo{
+    color: #ddd2a6;
+}
+
 #terror{
     color: #777157;
 }

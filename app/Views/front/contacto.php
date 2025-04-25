@@ -1,3 +1,20 @@
+<section class="contacto">
+  <div class="container-fluid">
+    <p>Argentina, Corrientes, 9 de julio</p>
+    <p>Contactorebobinar@rebobinar.com</p>
+    <p>+ 54 3794815400</p>       
+  </div>
+</section>
+
+<div class="d-flex justify-content-around">
+  <div class="card custom-card" style="width: 18rem;">
+    <img src="assets/img/duckSoup.jpg" class="card-img-top" alt="Card image">
+    <div class="card-body">
+      <h5 class="card-title">Duck Soup</h5>
+    </div>
+  </div>
+</div>
+
 <div class="container d-flex justify-content-center align-items-center min-vh-100">
   <div class="col-lg-6 col-md-8 col-sm-10">
     <div class="card shadow p-4">
@@ -20,7 +37,7 @@
         </div>
 
         <div class="d-grid">
-          <button type="submit" class="btn btn-primary btn-lg">Subir</button>
+          <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
         </div>
       </form>
     </div>

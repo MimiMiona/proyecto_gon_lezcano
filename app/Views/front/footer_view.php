@@ -32,9 +32,7 @@
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
+          <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
           <p>
             <a href="<?= base_url('catalogo') ?>" class="text-reset">Catalogo</a>
           </p>
@@ -55,7 +53,7 @@
           <p><i class="fas fa-home me-3"></i>Argentina, Corrientes, 9 de julio</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
-            contactoRebobinar@rebobinar.com
+            Contactorebobinar@rebobinar.com
           </p>
           <p><i class="fas fa-print me-3"></i> + 54 3794558476</p>
         </div>

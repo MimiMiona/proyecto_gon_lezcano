@@ -8,17 +8,19 @@
         <div class="carousel-item active">
             <img src="assets/img/nosferatu_gif.gif" class="d-block w-100" alt="nosferatu_carrusel">
             <div class="carousel-caption d-none d-md-block">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets\img\nosferatu.jpg" class="card-img-top">
-                </div>
+              <div class="card" style="width: 18rem;">
+                <img src="assets\img\nosferatu.jpg" class="card-img-top">
+              </div>
+              <h1 class="titulo">Nosferatu</h1>
             </div>
         </div>
         <div class="carousel-item">
             <img src="assets/img/theGhoul_gif.gif" class="d-block w-100" alt="TheGhoul_carrusel">
             <div class="carousel-caption d-none d-md-block">
                 <div class="card" style="width: 18rem;">
-                <img src="assets\img\theGhoul.jpg" class="card-img-top">
+                  <img src="assets\img\theGhoul.jpg" class="card-img-top">
                 </div>
+                <h1 class="titulo">The Ghoul</h1>
             </div>
         </div>
         <div class="carousel-item">
@@ -27,6 +29,7 @@
                 <div class="card" style="width: 18rem;">
                     <img src="assets\img\duckSoup.jpg" class="card-img-top">
                 </div>
+                <h1 class="titulo">Duck Soup</h1>
             </div>
         </div>
     </div>

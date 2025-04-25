@@ -51,13 +51,12 @@
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center text-center">
                 <h1 class="animate__animated animate__fadeInUp">¡Reviviendo los inicios de un arte que nos une!</h1>
-                <p class="animate__animated animate__fadeInUp animate__delay-1s">Encontrando la belleza y siguiendo el encanto de pasado</p>
-                <p class="animate__animated animate__fadeInUp animate__delay-1s">Acompañanos a descubir </p>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Acompañanos a descubir las maravillas que esconden los filmes mas famosos de antaño</p>
             </div>
         </div>
     </div>
 </section>
-<section> <!--cards-->
+<section class="carrusel-personalizado"> <!--cards-->
     <div>
     <p class="fs-3">Recomendados</p>
     </div>

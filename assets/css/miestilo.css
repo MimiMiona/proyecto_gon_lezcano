@@ -30,8 +30,13 @@ body {
     font-family: verdana;
 }
 
+.carrusel-personalizado{
+    background-color: #777157 !important;
+}
+
 .fs-3{
     text-align: center;
+    color: #ffffff;
 }
 
 .custom-footer {

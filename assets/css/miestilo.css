@@ -11,16 +11,6 @@ body {
     background-color: #ddd2a6 !important;
 }
 
-.navbar form[role="search"] .form-control {
-    background-color: #ffffff !important;
-    color: #6c757d !important;
-    border: 1px solid #ced4da !important;
-}
-
-.navbar form[role="search"] .form-control::placeholder {
-    color: #adb5bd !important;
-}
-
 
 .custom-hero{
     background-color: #ddd2a6;
@@ -52,6 +42,10 @@ body {
 
 .container-fluid .p{   
     text-align: center;
+}
+
+.bg-custom{
+    background-color: #777157 !important;
 }
 
 .titulo{

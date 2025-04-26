@@ -12,3 +12,4 @@ $routes->get('catalogo', 'Home::catalogo');
 $routes->get('contacto', 'Home::contacto');
 $routes->get('comercializacion', 'Home::comercializacion');
 $routes->get('terminos', 'Home::terminos');
+$routes->get('privacidad', 'Home::privacidad');

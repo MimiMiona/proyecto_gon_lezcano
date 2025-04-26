@@ -56,4 +56,13 @@ class Home extends BaseController
         echo view('front/terminos', $data);
         echo view('front/footer_view', $data);
     }
+
+    public function privacidad()
+    {
+        $data['titulo'] = 'privacidad';
+        echo view('front/head_view',$data);
+        echo view('front/nav_view', $data);
+        echo view('front/privacidad', $data);
+        echo view('front/footer_view', $data);
+    }
 }

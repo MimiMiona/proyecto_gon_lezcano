@@ -1,8 +1,8 @@
 <div class="container my-4">
   <p class="fs-3" id="terror">Terror</p>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
-    <div class="col">
-      <div class="card">
+    <div class="col d-flex">
+      <div class="card custom-card w-100">
         <img src="assets/img/houseOnHauntedHill.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">House on the Haunted Hill</h5>
@@ -10,8 +10,8 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
+    <div class="col d-flex">
+      <div class="card custom-card w-100">
         <img src="assets/img/nosferatu.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Nosferatu</h5>
@@ -19,8 +19,8 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
+    <div class="col d-flex">
+      <div class="card custom-card w-100">
         <img src="assets/img/theGhoul.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">The Ghoul</h5>
@@ -32,8 +32,8 @@
 
   <p class="fs-3 mt-5" id="ciencia-ficcion">Ciencia Ficción</p>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
-    <div class="col">
-      <div class="card">
+    <div class="col d-flex">
+      <div class="card custom-card w-100">
         <img src="assets/img/battleOfTheWorlds.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">La Batalla de los Mundos</h5>
@@ -41,8 +41,8 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
+    <div class="col d-flex">
+      <div class="card custom-card w-100">
         <img src="assets/img/20000Leagues.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">20.000 Leguas de Viaje Submarino</h5>
@@ -50,8 +50,8 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
+    <div class="col d-flex">
+      <div class="card custom-card w-100">
         <img src="assets/img/thingsToCome.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Things To Come</h5>
@@ -63,8 +63,8 @@
 
   <p class="fs-3 mt-5" id="comedia">Comedia</p>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
-    <div class="col">
-      <div class="card">
+    <div class="col d-flex">
+      <div class="card custom-card w-100">
         <img src="assets/img/myManGodfrey.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">My Man Godfrey</h5>
@@ -72,8 +72,8 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
+    <div class="col d-flex">
+      <div class="card custom-card w-100">
         <img src="assets/img/theGreatDictator.jpg" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">El Gran Dictador</h5>

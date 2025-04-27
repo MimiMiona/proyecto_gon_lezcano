@@ -13,7 +13,7 @@ body {
 
 
 .custom-hero{
-    background-color: #ddd2a6;
+    background-color: #cfc59a !important;
 }
 
 .custom-hero .h1 {
@@ -45,7 +45,11 @@ body {
 }
 
 .bg-custom{
-    background-color: #777157 !important;
+    background-color: #cfc59a;
+}
+
+.bg-consulta{
+    background-color: #cfc59a;
 }
 
 .titulo{

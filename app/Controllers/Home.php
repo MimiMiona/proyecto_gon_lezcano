@@ -65,4 +65,13 @@ class Home extends BaseController
         echo view('front/privacidad', $data);
         echo view('front/footer_view', $data);
     }
+
+    public function preguntas_frecuentes()
+    {
+        $data['titulo'] = 'Preguntas Frecuentes';
+        echo view('front/head_view',$data);
+        echo view('front/nav_view', $data);
+        echo view('front/preguntas_frecuentes', $data);
+        echo view('front/footer_view', $data);
+    }
 }

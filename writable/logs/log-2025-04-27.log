@@ -1,0 +1,4 @@
+CRITICAL - 2025-04-27 03:25:46 --> ErrorException: Cannot redeclare App\Controllers\Home::privacidad()
+[Method: GET, Route: terminos]
+in APPPATH\Controllers\Home.php on line 69.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

@@ -68,18 +68,21 @@
           <img src="assets/img/20000Leagues.jpg" class="card-img-top" alt="20000 Leguas">
           <div class="card-body">
             <h5 class="card-title">20.000 Leguas de Viaje Submarino</h5>
+            <p class="card-text"><strong>Precio: $2000</strong></p>
           </div>
         </div>
         <div class="card custom-card" style="width: 18rem;">
           <img src="assets/img/battleOfTheWorlds.jpg" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">La Batalla de los Mundos</h5>
+            <p class="card-text"><strong>Precio: $2000</strong></p>
           </div>
         </div>
         <div class="card custom-card" style="width: 18rem;">
           <img src="assets/img/duckSoup.jpg" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">Duck Soup</h5>
+            <p class="card-text"><strong>Precio: $2000</strong></p>
           </div>
         </div>
       </div>
@@ -92,18 +95,21 @@
           <img src="assets/img/houseOnHauntedHill.jpg" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">House on Haunted Hill</h5>
+            <p class="card-text"><strong>Precio: $2000</strong></p>
           </div>
         </div>
         <div class="card custom-card" style="width: 18rem;">
           <img src="assets/img/myManGodfrey.jpg" class="card-img-top" alt="Card image">
           <div class="card-body">
             <h5 class="card-title">My Man Godfrey</h5>
+            <p class="card-text"><strong>Precio: $2000</strong></p>
           </div>
         </div>
         <div class="card custom-card" style="width: 18rem;">
           <img src="assets/img/nosferatu.jpg" class="card-img-top" alt="Nosferatu">
           <div class="card-body">
             <h5 class="card-title">Nosferatu</h5>
+            <p class="card-text"><strong>Precio: $2000</strong></p>
           </div>
         </div>
       </div>

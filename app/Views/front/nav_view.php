@@ -25,7 +25,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="catalogoDropdown">
                             <li><a class="dropdown-item" href="<?= base_url('catalogo#terror') ?>">Terror</a></li>
-                            <li><a class="dropdown-item" href="<?= base_url('catalogo#ciencia_ficcion') ?>">Ciencia Ficción</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('catalogo#ciencia') ?>">Ciencia Ficción</a></li>
                             <li><a class="dropdown-item" href="<?= base_url('catalogo#comedia') ?>">Comedia</a></li>
                         </ul>
                     </li>

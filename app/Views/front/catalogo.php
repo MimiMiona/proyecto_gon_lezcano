@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <p class="fs-3 mt-5" id="ciencia-ficcion">Ciencia Ficción</p>
+  <p class="fs-3" id="ciencia">Ciencia Ficción</p>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
     <div class="col d-flex">
       <div class="card custom-card w-100">

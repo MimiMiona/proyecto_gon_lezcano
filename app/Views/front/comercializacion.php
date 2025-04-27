@@ -20,7 +20,7 @@
 
     <div class="row align-items-center mb-5 flex-lg-row-reverse">
         <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/img/correoEjemplo.png" alt="Ejemplo de correo" class="img-fluid rounded">
+            <img src="assets/img/correoImg.png" alt="Ejemplo de correo" class="img-fluid rounded">
         </div>
         <div class="col-lg-6">
             <h2 class="h4">¿Cómo consigo una película?</h2>

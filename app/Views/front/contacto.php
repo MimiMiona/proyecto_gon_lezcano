@@ -3,7 +3,7 @@
     <div class="col-12 col-md-8 col-lg-6">
       <div class="text-center bg-custom p-4 rounded shadow-sm">
         <p class="mb-1">Argentina, Corrientes, 9 de julio</p>
-        <p class="mb-1">Contactorebobinar@rebobinar.com</p>
+        <p class="mb-1">contactorebobinar@rebobinar.com</p>
         <p class="mb-0">+54 3794815400</p>   
       </div>
     </div>
@@ -32,8 +32,9 @@
             <textarea class="form-control" id="message" name="message" placeholder="Por favor, ingresa tu mensaje aquí..." rows="5"></textarea>
           </div>
 
-          <div class="d-grid">
+          <div class="d-grid gap-2">
             <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+            <button type="reset" class="btn btn-secondary btn-lg">Limpiar</button>
           </div>
         </form>
       </div>

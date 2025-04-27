@@ -27,7 +27,7 @@
             <p>El proceso es muy sencillo, y lo hicimos pensando en que no tengas que complicarte:</p>
             <ul>
                 <li>Explorá el catálogo: Navegá entre las películas disponibles.</li>
-                <li>Elegí tu favorita: Hacé clic en "Comprar" (¡es gratis su version digital!).</li>
+                <li>Elegí tu favorita: Hacé clic en "Comprar".</li>
                 <li>Dejanos tu email: Para enviarte el enlace.</li>
                 <li>Revisá tu bandeja: Recibirás un correo con el link directo a la película en Internet Archive.</li>
             </ul>

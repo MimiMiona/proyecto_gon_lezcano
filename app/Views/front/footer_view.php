@@ -1,22 +1,22 @@
 <html>
 <footer class="text-center text-lg-start custom-footer text-muted w-100 m-0 p-0">
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <div class="me-5 d-none d-lg-block">
-      <span>Siguenos por nuestras redes sociales</span>
+  <section class="d-flex justify-content-center justify-content-lg-between align-items-center p-4 border-bottom">
+    <div class="me-5">
+      <span>Síguenos por nuestras redes sociales</span>
     </div>
-    <div>
-      <a href="www.facebook.com" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
+    <div class="d-flex align-items-center">
+      <a href="https://www.facebook.com" class="me-3 text-reset">
+        <img src="assets/img/logo_facebook.png" alt="Facebook" width="40" height="40" class="img-fluid rounded">
       </a>
-      <a href="www.x.com" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
+      <a href="https://www.x.com" class="me-3 text-reset">
+        <img src="assets/img/logo_x.png" alt="X" width="40" height="40" class="img-fluid rounded">
       </a>
-      <a href="www.instagram.com" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
+      <a href="https://www.instagram.com" class="me-3 text-reset">
+        <img src="assets/img/logo_instagram.png" alt="Instagram" width="40" height="40" class="img-fluid rounded">
       </a>
     </div>
   </section>
-  <section class="">
+  <section>
     <div class="container text-center text-md-start mt-5">
       <div class="row mt-3">
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">

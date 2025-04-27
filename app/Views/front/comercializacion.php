@@ -14,7 +14,7 @@
             </p>
         </div>
         <div class="col-lg-6">
-            <img src="assets/img/trabajando.jpeg" alt="Cine clásico" class="img-fluid rounded">
+            <img src="assets\img\myManGodFrey_gif.gif" alt="Cine clásico" class="img-fluid rounded">
         </div>
     </div>
 
@@ -42,7 +42,7 @@
             </p>
         </div>
         <div class="col-lg-6">
-            <img src="assets/img/trabajando.jpeg" alt="Proyecto académico" class="img-fluid rounded">
+            <img src="assets\img\thingsToCome_gif.gif" alt="Proyecto académico" class="img-fluid rounded">
         </div>
     </div>
 

@@ -59,72 +59,71 @@
     <div>
     <p class="fs-3">Recomendados</p>
     </div>
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <!-- Primer slide -->
-    <div class="carousel-item active">
-      <div class="d-flex justify-content-around">
-        <div class="card custom-card" style="width: 18rem;">
-          <img src="assets/img/20000Leagues.jpg" class="card-img-top" alt="20000 Leguas">
-          <div class="card-body">
-            <h5 class="card-title">20.000 Leguas de Viaje Submarino</h5>
-            <p class="card-text"><strong>Precio: $2000</strong></p>
-          </div>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Primer slide -->
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-around">
+                    <div class="card custom-card" style="width: 18rem;">
+                    <img src="assets/img/20000Leagues.jpg" class="card-img-top" alt="20000 Leguas">
+                    <div class="card-body">
+                        <h5 class="card-title">20.000 Leguas de Viaje Submarino</h5>
+                        <p class="card-text"><strong>Precio: $2000</strong></p>
+                    </div>
+                    </div>
+                    <div class="card custom-card" style="width: 18rem;">
+                    <img src="assets/img/battleOfTheWorlds.jpg" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">La Batalla de los Mundos</h5>
+                        <p class="card-text"><strong>Precio: $2000</strong></p>
+                    </div>
+                    </div>
+                    <div class="card custom-card" style="width: 18rem;">
+                    <img src="assets/img/duckSoup.jpg" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Duck Soup</h5>
+                        <p class="card-text"><strong>Precio: $2000</strong></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Segundo slide -->
+            <div class="carousel-item">
+            <div class="d-flex justify-content-around">
+                <div class="card custom-card" style="width: 18rem;">
+                <img src="assets/img/houseOnHauntedHill.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">House on Haunted Hill</h5>
+                    <p class="card-text"><strong>Precio: $2000</strong></p>
+                </div>
+                </div>
+                <div class="card custom-card" style="width: 18rem;">
+                <img src="assets/img/myManGodfrey.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">My Man Godfrey</h5>
+                    <p class="card-text"><strong>Precio: $2000</strong></p>
+                </div>
+                </div>
+                <div class="card custom-card" style="width: 18rem;">
+                <img src="assets/img/nosferatu.jpg" class="card-img-top" alt="Nosferatu">
+                <div class="card-body">
+                    <h5 class="card-title">Nosferatu</h5>
+                    <p class="card-text"><strong>Precio: $2000</strong></p>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-        <div class="card custom-card" style="width: 18rem;">
-          <img src="assets/img/battleOfTheWorlds.jpg" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">La Batalla de los Mundos</h5>
-            <p class="card-text"><strong>Precio: $2000</strong></p>
-          </div>
-        </div>
-        <div class="card custom-card" style="width: 18rem;">
-          <img src="assets/img/duckSoup.jpg" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">Duck Soup</h5>
-            <p class="card-text"><strong>Precio: $2000</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Segundo slide -->
-    <div class="carousel-item">
-      <div class="d-flex justify-content-around">
-        <div class="card custom-card" style="width: 18rem;">
-          <img src="assets/img/houseOnHauntedHill.jpg" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">House on Haunted Hill</h5>
-            <p class="card-text"><strong>Precio: $2000</strong></p>
-          </div>
-        </div>
-        <div class="card custom-card" style="width: 18rem;">
-          <img src="assets/img/myManGodfrey.jpg" class="card-img-top" alt="Card image">
-          <div class="card-body">
-            <h5 class="card-title">My Man Godfrey</h5>
-            <p class="card-text"><strong>Precio: $2000</strong></p>
-          </div>
-        </div>
-        <div class="card custom-card" style="width: 18rem;">
-          <img src="assets/img/nosferatu.jpg" class="card-img-top" alt="Nosferatu">
-          <div class="card-body">
-            <h5 class="card-title">Nosferatu</h5>
-            <p class="card-text"><strong>Precio: $2000</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Controles del carrusel -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </section>

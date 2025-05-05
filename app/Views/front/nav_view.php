@@ -1,10 +1,4 @@
-<html>
-    <head>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?= base_url('assets/css/miestilo.css') ?>" rel="stylesheet">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    </head>
-    <body>
+<body>
     <section class="w-100 m-0 p-0">    <!-- barra de nav -->
         <nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
             <div class="container-fluid">
@@ -36,7 +30,7 @@
                     <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
                     </li>
                 </ul>
-               <!-- <form class="d-flex" role="search">
+                 <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -44,6 +38,4 @@
                 -->
             </div>
         </nav>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+    </section>

@@ -11,7 +11,7 @@
 </section>
 
 <section class="container py-4">
-  <div class="row justify-content-center">
+  <div class="row justify-content-center"> 
     <div class="col-12 col-sm-10 col-md-8 col-lg-6">
       <div class="card shadow p-4 bg-consulta">
         <form action="" method="post">

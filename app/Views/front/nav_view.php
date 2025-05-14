@@ -10,11 +10,8 @@
                 </button> 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active nav_color" href="<?= base_url('quienes_somos') ?>">Nosotros</a>
-                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="<?= base_url('catalogo') ?>" id="catalogoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="<?= base_url('catalogo') ?>" id="catalogoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Catálogo
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="catalogoDropdown">
@@ -27,7 +24,20 @@
                     <a class="nav-link active" href="<?= base_url('comercializacion') ?>">Comercializacion</a>
                     </li>
                     <li class="nav-item">
+                    <a class="nav-link active nav_color" href="<?= base_url('quienes_somos') ?>">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <span class="nav-link dropdown-toggle active" id="ayudaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ayuda
+                    </span>
+                        <ul class="dropdown-menu" aria-labelledby="Ayuda">
+                            <li><a class="dropdown-item" href="<?= base_url('preguntas_frecuentes') ?>">Preguntas Frecuentes</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('terminos') ?>">Términos y Condiciones</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('privacidad') ?>">Politica de Privacidad</a></li>
+                        </ul>
                     </li>
                 </ul>
                  <!-- <form class="d-flex" role="search">

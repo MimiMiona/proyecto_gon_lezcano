@@ -74,4 +74,13 @@ class Home extends BaseController
         echo view('front/preguntas_frecuentes', $data);
         echo view('front/footer_view', $data);
     }
+
+    public function formulario()
+    {
+        $data['titulo'] = 'formulario';
+        echo view('front/head_view',$data);
+        echo view('front/nav_view', $data);
+        echo view('back/formulario.php', $data);
+        echo view('front/footer_view', $data);
+    }
 }

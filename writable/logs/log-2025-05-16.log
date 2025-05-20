@@ -1,0 +1,393 @@
+CRITICAL - 2025-05-16 18:59:29 --> ParseError: syntax error, unexpected variable "$routes"
+[Method: GET, Route: formulario]
+in APPPATH\Config\Routes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:00:03 --> ParseError: syntax error, unexpected variable "$routes"
+[Method: GET, Route: formulario]
+in APPPATH\Config\Routes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:00:05 --> ParseError: syntax error, unexpected variable "$routes"
+[Method: GET, Route: formulario]
+in APPPATH\Config\Routes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:00:05 --> ParseError: syntax error, unexpected variable "$routes"
+[Method: GET, Route: formulario]
+in APPPATH\Config\Routes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:00:06 --> ParseError: syntax error, unexpected variable "$routes"
+[Method: GET, Route: formulario]
+in APPPATH\Config\Routes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:00:07 --> ParseError: syntax error, unexpected variable "$routes"
+[Method: GET, Route: formulario]
+in APPPATH\Config\Routes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:00:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:04:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:04:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:04:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:04:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:12:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:13:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:13:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:13:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:14:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:16:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:16:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:16:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:17:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:17:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:17:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "app\Views\back\formulario.php"
+[Method: GET, Route: formulario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('app\\Views\\back\\formulario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('app\\Views\\back\\formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('app\\Views\\back\\formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-16 19:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-16 19:20:22 --> ErrorException: Undefined variable $usuario
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 25.
+ 1 APPPATH\Views\back\formulario.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\formulario.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\formulario.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 5 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:23:22 --> ParseError: syntax error, unexpected fully qualified name "\Config\Services"
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 6.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:24:25 --> ParseError: syntax error, unexpected fully qualified name "\Config\Services"
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 6.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:24:32 --> ParseError: syntax error, unexpected namespaced name "app\Config\Services"
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 6.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:24:42 --> ParseError: syntax error, unexpected namespaced name "app\Config\Services"
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 6.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:24:59 --> ParseError: syntax error, unexpected namespaced name "app\Config\Services"
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 6.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:25:09 --> ParseError: syntax error, unexpected fully qualified name "\Config\Services"
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 6.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:25:09 --> ParseError: syntax error, unexpected fully qualified name "\Config\Services"
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 6.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:25:10 --> ParseError: syntax error, unexpected fully qualified name "\Config\Services"
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 6.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:25:10 --> ParseError: syntax error, unexpected fully qualified name "\Config\Services"
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 6.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:26:20 --> ParseError: syntax error, unexpected variable "$validation", expecting "," or ";"
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 21.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-16 19:28:56 --> ParseError: Unclosed '{'
+[Method: GET, Route: formulario]
+in APPPATH\Views\back\formulario.php on line 28.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/formulario.php', [], true)
+ 3 APPPATH\Controllers\Home.php(83): view('back/formulario.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

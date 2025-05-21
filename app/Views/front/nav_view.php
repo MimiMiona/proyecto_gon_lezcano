@@ -30,7 +30,10 @@
                     <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" href="<?= base_url('formulario') ?>">Formulario</a>
+                    <a class="nav-link active" href="<?= base_url('registro') ?>">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="<?= base_url('login') ?>">Login</a>
                     </li>
                     <li class="nav-item dropdown">
                     <span class="nav-link dropdown-toggle active" id="ayudaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

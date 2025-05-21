@@ -75,12 +75,21 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
-    public function formulario()
+    public function registro()
     {
-        $data['titulo'] = 'formulario';
+        $data['titulo'] = 'registro';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
-        echo view('back/formulario.php', $data);
+        echo view('back/usuario/registro.php', $data);
+        echo view('front/footer_view', $data);
+    }
+
+        public function login()
+    {
+        $data['titulo'] = 'login';
+        echo view('front/head_view',$data);
+        echo view('front/nav_view', $data);
+        echo view('back/usuario/login.php', $data);
         echo view('front/footer_view', $data);
     }
 }

@@ -3,8 +3,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\Usuarios_model;
 
-class Login:controller extends BaseController
-{
+class Login_controller extends BaseController {
 	public function index()
 	{
 		helper(['form', 'url']);
@@ -26,25 +25,26 @@ class Login:controller extends BaseController
 				return redirect()->to('/');
 				$verify_pass = password_verify($password, $pass);
 				if($verify_pass){
-					
+			
                     $ses_data = [
-					'id_usuario' => $data['id_usuario'];
-					'nombre' => $data['nombre'];
-					'apellido' => $data['apellido'];
-					'email' => $data['email'];
-					'usuario' => $data['usuario'];
-					'perfil_id' => $data['perfil_id'];
-					'logged_in' => TRUE;
+					'id_usuario' => $data['id_usuario'],
+					'nombre' => $data['nombre'],
+					'apellido' => $data['apellido'],
+					'email' => $data['email'],
+					'usuario' => $data['usuario'],
+					'perfil_id' => $data['perfil_id'],
+					'logged_in' => TRUE,
 					];
-					$session->set($ses_data)
-					session()->setFlashdata('msg', 'Bienvenido!!');
+					$session->set($ses_data);
+					$session->setFlashdata('msg', 'Bienvenido!!');
 				}else{
 					$session->setFlashdata('msg', 'Password Incorrecta');
 					return redirect()->to('/login');
 				}
-		}else{
+			}else{
 			$session->setFlashdata('msg', 'No ingreso un email o el mismo es incorrecto');
 			return redirect()->to('/login');
+			}
 		}
 	}
 }

@@ -5,13 +5,13 @@
             </div>
             <div class="d-flex align-items-center">
             <a href="https://www.facebook.com" target="_blank" class="me-3 text-reset">
-                <img src="assets/img/logo_facebook.png" alt="Facebook" width="40" height="40" class="img-fluid rounded">
+                <img src="<?= base_url('assets/img/logo_facebook.png') ?>" alt="Facebook" width="40" height="40" class="img-fluid rounded">
             </a>
             <a href="https://www.x.com" target="_blank" class="me-3 text-reset">
-                <img src="assets/img/logo_x.png" alt="X" width="40" height="40" class="img-fluid rounded">
+                <img src="<?= base_url('assets/img/logo_x.png') ?>" alt="X" width="40" height="40" class="img-fluid rounded">
             </a>
             <a href="https://www.instagram.com" target="_blank" class="me-3 text-reset">
-                <img src="assets/img/logo_instagram.png" alt="Instagram" width="40" height="40" class="img-fluid rounded">
+                <img src="<?= base_url('assets/img/logo_instagram.png') ?>" alt="Instagram" width="40" height="40" class="img-fluid rounded">
             </a>
             </div>
         </section>

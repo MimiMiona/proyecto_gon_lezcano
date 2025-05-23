@@ -23,28 +23,27 @@ class Login_controller extends BaseController {
 				
                 $session->setFlashdata('msg', 'usuario dado de baja');
 				return redirect()->to('/');
-				$verify_pass = password_verify($password, $pass);
-				if($verify_pass){
-			
-                    $ses_data = [
-					'id_usuario' => $data['id_usuario'],
-					'nombre' => $data['nombre'],
-					'apellido' => $data['apellido'],
-					'email' => $data['email'],
-					'usuario' => $data['usuario'],
-					'perfil_id' => $data['perfil_id'],
-					'logged_in' => TRUE,
-					];
-					$session->set($ses_data);
-					$session->setFlashdata('msg', 'Bienvenido!!');
-				}else{
-					$session->setFlashdata('msg', 'Password Incorrecta');
-					return redirect()->to('/login');
-				}
-			}else{
-			$session->setFlashdata('msg', 'No ingreso un email o el mismo es incorrecto');
-			return redirect()->to('/login');
 			}
+			if(password_verify($password, $pass)){
+				$ses_data = [
+				'id_usuario' => $data['id_usuario'],
+				'nombre' => $data['nombre'],
+				'apellido' => $data['apellido'],
+				'email' => $data['email'],
+				'usuario' => $data['usuario'],
+				'perfil_id' => $data['perfil_id'],
+				'logged_in' => TRUE,
+				];
+				$session->set($ses_data);
+				$session->setFlashdata('msg', 'Bienvenido!!');
+				return redirect()->to('/logueado');
+			}else{
+				$session->setFlashdata('msg', 'Password Incorrecta');
+				return redirect()->to('/login');
+			}
+		}else{
+		$session->setFlashdata('msg', 'No ingreso un email o el mismo es incorrecto');
+		return redirect()->to('/login');
 		}
 	}
 }

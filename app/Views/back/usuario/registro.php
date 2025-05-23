@@ -26,40 +26,40 @@
                         <div class="mb-3"> 
                             <label for="exampleFormControlInput1" class="form-label">Apellido</label> 
                             <input name="apellido" type="text" class="form-control" placeholder="apellido" > 
-                                <?php if($validation->getError('apellido')) {?> 
-                                    <div class='alert alert-danger mt-3'> 
-                                        <?= $error = $validation->getError('apellido'); ?> 
-                                    </div> 
-                                <?php }?> 
+                            <?php if($validation->getError('apellido')) {?> 
+                                <div class='alert alert-danger mt-3'> 
+                                    <?= $error = $validation->getError('apellido'); ?> 
+                                </div> 
+                            <?php }?> 
                         </div>
                         <div class="mb-4"> 
                             <label for="exampleFormControlInput1" class="form-label">Nombre de Usuario</label> 
                             <input name="usuario" type="text" class="form-control" placeholder="usuario" > 
-                                <?php if($validation->getError('usuario')) {?> 
-                                    <div class='alert alert-danger mt-4'> 
-                                        <?= $error = $validation->getError('usuario'); ?> 
-                                    </div> 
-                                <?php }?> 
+                            <?php if($validation->getError('usuario')) {?> 
+                                <div class='alert alert-danger mt-4'> 
+                                    <?= $error = $validation->getError('usuario'); ?> 
+                                </div> 
+                            <?php }?> 
                         </div>
                         <div class="mb-4"> 
                             <label for="exampleFormControlInput1" class="form-label">Email</label> 
                             <input name="email" type="text" class="form-control" placeholder="email" > 
-                                <?php if($validation->getError('email')) {?> 
-                                    <div class='alert alert-danger mt-4'> 
-                                        <?= $error = $validation->getError('usuario'); ?> 
-                                    </div> 
-                                <?php }?> 
+                            <?php if($validation->getError('email')) {?> 
+                                <div class='alert alert-danger mt-4'> 
+                                    <?= $error = $validation->getError('usuario'); ?> 
+                                </div> 
+                            <?php }?> 
                         </div>
                         <div class="mb-4"> 
                             <label class="form-label">Contraseña</label> 
-                            <input name="pass" type="password" class="form-control" placeholder="Contraseña"> 
+                            <input name="pass" type="password" class="form-control" placeholder="contraseña"> 
                             <?php if ($validation->getError('pass')): ?> 
                                 <div class="alert alert-danger mt-2"><?= $validation->getError('pass'); ?></div> 
                             <?php endif; ?> 
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Registrarse</button>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

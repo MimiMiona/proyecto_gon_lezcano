@@ -22,6 +22,5 @@ $routes->post('/enviar-form', 'usuario_controller::formValidation');
 
 $routes->get('/login', 'Home::login');
 $routes->post('/enviarlogin', 'Login_controller::auth');
-$routes->get('/login', 'Panel_controller::index', ['filter' => 'auth']);
+$routes->get('/logueado', 'Panel_controller::index', ['filter' => 'auth']);
 $routes->get('/logout', 'Login_controller::logout');
-

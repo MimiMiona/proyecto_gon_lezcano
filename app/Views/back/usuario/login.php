@@ -15,10 +15,10 @@
             <!-- Inicio formulario login -->
             <form method="post" action="<?php echo base_url('/enviarlogin'); ?>">
               <div class="mb-3">
-                <label for="usuario" class="registro-label">
-                  <p class="supertexto">Nombre de usuario</p>
+                <label for="Wmail" class="registro-label">
+                  <p class="supertexto">Email</p>
                 </label>
-            <input name="usuario" type="text" class="form-control" placeholder="usuario" > </div>
+            <input name="email" type="text" class="form-control" placeholder="Email" > </div>
               <div class="mb-3">
                 <label for="password" class="registro-label">
                 <p class="supertexto">Contraseña</p>

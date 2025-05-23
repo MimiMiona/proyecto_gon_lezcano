@@ -84,12 +84,21 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
-        public function login()
+    public function login()
     {
         $data['titulo'] = 'login';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('back/usuario/login.php', $data);
+        echo view('front/footer_view', $data);
+    }
+
+    public function usuario_logueado()
+    {
+        $data['titulo'] = 'logueado';
+        echo view('front/head_view',$data);
+        echo view('front/nav_view', $data);
+        echo view('back/usuario/usuario_logueado.php', $data);
         echo view('front/footer_view', $data);
     }
 }

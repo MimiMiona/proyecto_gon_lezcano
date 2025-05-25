@@ -26,6 +26,12 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `perfiles`
 --
+CREATE DATABASE rebobinar
+  DEFAULT CHARACTER SET utf8mb4
+  COLLATE utf8mb4_general_ci;
+
+
+USE rebobinar;
 
 CREATE TABLE `perfiles` (
   `id` int(11) NOT NULL,

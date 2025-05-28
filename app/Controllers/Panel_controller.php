@@ -6,6 +6,9 @@ class Panel_controller extends BaseController
 {
     public function index()
     {
-        return view('back/usuario/usuario_logueado');
+        echo view('front/head_view');
+        echo view('front/nav_view');
+        echo view('back/usuario/usuario_logueado');
+        return view('front/footer_view');
     }
 }

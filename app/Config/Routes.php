@@ -16,9 +16,11 @@ $routes->get('privacidad', 'Home::privacidad');
 $routes->get('registro', 'Home::registro');
 $routes->get('preguntas_frecuentes', 'Home::preguntas_frecuentes');
 
+$routes->get('/contacto','consultas_controller::create');
+$routes->post('/enviar-formulario', 'consultas_controller::formValidation');
+
 $routes->get('/registro','usuario_controller::create');
 $routes->post('/enviar-form', 'usuario_controller::formValidation');
-
 
 $routes->get('/login', 'Home::login');
 $routes->post('/enviarlogin', 'Login_controller::auth');

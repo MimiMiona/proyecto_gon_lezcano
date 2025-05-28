@@ -14,12 +14,12 @@
   <div class="row justify-content-center"> 
     <div class="col-12 col-sm-10 col-md-8 col-lg-6">
       <div class="card shadow p-4 bg-consulta">
-        <form action="" method="post">
+        <form method="post" action="<?php echo base_url('/enviar-formulario'); ?>">
           <h2 class="text-center mb-4">¡Contáctanos!</h2>
 
           <div class="mb-3">
             <label for="name" class="form-label">Nombre completo</label>
-            <input id="name" name="name" type="text" placeholder="Tu nombre" class="form-control">
+            <input id="name" name="nombre" type="text" placeholder="Tu nombre" class="form-control">
           </div>
 
           <div class="mb-3">
@@ -29,7 +29,7 @@
 
           <div class="mb-3">
             <label for="message" class="form-label">Tu mensaje</label>
-            <textarea class="form-control" id="message" name="message" placeholder="Por favor, ingresa tu mensaje aquí..." rows="5"></textarea>
+            <textarea class="form-control" id="message" name="mensaje" placeholder="Por favor, ingresa tu mensaje aquí..." rows="5"></textarea>
           </div>
 
           <div class="d-grid gap-2">

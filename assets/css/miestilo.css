@@ -5,12 +5,15 @@ body {
     padding: 0;
     height: 100%;
 }
+
+h1{
+    text-align: center;
+}
 .custom-navbar {
     width: 100%;
     background-size: cover;
     background-color: #ddd2a6 !important;
 }
-
 
 .custom-hero{
     background-color: #cfc59a !important;
@@ -31,6 +34,13 @@ body {
 
 .custom-footer {
     background-color: #ddd2a6;
+}
+
+.custom-register-card {
+    background-color: #cfc59a; 
+    color: #424242;
+    border: 1px solid #cfc59a;
+    border-radius: 10px;
 }
 
 .custom-card {
@@ -63,3 +73,4 @@ body {
 #comedia{
     color: #777157;
 }
+

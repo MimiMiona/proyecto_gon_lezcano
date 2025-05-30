@@ -26,3 +26,13 @@ $routes->get('/login', 'Home::login');
 $routes->post('/enviarlogin', 'Login_controller::auth');
 $routes->get('/logueado', 'Panel_controller::index', ['filter' => 'auth']);
 $routes->get('/logout', 'Login_controller::logout');
+
+$routes->get('/crear', 'Productocontroller::index', ['filter' => 'auth']);
+$routes->get('/agregar', 'Productocontroller::index', ['filter' => 'auth']);
+$routes->get('/produ-form', 'Productocontroller::crearproducto', ['filter' => 'auth']);
+$routes->post('/enviar-produ', 'Productocontroller::store', ['filter' => 'auth']);
+$routes->get('/editar/(:num)', 'Productocontroller::singleproducto/$1', ['filter' => 'auth']);
+$routes->post('modifica/(:num)', 'Productocontroller::modifica/$1', ['filter' => 'auth']);
+$routes->get('borrar/(:num)', 'Productocontroller::deleteproducto/$1', ['filter' => 'auth']);
+$routes->get('/eliminados', 'Productocontroller::eliminados', ['filter' => 'auth']);
+$routes->get('activar_pro/(:num)', 'Productocontroller::activarproducto/$1', ['filter' => 'auth']);

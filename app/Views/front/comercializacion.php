@@ -14,13 +14,13 @@
             </p>
         </div>
         <div class="col-lg-6">
-            <img src="assets\img\myManGodFrey_gif.gif" alt="Cine clásico" class="img-fluid rounded">
+            <img src="<?= base_url('assets/img/myManGodFrey_gif.gif') ?>" alt="Cine clásico" class="img-fluid rounded">
         </div>
     </div>
 
     <div class="row align-items-center mb-5 flex-lg-row-reverse">
         <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/img/correoImg.png" alt="Ejemplo de correo" class="img-fluid rounded">
+            <img src="<?= base_url('assets/img/correoImg.png')?>" alt="Ejemplo de correo" class="img-fluid rounded">
         </div>
         <div class="col-lg-6">
             <h2 class="h4">¿Cómo consigo una película?</h2>
@@ -42,7 +42,7 @@
             </p>
         </div>
         <div class="col-lg-6">
-            <img src="assets\img\thingsToCome_gif.gif" alt="Proyecto académico" class="img-fluid rounded">
+            <img src="<?= base_url('assets/img/thingsToCome_gif.gif') ?>" alt="Proyecto académico" class="img-fluid rounded">
         </div>
     </div>
 

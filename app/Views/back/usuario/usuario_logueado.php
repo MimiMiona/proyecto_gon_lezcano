@@ -1,6 +1,6 @@
 <section class="container py-5" style="max-width: 1200px; margin: 0 auto; padding: 20px;"> 
     <div class="mb-5 text-center">
-        <h1 class="display-4">📽️ Bienvenido a Rebobinar</h1>
+        <h1 class="display-4">📽️ Bienvenido <?= session('nombre'); ?> a Rebobinar</h1>
         <p class="lead">Tu rincón para descubrir y disfrutar del cine clásico en dominio público.</p>
     </div>
 

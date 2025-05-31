@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-05-2025 a las 17:01:46
+-- Tiempo de generación: 01-06-2025 a las 00:08:28
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -51,7 +51,8 @@ CREATE TABLE `contacto` (
 --
 
 INSERT INTO `contacto` (`id_usuario`, `nombre`, `email`, `mensaje`) VALUES
-(1, 'Jose', 'jose123@gmail.com', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+(1, 'Jose Gomez', 'jose123@gmail.com', 'Mi pedido llego fallado, la caja en la que vino estaba bastante golpeada ¿Tiene solución?'),
+(2, 'Maria', 'mariamaidana33@gmail.com', 'No puedo colocar mi ubicacion a mi hogar correctamente, como lo puedo colocar?');
 
 -- --------------------------------------------------------
 
@@ -190,6 +191,12 @@ ALTER TABLE `usuarios`
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `categorias`
+--
+ALTER TABLE `categorias`
+  ADD CONSTRAINT `categorias_ibfk_1` FOREIGN KEY (`id`) REFERENCES `productos` (`categoria_id`);
 
 --
 -- Filtros para la tabla `usuarios`

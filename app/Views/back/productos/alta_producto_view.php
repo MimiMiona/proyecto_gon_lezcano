@@ -14,7 +14,7 @@
                     <?php endif?> 
                     <?php $validation = \Config\Services::validation(); ?>
                     <form action="<?php echo base_url('/enviar-form') method="post" enctype="multipart/form-data" ?>">
-                        <div class="card-body" media=(max-width:568px)">
+                        <div class="card-body" media="(max-width:568px)">
                             <div class="mb-2"> 
                                 <label for="nombre_prod" class="form-label">Producto</label> 
                                 <input class="form-control" type="text" name="nombre_prod" id="nombre_prod" value="<?= set_value('nombre_prod'); ?>" 

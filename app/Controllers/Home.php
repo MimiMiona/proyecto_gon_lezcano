@@ -92,4 +92,5 @@ class Home extends BaseController
         echo view('back/usuario/login.php', $data);
         echo view('front/footer_view', $data);
     }
+
 }

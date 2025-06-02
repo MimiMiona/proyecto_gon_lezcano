@@ -1,13 +1,13 @@
 <?php
 namespace App\Controllers;
-Use App\Models\Producto_Model;
+Use App\Models\Productos_Model;
 Use App\Models\Usuario_Model;
 Use App\Models\Ventas_cabecera_model;
 Use App\Models\Ventas_detalle_model;
 Use App\Models\categoria_model;
 use CodeIgniter\Controller;
 
-class Productoscontroller extends Controller {
+class Productos_controller extends Controller {
 	public function __construct()
 	{
 		helper(['form', 'url']);
@@ -15,7 +15,7 @@ class Productoscontroller extends Controller {
 	}
 	public function index()
 	{
-		$productoModel = new Producto_Model();
+		$productoModel = new Productos_Model();
 
 		$data['producto'] = $productoModel->getProductoAll();
 
@@ -27,11 +27,11 @@ class Productoscontroller extends Controller {
 	}
 
     public function crearproducto(){
-        $categoriamodel = new categoria_model();
+        $categoriamodel = new Categorias_model();
         $data['categorias'] = $categoriasmodel->getCategorias();
 
         $productoModel = new Producto_Model();
-        $data['producto'] = $productomodel->getProductoAll();
+        $data['obj'] = $productoModel->orderBy('id', 'DESC')->findAll();
 
         $dato['titulo']='Alta Producto';
         echo view('front/head_view',$dato);
@@ -54,7 +54,7 @@ class Productoscontroller extends Controller {
         $productoModel = new Producto_Model();
 
         if(!$input){
-            $categoria_model = new categoria_model();
+            $categoria_model = new Categorias_model();
             $data['categoria'] = $categoria_model->getCategorias();
             $data['validation'] = $this->validator;
 
@@ -68,28 +68,28 @@ class Productoscontroller extends Controller {
             $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);
 
             $data = [
-                'nombre_prod' => $this->request->getVar('nombre_prod');
-                'imagen' => $img->getName();
+                'nombre_prod' => $this->request->getVar('nombre_prod'),
+                'imagen' => $img->getName(),
                 'categoria_id' => $this->request->getVar('categoria'),
                 'precio' => $this->request->getVar('precio'),
                 'precio_vta' => $this->request->getVar('precio_vta'),
                 'stock' => $this->request->getVar('stock'),
                 'stock_min' => $this->request->getVar('stock_min'),
-            ]
+            ];
 
-            $producto = new Producto_Model();
-            $producto->insert($data);
+            $producto  = new Productos_Model();
+            $producto ->insert($data);
             session()->setFlashdata('sucess', 'Alta Exitosa...');
-            return $this->reponse->redirect(site_url('crear'));
+            return $this->response->redirect(site_url('crear'));
         }
     }
     public function singleproducto($id = null){
-        $productoModel = new Producto_Model();
+        $productoModel = new Productos_Model();
         $data['old'] = $productoModel->where('id', $id)->first();
         if(empty($data['old'])){
             throw new \CodeIgniter\Exceptions\PageNotFoundException('No se ha seleccionado');
         }
-        $categoriasM = new categoria_model();
+        $categoriasM = new  Categorias_model();
         $data['categorias'] = $categoriasM->getCategorias();
         
         $data['titulo']='Crud_productos';
@@ -99,7 +99,7 @@ class Productoscontroller extends Controller {
         echo view('front/footer_view', $data);
 	}
     public function modifica($id){
-        $productoModel = new Producto_Model();
+        $productoModel = new Productos_Model();
         $id = $productoModel->where('id', $id)->first();
         $img = $this->request->getFile('image');
 
@@ -121,13 +121,13 @@ class Productoscontroller extends Controller {
                 'precio_vta' => $this->request->getVar('precio_vta'),
                 'stock' => $this->request->getVar('stock'),	
                 'stock_min' => $this->request->getVar('stock_min'),
-            ]
+            ];
         }
         $productoModel->update($id, $data);
-        session()->setFlashdata('sucess', 'Modificacion Exitosa...')
+        session()->setFlashdata('sucess', 'Modificacion Exitosa...');
     }
     public function eliminados($id){
-        $productoModel = new Producto_Model();
+        $productoModel = new Productos_Model();
         $data['producto'] = $productoModel->getProductoAll();
         $dato['titulo']='Crud_productos';
         echo view('front/head_view',$data);
@@ -136,11 +136,11 @@ class Productoscontroller extends Controller {
         echo view('front/footer_view', $data);
     }
     public function activarproducto($id){
-        $productoModel = new Producto_Model();
+        $productoModel = new Productos_Model();
         $data['eliminado'] = $productoModel->where('id', $id)->first();
         $data['eliminado'] = 'NO';
         $productoModel->update($id, $data);
         session()->setFlashdata('sucess', 'Activacion Exitosa...');
-        return $this->response->redirect->(site_url('/crear'));
+        return $this->response->redirect(site_url('crear'));
     }
 }

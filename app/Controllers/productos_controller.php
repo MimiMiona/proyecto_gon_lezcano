@@ -1,75 +1,77 @@
 <?php
 namespace App\Controllers;
-Use App\Models\Productos_Model;
-Use App\Models\Usuario_Model;
-Use App\Models\Ventas_cabecera_model;
-Use App\Models\Ventas_detalle_model;
-Use App\Models\categoria_model;
+
+use App\Models\Productos_Model;
+use App\Models\Usuario_Model;
+use App\Models\Ventas_cabecera_model;
+use App\Models\Ventas_detalle_model;
+use App\Models\Categorias_model;
 use CodeIgniter\Controller;
 
 class Productos_controller extends Controller {
-	public function __construct()
-	{
-		helper(['form', 'url']);
-        $session=session();
-	}
-	public function index()
-	{
-		$productoModel = new Productos_Model();
 
-		$data['producto'] = $productoModel->getProductoAll();
+    public function __construct() {
+        helper(['form', 'url']);
+        $this->session = session();
+    }
 
-        $dato['titulo']='Crud_productos';
-        echo view('front/head_view',$data);
-        echo view('front/nav_view', $data);
-        echo view('back/usuario/registro', $data);
-        echo view('front/footer_view', $data);
-	}
+    public function index() {
+        $productoModel = new Productos_Model();
+        $data['producto'] = $productoModel->getProductoAll();
 
-    public function crearproducto(){
-        $categoriamodel = new Categorias_model();
+        $dato['titulo'] = 'Crud_productos';
+        echo view('front/head_view', $dato);
+        echo view('front/nav_view', $dato);
+        echo view('back/productos/producto_nuevo_view.php', $data);
+        echo view('front/footer_view', $dato);
+    }
+
+    public function crearproducto() {
+        $categoriasmodel = new Categorias_model();
         $data['categorias'] = $categoriasmodel->getCategorias();
 
-        $productoModel = new Producto_Model();
+        $productoModel = new Productos_Model();
         $data['obj'] = $productoModel->orderBy('id', 'DESC')->findAll();
 
-        $dato['titulo']='Alta Producto';
-        echo view('front/head_view',$dato);
+        $dato['titulo'] = 'Alta Producto';
+        echo view('front/head_view', $dato);
         echo view('front/nav_view');
-        echo view('back/usuario/alta_producto_view', $data);
+        echo view('back/productos/alta_producto_view.php', $data);
         echo view('front/footer_view');
     }
 
-     public function store(){
+    public function store() {
         $input = $this->validate([
             'nombre_prod' => 'required|min_length[3]',
-			'categoria' => 'is_unique[categorias.id]',
-			'precio'=> 'required|numeric',
-			'precio_vta' => 'required|numeric',
-			'stock'=> 'required',
-            'stock_min'=> 'required',
-            'imagen'=> 'uploaded[imagen]',
+            'categoria' => 'required|is_natural_no_zero',
+            'precio' => 'required|numeric',
+            'precio_vta' => 'required|numeric',
+            'stock' => 'required|integer',
+            'stock_min' => 'required|integer',
+            'imagen' => 'uploaded[imagen]|is_image[imagen]|max_size[imagen,2048]',
         ]);
 
-        $productoModel = new Producto_Model();
-
-        if(!$input){
+        if (!$input) {
             $categoria_model = new Categorias_model();
-            $data['categoria'] = $categoria_model->getCategorias();
-            $data['validation'] = $this->validator;
+            $data = [
+                'categorias' => $categoria_model->getCategorias(),
+                'validation' => $this->validator,
+                'titulo' => 'Alta Producto'
+            ];
 
-			$data['titulo']='Alta';
-			echo view ('front/head_view', $data);
-			echo view ('front/nav_view');
-			echo view ('back/productos/alta_producto_view', $data);
-		} else {
+
+            echo view('front/head_view', $data);
+            echo view('front/nav_view');
+            echo view('back/productos/alta_producto_view', $data);
+            echo view('front/footer_view');
+        } else {
             $img = $this->request->getFile('imagen');
             $nombre_aleatorio = $img->getRandomName();
-            $img->move(ROOTPATH.'assets/uploads', $nombre_aleatorio);
+            $img->move(ROOTPATH . 'assets/uploads', $nombre_aleatorio);
 
             $data = [
                 'nombre_prod' => $this->request->getVar('nombre_prod'),
-                'imagen' => $img->getName(),
+                'imagen' => $nombre_aleatorio,
                 'categoria_id' => $this->request->getVar('categoria'),
                 'precio' => $this->request->getVar('precio'),
                 'precio_vta' => $this->request->getVar('precio_vta'),
@@ -77,70 +79,83 @@ class Productos_controller extends Controller {
                 'stock_min' => $this->request->getVar('stock_min'),
             ];
 
-            $producto  = new Productos_Model();
-            $producto ->insert($data);
-            session()->setFlashdata('sucess', 'Alta Exitosa...');
-            return $this->response->redirect(site_url('crear'));
+            $productoModel = new Productos_Model();
+            $productoModel->insert($data);
+
+            session()->setFlashdata('success', 'Alta Exitosa...');
+            return redirect()->to(site_url('crear'));
         }
     }
-    public function singleproducto($id = null){
+
+    public function singleproducto($id = null) {
         $productoModel = new Productos_Model();
-        $data['old'] = $productoModel->where('id', $id)->first();
-        if(empty($data['old'])){
+        $data['old'] = $productoModel->find($id);
+
+        if (empty($data['old'])) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('No se ha seleccionado');
         }
-        $categoriasM = new  Categorias_model();
+
+        $categoriasM = new Categorias_model();
         $data['categorias'] = $categoriasM->getCategorias();
-        
-        $data['titulo']='Crud_productos';
-        echo view('front/head_view',$data);
+        $data['titulo'] = 'Editar Producto';
+
+        echo view('front/head_view', $data);
         echo view('front/nav_view', $data);
         echo view('back/productos/edit', $data);
         echo view('front/footer_view', $data);
-	}
-    public function modifica($id){
-        $productoModel = new Productos_Model();
-        $id = $productoModel->where('id', $id)->first();
-        $img = $this->request->getFile('image');
-
-        if($img && $img->isValid()){
-            $data = [
-                'nombre_prod' => $this->request->getVar('nombre_prod'),
-                'imagen' => $img->getName('imagen'),
-                'categoria_id' => $this->request->getVar('categoria'),
-                'precio' => $this->request->getVar('precio'),
-                'precio_vta' => $this->request->getVar('precio_vta'),
-                'stock' => $this->request->getVar('stock'),	
-                'stock_min' => $this->request->getVar('stock_min'),
-            ];
-        }else{
-            $data = [
-                'nombre_prod' => $this->request->getVar('nombre_prod'),
-                'categoria_id' => $this->request->getVar('categoria'),
-                'precio' => $this->request->getVar('precio'),
-                'precio_vta' => $this->request->getVar('precio_vta'),
-                'stock' => $this->request->getVar('stock'),	
-                'stock_min' => $this->request->getVar('stock_min'),
-            ];
-        }
-        $productoModel->update($id, $data);
-        session()->setFlashdata('sucess', 'Modificacion Exitosa...');
     }
-    public function eliminados($id){
+
+    public function modifica($id) {
+        $productoModel = new Productos_Model();
+        $producto = $productoModel->find($id);
+
+        if (!$producto) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Producto no encontrado');
+        }
+
+        $img = $this->request->getFile('imagen');
+
+        $data = [
+            'nombre_prod' => $this->request->getVar('nombre_prod'),
+            'categoria_id' => $this->request->getVar('categoria'),
+            'precio' => $this->request->getVar('precio'),
+            'precio_vta' => $this->request->getVar('precio_vta'),
+            'stock' => $this->request->getVar('stock'),
+            'stock_min' => $this->request->getVar('stock_min'),
+        ];
+
+        if ($img && $img->isValid() && !$img->hasMoved()) {
+            $nombre_aleatorio = $img->getRandomName();
+            $img->move(ROOTPATH . 'assets/uploads', $nombre_aleatorio);
+            $data['imagen'] = $nombre_aleatorio;
+        }
+
+        $productoModel->update($id, $data);
+        session()->setFlashdata('success', 'Modificación Exitosa...');
+        return redirect()->to(site_url('crear'));
+    }
+
+    public function eliminados($id) {
         $productoModel = new Productos_Model();
         $data['producto'] = $productoModel->getProductoAll();
-        $dato['titulo']='Crud_productos';
-        echo view('front/head_view',$data);
-        echo view('front/nav_view', $data);
+
+        $dato['titulo'] = 'Productos Eliminados';
+        echo view('front/head_view', $dato);
+        echo view('front/nav_view', $dato);
         echo view('back/productos/producto_eliminado', $data);
-        echo view('front/footer_view', $data);
+        echo view('front/footer_view', $dato);
     }
-    public function activarproducto($id){
+
+    public function activarproducto($id) {
         $productoModel = new Productos_Model();
-        $data['eliminado'] = $productoModel->where('id', $id)->first();
-        $data['eliminado'] = 'NO';
-        $productoModel->update($id, $data);
-        session()->setFlashdata('sucess', 'Activacion Exitosa...');
-        return $this->response->redirect(site_url('crear'));
+        $producto = $productoModel->find($id);
+
+        if (!$producto) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Producto no encontrado');
+        }
+
+        $productoModel->update($id, ['eliminado' => 'NO']);
+        session()->setFlashdata('success', 'Activación Exitosa...');
+        return redirect()->to(site_url('crear'));
     }
 }

@@ -135,7 +135,7 @@ class Productos_controller extends Controller {
         return redirect()->to(site_url('crear'));
     }
 
-    public function eliminados($id) {
+    public function eliminados() {
         $productoModel = new Productos_Model();
         $data['producto'] = $productoModel->getProductoAll();
 
@@ -156,6 +156,21 @@ class Productos_controller extends Controller {
 
         $productoModel->update($id, ['eliminado' => 'NO']);
         session()->setFlashdata('success', 'Activación Exitosa...');
+        return redirect()->to(site_url('crear'));
+    }
+
+    public function deleteproducto($id){
+        $productoModel = new \App\Models\Productos_Model();
+        $producto = $productoModel->find($id);
+
+        if (!$producto) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Producto no encontrado');
+        }
+
+        // Marcamos como eliminado, en vez de borrar físicamente
+        $productoModel->update($id, ['eliminado' => 'SI']);
+        
+        session()->setFlashdata('success', 'Producto eliminado correctamente.');
         return redirect()->to(site_url('crear'));
     }
 }

@@ -27,6 +27,7 @@ $routes->post('/enviarlogin', 'Login_controller::auth');
 $routes->get('/logueado', 'Panel_controller::index', ['filter' => 'auth']);
 $routes->get('/logout', 'Login_controller::logout');
 
+$routes->get('/ver-consultas', 'Consultas_controller::verConsultas');
 
 $routes->get('/crear', 'Productos_controller::index', ['filter' => 'auth']);
 $routes->get('/agregar', 'Productos_controller::index', ['filter' => 'auth']);

@@ -16,11 +16,9 @@ class Login_controller extends BaseController {
 		$password = $this->request->getVar('pass');
 		$data = $model->where('email', $email)->first();
 		if($data){
-			
             $pass = $data['pass'];
 			$ba = $data['baja'];
             if($ba == 'SI'){
-				
                 $session->setFlashdata('msg', 'usuario dado de baja');
 				return redirect()->to('/');
 			}
@@ -36,14 +34,20 @@ class Login_controller extends BaseController {
 				];
 				$session->set($ses_data);
 				$session->setFlashdata('msg', 'Bienvenido!!');
-				return redirect()->to('/logueado');
-			}else{
-				$session->setFlashdata('msg', 'Password Incorrecta');
-				return redirect()->to('/login');
+				
+				if ($data['perfil_id'] == 1) {
+					return redirect()->to('/logueado');
+				} elseif ($data['perfil_id'] == 2) {
+					return redirect()->to('/logueado');
+				}else{
+					$session->setFlashdata('msg', 'Password Incorrecta');
+					return redirect()->to('/login');
+				}
+			
 			}
 		}else{
-		$session->setFlashdata('msg', 'No ingreso un email o el mismo es incorrecto');
-		return redirect()->to('/login');
+			$session->setFlashdata('msg', 'No ingreso un email o el mismo es incorrecto');
+			return redirect()->to('/login');
 		}
 	}
 }

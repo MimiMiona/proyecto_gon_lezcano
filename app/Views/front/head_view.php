@@ -6,5 +6,5 @@
         <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
         <link href="<?= base_url('assets/css/miestilo.css') ?>" rel="stylesheet">
         <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
-        <title>Rebobinar</title>
+        <title><?php echo($titulo);?></title>
     </head>

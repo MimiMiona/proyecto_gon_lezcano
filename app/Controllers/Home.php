@@ -5,7 +5,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        $data['titulo'] = 'principal';
+        $data['titulo'] = 'Inicio';
         echo view('front/head_view', $data);
         echo view('front/nav_view', $data);
         echo view('front/inicio', $data);
@@ -23,7 +23,7 @@ class Home extends BaseController
 
     public function catalogo()
     {
-        $data['titulo'] = 'catalogo';
+        $data['titulo'] = 'Catálogo';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('front/catalogo', $data);
@@ -32,7 +32,7 @@ class Home extends BaseController
 
     public function contacto()
     {
-        $data['titulo'] = 'contacto';
+        $data['titulo'] = 'Contacto';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('front/contacto', $data);
@@ -41,7 +41,7 @@ class Home extends BaseController
 
     public function comercializacion()
     {
-        $data['titulo'] = 'comercializacion';
+        $data['titulo'] = 'Comercialización';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('front/comercializacion', $data);
@@ -50,7 +50,7 @@ class Home extends BaseController
 
     public function terminos()
     {
-        $data['titulo'] = 'terminos';
+        $data['titulo'] = 'Terminos y Condiciones';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('front/terminos', $data);
@@ -59,7 +59,7 @@ class Home extends BaseController
 
     public function privacidad()
     {
-        $data['titulo'] = 'privacidad';
+        $data['titulo'] = 'Privacidad';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('front/privacidad', $data);
@@ -77,7 +77,7 @@ class Home extends BaseController
 
     public function registro()
     {
-        $data['titulo'] = 'registro';
+        $data['titulo'] = 'Registro';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('back/usuario/registro.php', $data);
@@ -86,11 +86,10 @@ class Home extends BaseController
 
     public function login()
     {
-        $data['titulo'] = 'login';
+        $data['titulo'] = 'Login';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('back/usuario/login.php', $data);
         echo view('front/footer_view', $data);
     }
-
 }

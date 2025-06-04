@@ -17,27 +17,18 @@
         <?php $validation = \Config\Services::validation(); ?>
         <form method="post" action="<?php echo base_url('/enviar-formulario'); ?>">
           <h2 class="text-center mb-4">¡Contáctanos!</h2>
-
+          
           <div class="mb-3">
-            <label for="name" class="form-label">Nombre completo</label>
-            <input id="name" name="nombre" type="text" placeholder="Tu nombre" class="form-control">
-            <?php if($validation->getError('nombre')) {?> 
-              <div class='alert alert-danger mt-2'> 
-                <?= $error = $validation->getError('nombre'); ?> 
-              </div> 
-            <?php }?> 
+            <label for="message" class="form-label">Tu Nombre</label>
+            <input id="nombre" name="nombre" type="name" placeholder="Tu Nombre" class="form-control"
+            value="<?= session()->get('nombre') ?>">
           </div>
-
+          
           <div class="mb-3">
-            <label for="email" class="form-label">Gmail</label>
-            <input id="email" name="email" type="email" placeholder="Tu Gmail" class="form-control">
-            <?php if($validation->getError('email')) {?> 
-              <div class='alert alert-danger mt-4'> 
-                  <?= $error = $validation->getError('nombre'); ?> 
-              </div> 
-            <?php }?>
+            <label for="message" class="form-label">Tu Email</label>
+            <input id="email" name="email" type="email" placeholder="Tu Gmail" class="form-control"
+            value="<?= session()->get('email') ?>">
           </div>
-
           <div class="mb-3">
             <label for="message" class="form-label">Tu mensaje</label>
             <textarea class="form-control" id="message" name="mensaje" placeholder="Por favor, ingresa tu mensaje aquí..." rows="5"></textarea>

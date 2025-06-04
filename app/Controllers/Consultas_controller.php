@@ -9,7 +9,7 @@ class Consultas_controller extends Controller{
 	}
 
 	public function create(){
-	$data['titulo']='contacto';
+	$data['titulo']='Contacto';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('front/contacto', $data);
@@ -26,7 +26,7 @@ class Consultas_controller extends Controller{
 	
 		$formModel = new consultas_model();
 		if(!$input){
-			$data['titulo']='contacto';
+			$data['titulo'] = 'Contacto';
 			echo view ('front/head_view', $data);
 			echo view ('front/nav_view');
 			echo view ('front/contacto', ['validation' => $this->validator]);
@@ -42,4 +42,16 @@ class Consultas_controller extends Controller{
 			return $this->response->redirect(base_url('/contacto'));
 		}
 	}
+
+	public function verConsultas(){
+		$modelo = new Consultas_model();
+		$data['consultas'] = $modelo->findAll();
+
+		$data['titulo'] = 'Listado de Consultas';
+		echo view('front/head_view', $data);
+		echo view('front/nav_view', $data);
+		echo view('back/consultas/ver_consultas', $data);
+		echo view('front/footer_view', $data);
+	}
+
 }

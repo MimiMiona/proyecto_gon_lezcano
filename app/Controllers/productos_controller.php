@@ -59,7 +59,6 @@ class Productos_controller extends Controller {
                 'titulo' => 'Alta Producto'
             ];
 
-
             echo view('front/head_view', $data);
             echo view('front/nav_view');
             echo view('back/productos/alta_producto_view', $data);

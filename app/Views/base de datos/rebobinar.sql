@@ -3,14 +3,10 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-06-2025 a las 00:08:28
+-- Tiempo de generación: 06-06-2025 a las 14:09:37
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
-CREATE DATABASE rebobinar
-  DEFAULT CHARACTER SET utf8mb4
-  COLLATE utf8mb4_general_ci;
 
-USE rebobinar;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -37,6 +33,15 @@ CREATE TABLE `categorias` (
   `activo` int(2) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `categorias`
+--
+
+INSERT INTO `categorias` (`id`, `descripcion`, `activo`) VALUES
+(1, 'Terror', 1),
+(2, 'Comedia', 1),
+(3, 'Ciencia Ficcion', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -56,7 +61,8 @@ CREATE TABLE `contacto` (
 
 INSERT INTO `contacto` (`id_usuario`, `nombre`, `email`, `mensaje`) VALUES
 (1, 'Jose Gomez', 'jose123@gmail.com', 'Mi pedido llego fallado, la caja en la que vino estaba bastante golpeada ¿Tiene solución?'),
-(2, 'Maria', 'mariamaidana33@gmail.com', 'No puedo colocar mi ubicacion a mi hogar correctamente, como lo puedo colocar?');
+(2, 'Maria', 'mariamaidana33@gmail.com', 'No puedo colocar mi ubicacion a mi hogar correctamente, como lo puedo colocar?'),
+(3, 'Jose', 'jose123@gmail.com', 'Solo son una persona que no estaria sabiendo como entrar a la plataforma de la manera correcta');
 
 -- --------------------------------------------------------
 
@@ -95,6 +101,21 @@ CREATE TABLE `productos` (
   `eliminado` varchar(10) NOT NULL DEFAULT 'NO'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`id`, `nombre_prod`, `imagen`, `categoria_id`, `precio`, `precio_vta`, `stock`, `stock_min`, `eliminado`) VALUES
+(1, 'Things to Come', '1749065674_4a5da7da1132fea62921.jpg', 3, 1000.00, 2000.00, 10, 1, 'NO'),
+(2, 'Battle Of The Worlds', '1749065704_7e21a0fb85564b4aeffc.jpg', 3, 1000.00, 2000.00, 10, 1, 'NO'),
+(3, 'House on Haunted Hill', '1749065730_a86c680863c55b71d781.jpg', 1, 1000.00, 2000.00, 10, 1, 'NO'),
+(4, 'Nosferatu', '1749065757_2fdbc5181d92418ea40e.jpg', 1, 1000.00, 2000.00, 10, 1, 'NO'),
+(5, 'The Ghoul', '1749065785_9644cd8cff78f2a9df2b.jpg', 1, 1000.00, 2000.00, 10, 1, 'NO'),
+(6, 'The Great Dictator', '1749065813_1be18e1096b0bdb84aa1.jpg', 2, 1000.00, 2000.00, 10, 1, 'NO'),
+(7, 'Duck Soup', '1749065846_993e7737cff769c675c5.jpg', 2, 1000.00, 2000.00, 10, 1, 'NO'),
+(8, 'My Man Godfrey', '1749065894_b9e36c572dbfa9f73ed6.jpg', 2, 1000.00, 2000.00, 10, 1, 'NO'),
+(9, '20,000 Leagues Under The Sea', '1749065964_62c5b81b1d64b37a05b3.jpg', 3, 1000.00, 2000.00, 10, 1, 'NO');
+
 -- --------------------------------------------------------
 
 --
@@ -120,7 +141,7 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `usuario`, `email`, 
 (1, 'Jose', 'Gomez', 'jose_gomez', 'jose123@gmail.com', '$2y$10$qirYWr4XmJKkKtx/OJQe5.cTraCqvKA6lUW1M0m1f0SAhBeKq992y', 2, 'NO'),
 (2, 'Maria', 'Maidana', 'maidanamari', 'mariamaidana33@gmail.com', '$2y$10$w3rZkNYTqq.WyFbTobRBfOaoIrfxsodOnb0Y5BkERdNS8ZA5QnI3m', 2, 'NO'),
 (3, 'Sabrina', 'Ramirez', 'Sabri_12', 'Sasabrina123@gmail.com', '$2y$10$71P0eZVmJf30aNmLALlUC.dvv8G5XM2OddQIEaiqlrXfx.DtK/PPm', 2, 'NO'),
-(4, 'Juan', 'Gomez', 'juan12345', 'juan1221@gmail.com', '$2y$10$0E1ER9hQYoEuH0ee2mqIw.QTt/Qlf9Dsdw5pF/f4YdAWDaHhnlKzy', 2, 'NO');
+(4, 'Juan', 'Gomez', 'juan12345', 'juan1221@gmail.com', '$2y$10$0E1ER9hQYoEuH0ee2mqIw.QTt/Qlf9Dsdw5pF/f4YdAWDaHhnlKzy', 1, 'NO');
 
 --
 -- Índices para tablas volcadas
@@ -148,8 +169,7 @@ ALTER TABLE `perfiles`
 -- Indices de la tabla `productos`
 --
 ALTER TABLE `productos`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `categoria_id` (`categoria_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -163,16 +183,10 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de la tabla `categorias`
---
-ALTER TABLE `categorias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT de la tabla `contacto`
 --
 ALTER TABLE `contacto`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `perfiles`
@@ -184,7 +198,7 @@ ALTER TABLE `perfiles`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
@@ -195,12 +209,6 @@ ALTER TABLE `usuarios`
 --
 -- Restricciones para tablas volcadas
 --
-
---
--- Filtros para la tabla `categorias`
---
-ALTER TABLE `categorias`
-  ADD CONSTRAINT `categorias_ibfk_1` FOREIGN KEY (`id`) REFERENCES `productos` (`categoria_id`);
 
 --
 -- Filtros para la tabla `usuarios`

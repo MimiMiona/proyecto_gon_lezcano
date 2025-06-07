@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 
 class Consultas_model extends Model
 {
-	protected $table = 'contacto';
+	protected $table = 'consultas';
 	protected $primaryKey = 'id_usuario';
-	protected $allowedFields = ['nombre', 'email', 'mensaje'];
+	protected $allowedFields = ['nombre', 'email', 'mensaje', 'eliminado'];
 }

@@ -36,7 +36,8 @@ class Consultas_controller extends Controller{
 			$formModel->save([
 				'nombre' => $this->request->getVar('nombre'),
 				'email' => $this->request->getVar('email'),
-				'mensaje' => $this->request->getVar('mensaje')
+				'mensaje' => $this->request->getVar('mensaje'),
+				'elminado' => $this->request->getVar('eliminado')
 			]);
 			session()->setFlashdata('success', 'Consulta registrada con exito');
 			return $this->response->redirect(base_url('/contacto'));
@@ -53,5 +54,20 @@ class Consultas_controller extends Controller{
 		echo view('back/consultas/ver_consultas', $data);
 		echo view('front/footer_view', $data);
 	}
+
+	public function deleteConsulta($id_usuario){
+        $modelo = new \App\Models\Consultas_Model();
+        $consultaModel = $modelo->find($id_usuario);
+
+        if (!$consultaModel) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Consulta no encontrada');
+        }
+
+        // Marcamos como eliminado, en vez de borrar físicamente
+        $modelo->update($id_usuario, ['eliminado' => 'SI']);
+        
+        session()->setFlashdata('success', 'Consulta eliminada correctamente.');
+        return redirect()->to(site_url('ver-consultas'));
+    }
 
 }

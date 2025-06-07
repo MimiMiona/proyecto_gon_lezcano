@@ -1,7 +1,7 @@
 <section>
     <div class="container mt-1 mb-1 d-flex justify-content-center">
-        <div class="card" style="width:75%">
-            <div class="card-header text-center">
+        <div class="card shadow-lg rounded-4 p-3" style="width: 75%;">
+            <div class="card-header bg-productos text-center">
                 <h2>Alta de Productos</h2>
             </div>
             <div>

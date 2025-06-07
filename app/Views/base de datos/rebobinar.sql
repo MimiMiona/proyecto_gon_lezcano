@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-06-2025 a las 14:09:37
+-- Tiempo de generación: 06-06-2025 a las 21:39:06
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -45,24 +45,16 @@ INSERT INTO `categorias` (`id`, `descripcion`, `activo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `contacto`
+-- Estructura de tabla para la tabla `consultas`
 --
 
-CREATE TABLE `contacto` (
+CREATE TABLE `consultas` (
   `id_usuario` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `mensaje` varchar(300) NOT NULL
+  `mensaje` varchar(300) NOT NULL,
+  `eliminado` varchar(10) NOT NULL DEFAULT 'NO'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `contacto`
---
-
-INSERT INTO `contacto` (`id_usuario`, `nombre`, `email`, `mensaje`) VALUES
-(1, 'Jose Gomez', 'jose123@gmail.com', 'Mi pedido llego fallado, la caja en la que vino estaba bastante golpeada ¿Tiene solución?'),
-(2, 'Maria', 'mariamaidana33@gmail.com', 'No puedo colocar mi ubicacion a mi hogar correctamente, como lo puedo colocar?'),
-(3, 'Jose', 'jose123@gmail.com', 'Solo son una persona que no estaria sabiendo como entrar a la plataforma de la manera correcta');
 
 -- --------------------------------------------------------
 
@@ -106,7 +98,7 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id`, `nombre_prod`, `imagen`, `categoria_id`, `precio`, `precio_vta`, `stock`, `stock_min`, `eliminado`) VALUES
-(1, 'Things to Come', '1749065674_4a5da7da1132fea62921.jpg', 3, 1000.00, 2000.00, 10, 1, 'NO'),
+(1, 'Things to Come', '1749065674_4a5da7da1132fea62921.jpg', 3, 1000.00, 2000.00, 10, 1, 'SI'),
 (2, 'Battle Of The Worlds', '1749065704_7e21a0fb85564b4aeffc.jpg', 3, 1000.00, 2000.00, 10, 1, 'NO'),
 (3, 'House on Haunted Hill', '1749065730_a86c680863c55b71d781.jpg', 1, 1000.00, 2000.00, 10, 1, 'NO'),
 (4, 'Nosferatu', '1749065757_2fdbc5181d92418ea40e.jpg', 1, 1000.00, 2000.00, 10, 1, 'NO'),
@@ -154,9 +146,9 @@ ALTER TABLE `categorias`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `contacto`
+-- Indices de la tabla `consultas`
 --
-ALTER TABLE `contacto`
+ALTER TABLE `consultas`
   ADD PRIMARY KEY (`id_usuario`);
 
 --
@@ -183,10 +175,10 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de la tabla `contacto`
+-- AUTO_INCREMENT de la tabla `consultas`
 --
-ALTER TABLE `contacto`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `consultas`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `perfiles`

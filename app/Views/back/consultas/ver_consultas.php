@@ -12,12 +12,17 @@
             </thead>
             <tbody>
                 <?php foreach ($consultas as $consulta): ?>
+                    <?php if ($consulta['eliminado'] === 'NO'): ?>
                     <tr>
                         <td><?= esc($consulta['id_usuario']) ?></td>
                         <td><?= esc($consulta['nombre']) ?></td>
                         <td><?= esc($consulta['email']) ?></td>
                         <td><?= esc($consulta['mensaje']) ?></td>
+                        <td>
+                            <a href="<?= base_url('borrarConsulta/' . $consulta['id_usuario']); ?>" class="btn btn-secondary btn-sm" onclick="return confirm('¿Está seguro de eliminar esta consulta?');">Resuelto</a>
+                        </td>
                     </tr>
+                    <?php endif; ?>
                 <?php endforeach; ?>
             </tbody>
         </table>

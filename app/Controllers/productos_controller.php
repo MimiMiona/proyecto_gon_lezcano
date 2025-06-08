@@ -166,7 +166,6 @@ class Productos_controller extends Controller {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Producto no encontrado');
         }
 
-        // Marcamos como eliminado, en vez de borrar físicamente
         $productoModel->update($id, ['eliminado' => 'SI']);
         
         session()->setFlashdata('success', 'Producto eliminado correctamente.');

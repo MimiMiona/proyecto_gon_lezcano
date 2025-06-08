@@ -46,4 +46,20 @@ class Usuario_controller extends Controller{
 			return $this->response->redirect(base_url('/registro'));
 		}
 	}
+
+	public function verUsuarios(){
+		$modelo = new usuarios_model();
+		$data['usuarios'] = $modelo->findAll();
+
+		$data['titulo'] = 'Listado de Usuarios';
+		echo view('front/head_view', $data);
+		echo view('front/nav_view', $data);
+		echo view('back/usuario/usuarios_activos', $data);
+		echo view('front/footer_view', $data);
+	}
+
+	public function logout(){
+		session()->destroy(); 
+		return redirect()->to(base_url('inicio'));
+	}
 }

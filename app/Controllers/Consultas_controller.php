@@ -63,7 +63,6 @@ class Consultas_controller extends Controller{
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Consulta no encontrada');
         }
 
-        // Marcamos como eliminado, en vez de borrar físicamente
         $modelo->update($id_usuario, ['eliminado' => 'SI']);
         
         session()->setFlashdata('success', 'Consulta eliminada correctamente.');

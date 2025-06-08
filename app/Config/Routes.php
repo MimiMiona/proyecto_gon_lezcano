@@ -21,6 +21,8 @@ $routes->post('/enviar-formulario', 'consultas_controller::formValidation');
 
 $routes->get('/registro','usuario_controller::create');
 $routes->post('/enviar-form', 'usuario_controller::formValidation');
+$routes->get('/ver-usuarios', 'usuario_controller::verUsuarios');
+$routes->get('/logout', 'Usuario_controller::logout');
 
 $routes->get('/login', 'Home::login');
 $routes->post('/enviarlogin', 'Login_controller::auth');

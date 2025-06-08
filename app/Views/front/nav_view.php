@@ -32,7 +32,7 @@
                                 <a class="nav-link active nav_color" href="<?= base_url('quienes_somos') ?>">Nosotros</a>
                             </li>
                         <?php endif; ?>
-                        <?php if (session('perfil_id') == 1): ?>
+                        <?php if (session('perfil_id') == 2): ?>
                             <li class="nav-item">
                                 <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
                             </li>

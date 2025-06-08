@@ -2,7 +2,8 @@
     <section class="container py-5" style="max-width: 1200px; margin: 0 auto; padding: 20px;"> 
         <div class="mb-5 text-center">
             <h1 class="display-4">📽️ Bienvenido <?= session('nombre'); ?> a Rebobinar 📽️</h1>
-            <p class="lead">Tu rincón para descubrir y disfrutar del cine clásico en dominio público.</p>
+            <p class="lead"> por ser parte de nuestra comunidad cinéfila. Como usuario registrado, podés descubrir, disfrutar y apoyar la difusión del cine clásico en dominio público. 
+                ¡Empezá a explorar el catálogo y viajá en el tiempo con nosotros!</p>
         </div>
 
         <div class="row align-items-center mb-5">

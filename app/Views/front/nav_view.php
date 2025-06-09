@@ -11,18 +11,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <?php if (session('perfil_id') != 1): ?>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="<?= base_url('catalogo') ?>" id="catalogoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Catálogo
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="catalogoDropdown">
-                                <li><a class="dropdown-item" href="<?= base_url('catalogo#terror') ?>">Terror</a></li>
-                                <li><a class="dropdown-item" href="<?= base_url('catalogo#ciencia') ?>">Ciencia Ficción</a></li>
-                                <li><a class="dropdown-item" href="<?= base_url('catalogo#comedia') ?>">Comedia</a></li>
-                            </ul>
-                        </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') != 1): ?>
                             <li class="nav-item">
                                 <a class="nav-link active" href="<?= base_url('comercializacion') ?>">Comercializacion</a>
                             </li>
@@ -35,6 +23,14 @@
                         <?php if (session('perfil_id') == 2): ?>
                             <li class="nav-item">
                                 <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
+                            </li>
+                        <?php endif; ?>
+                        <?php if (session('perfil_id') == 2): ?>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('/todos_p') ?>">Catalogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('/muestro') ?>">Carrito</a>
                             </li>
                         <?php endif; ?>
                         <?php if (session('perfil_id') != 1): ?>

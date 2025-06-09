@@ -2,6 +2,7 @@
 namespace App\Controllers;
 use App\Models\Ventas_cabecera_model;
 use App\Models\Ventas_detalle_model;
+use App\Models\Productos_Model;
 use CodeIgniter\Controller;
 
 class carrito_controller extends BaseController{
@@ -17,6 +18,7 @@ class carrito_controller extends BaseController{
         $cart     = \Config\Services::Cart();
         $request  = \Config\Services::request();
 
+        
         $cart->insert(array(
             'id'      => $request->getPost('id'),
             'qty'     => 1,
@@ -44,7 +46,7 @@ class carrito_controller extends BaseController{
     }
 
         public function catalogo(){
-        $productoModel = new Producto_Model();
+        $productoModel = new Productos_Model();
         $data['producto'] = $productoModel->orderBy('id', 'DESC')->findAll();
 
         $dato = ['titulo' => 'Todos los Productos'];

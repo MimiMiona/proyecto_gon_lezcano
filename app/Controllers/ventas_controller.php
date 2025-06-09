@@ -2,12 +2,12 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\Producto_model;
+use App\Models\Productos_model;
 use App\Models\Usuarios_model;
 use App\Models\Ventas_cabecera_model;
 use App\Models\Ventas_detalle_model;
 
-class Ventascontroller extends Controller
+class Ventas_controller extends Controller
 {
     public function registrar_venta()
     {
@@ -16,7 +16,7 @@ class Ventascontroller extends Controller
         $cartController = new carrito_controller();
         $carrito_contents = $cartController->devolver_carrito();
 
-        $productoModel = new Producto_model();
+        $productoModel = new Productos_model();
         $ventasModel = new Ventas_cabecera_model();
         $detalleModel = new Ventas_detalle_model();
 
@@ -54,6 +54,7 @@ class Ventascontroller extends Controller
             'usuario_id' => $session->get('id_usuario'),
             'total_venta' => $total
         ];
+        var_dump($ventasModel); die;
         $venta_id = $ventasModel->insert($nueva_venta);
 
         // Insertar detalle y actualizar stock

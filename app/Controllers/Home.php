@@ -21,15 +21,6 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
-    public function catalogo()
-    {
-        $data['titulo'] = 'Catálogo';
-        echo view('front/head_view',$data);
-        echo view('front/nav_view', $data);
-        echo view('front/catalogo', $data);
-        echo view('front/footer_view', $data);
-    }
-
     public function contacto()
     {
         $data['titulo'] = 'Contacto';

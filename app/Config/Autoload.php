@@ -37,13 +37,15 @@ class Autoload extends AutoloadConfig
      * but this should be done prior to creating any namespaced classes,
      * else you will need to modify all of those classes for this to work.
      *
-     * @var array<string, list<string>|string>
+* @var array<string, list<string>|string>
      */
     public $psr4 = [
         APP_NAMESPACE => APPPATH,
         'Config' => APPPATH . 'Config',
-        'CodeIgniterCart' => ROOTPATH . 'cart/src'
-    ];
+        // ¡¡AQUÍ ES DONDE ESTÁ EL CAMBIO!!
+        // La ruta correcta ahora es ROOTPATH . 'Cart/src'
+        'CodeIgniterCart' => ROOTPATH . 'Cart/src',
+    ];
 
     /**
      * -------------------------------------------------------------------

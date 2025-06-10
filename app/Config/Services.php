@@ -19,14 +19,21 @@ use CodeIgniter\Config\BaseService;
  */
 class Services extends BaseService
 {
-    /*
-     * public static function example($getShared = true)
-     * {
-     *     if ($getShared) {
-     *         return static::getSharedInstance('example');
-     *     }
-     *
-     *     return new \CodeIgniter\Example();
-     * }
+    /**
+     * Servicio para el carrito de compras.
      */
+     public static function cart(bool $getShared = true)
+    {
+        // Esto asegura que solo haya una instancia del carrito en tu aplicación.
+        if ($getShared) {
+            return static::getSharedInstance('cart');
+        }
+
+        // Esta es la línea clave que crea una nueva instancia de la clase Cart del módulo.
+        // Asegúrate de que el namespace \CodeIgniterCart\Cart sea el correcto
+        // basado en la estructura de archivos del módulo que descargaste.
+        return new \CodeIgniterCart\Cart();
+    }
+
+    // Aquí puedes agregar otros servicios personalizados si lo necesitas
 }

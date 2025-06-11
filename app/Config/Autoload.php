@@ -44,8 +44,8 @@ class Autoload extends AutoloadConfig
         'Config' => APPPATH . 'Config',
         // ¡¡AQUÍ ES DONDE ESTÁ EL CAMBIO!!
         // La ruta correcta ahora es ROOTPATH . 'Cart/src'
-        'CodeIgniterCart' => ROOTPATH . 'Cart/src',
-    ];
+        'App\Libraries' => APPPATH . 'Libraries',
+    ];
 
     /**
      * -------------------------------------------------------------------

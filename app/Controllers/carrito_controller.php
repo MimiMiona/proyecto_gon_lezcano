@@ -19,15 +19,18 @@ class carrito_controller extends BaseController{
         $request  = \Config\Services::request();
 
         
-        $cart->insert(array(
+        $cart->insert([
             'id'      => $request->getPost('id'),
             'qty'     => 1,
             'name'    => $request->getPost('nombre_prod'),
             'price'   => $request->getPost('precio_vta'),
-            'imagen'  => $request->getPost('imagen'),
-        ));
+            'options' => [
+            'imagen' => $request->getPost('imagen'),
+            ],
+        ]);
 
-        return redirect()->back()->withInput();
+        log_message('debug', 'POST: ' . print_r($request->getPost(), true));
+        return redirect()->to(base_url('muestro'));
     }
 
     public function actualiza_carrito(){
@@ -45,7 +48,7 @@ class carrito_controller extends BaseController{
         return redirect()->back()->withInput();
     }
 
-        public function catalogo(){
+    public function catalogo(){
         $productoModel = new Productos_Model();
         $data['producto'] = $productoModel->orderBy('id', 'DESC')->findAll();
 
@@ -91,7 +94,7 @@ class carrito_controller extends BaseController{
         return redirect()->back()->withInput();
     }
 
-        public function devolver_carrito()
+    public function devolver_carrito()
     {
         $cart = \Config\Services::cart();
         return $cart->contents();

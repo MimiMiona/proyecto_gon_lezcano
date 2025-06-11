@@ -11,7 +11,7 @@ class Productos_Model extends Model
     protected $useSoftDeletes = false; 
     protected $allowedFields = ['nombre_prod','imagen','categoria_id','precio','precio_vta','stock','stock_min','eliminado'];
 
-    public function getProductoAll(){
+    public function getProducto(){
         return $this->findAll();
     }
 

@@ -4,6 +4,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\Productos_model;
 use App\Models\Usuarios_model;
+use App\Controllers\carrito_controller;
 use App\Models\Ventas_cabecera_model;
 use App\Models\Ventas_detalle_model;
 
@@ -12,7 +13,6 @@ class Ventas_controller extends Controller
     public function registrar_venta()
     {
         $session = session();
-        require(APPPATH . 'Controllers/carrito_controller.php');
         $cartController = new carrito_controller();
         $carrito_contents = $cartController->devolver_carrito();
 

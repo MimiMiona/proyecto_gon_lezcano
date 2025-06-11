@@ -1,0 +1,938 @@
+DEBUG - 2025-06-11 03:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 03:06:27 --> Error: Class "CodeIgniterCart\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 03:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 03:07:24 --> Error: Class "Config\CodeIgniterCart\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 03:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 03:07:28 --> Error: Class "Config\CodeIgniterCart\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 03:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 03:19:09 --> Error: Class "Config\CodeIgniterCart\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 03:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 03:19:45 --> Cart Class Initialized
+DEBUG - 2025-06-11 03:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 03:21:14 --> Cart Class Initialized
+DEBUG - 2025-06-11 03:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 03:21:16 --> Cart Class Initialized
+DEBUG - 2025-06-11 03:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 03:21:17 --> Cart Class Initialized
+DEBUG - 2025-06-11 03:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 03:21:36 --> Cart Class Initialized
+DEBUG - 2025-06-11 03:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 03:21:40 --> Cart Class Initialized
+DEBUG - 2025-06-11 03:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 03:21:40 --> Cart Class Initialized
+DEBUG - 2025-06-11 03:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 03:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 03:23:50 --> Cart Class Initialized
+DEBUG - 2025-06-11 03:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 03:23:50 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 12:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 12:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 12:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 12:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:44:09 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:47:50 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:47:58 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:48:43 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:48:43 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:48:46 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:56:27 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:56:27 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:56:31 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:57:34 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:57:36 --> Cart Class Initialized
+ERROR - 2025-06-11 12:57:36 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:57:36 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:57:37 --> Cart Class Initialized
+ERROR - 2025-06-11 12:57:37 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:57:37 --> Cart Class Initialized
+ERROR - 2025-06-11 12:57:37 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:57:37 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:57:38 --> Cart Class Initialized
+ERROR - 2025-06-11 12:57:38 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:57:39 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:58:02 --> Cart Class Initialized
+ERROR - 2025-06-11 12:58:02 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:58:03 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:58:04 --> Cart Class Initialized
+ERROR - 2025-06-11 12:58:04 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:58:04 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:58:09 --> Cart Class Initialized
+ERROR - 2025-06-11 12:58:09 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:58:09 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:11 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:12 --> Cart Class Initialized
+ERROR - 2025-06-11 12:59:12 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:12 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:14 --> Cart Class Initialized
+ERROR - 2025-06-11 12:59:14 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:14 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:15 --> Cart Class Initialized
+ERROR - 2025-06-11 12:59:15 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:15 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:25 --> Cart Class Initialized
+ERROR - 2025-06-11 12:59:25 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:25 --> Cart Class Initialized
+DEBUG - 2025-06-11 12:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:27 --> Cart Class Initialized
+ERROR - 2025-06-11 12:59:27 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 12:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 12:59:27 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:00:41 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:00:42 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:00:42 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:01:35 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:01:36 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:01:36 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:03:13 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:03:14 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:03:15 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:03:16 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:03:22 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:03:22 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:03:24 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:06:55 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:06:57 --> Cart Class Initialized
+ERROR - 2025-06-11 13:06:57 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:06:57 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:06:59 --> Cart Class Initialized
+ERROR - 2025-06-11 13:06:59 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:06:59 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:09:51 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:09:53 --> Cart Class Initialized
+ERROR - 2025-06-11 13:09:53 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:09:53 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:09:55 --> Cart Class Initialized
+ERROR - 2025-06-11 13:09:55 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:09:55 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:10:56 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:10:58 --> Cart Class Initialized
+ERROR - 2025-06-11 13:10:58 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:10:58 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:11:00 --> Cart Class Initialized
+ERROR - 2025-06-11 13:11:00 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:11:00 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:11:01 --> Cart Class Initialized
+ERROR - 2025-06-11 13:11:01 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:11:01 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:11:03 --> Cart Class Initialized
+ERROR - 2025-06-11 13:11:03 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:11:03 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:11:53 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:11:54 --> Cart Class Initialized
+ERROR - 2025-06-11 13:11:54 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:11:55 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:12:29 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:13:00 --> Cart Class Initialized
+CRITICAL - 2025-06-11 13:13:00 --> ParseError: syntax error, unexpected token "echo"
+[Method: GET, Route: todos_p]
+in APPPATH\Views\back\carrito\productos_catalogo_view.php on line 33.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/productos_catalogo_view', [], true)
+ 3 APPPATH\Controllers\carrito_controller.php(55): view('back/carrito/productos_catalogo_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->catalogo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:13:09 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:14:40 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:20:02 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:20:04 --> Cart Class Initialized
+ERROR - 2025-06-11 13:20:04 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:20:04 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:20:05 --> Cart Class Initialized
+ERROR - 2025-06-11 13:20:05 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:20:05 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:20:07 --> Cart Class Initialized
+ERROR - 2025-06-11 13:20:07 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:20:07 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:41 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:42 --> Cart Class Initialized
+ERROR - 2025-06-11 13:21:42 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:42 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:43 --> Cart Class Initialized
+ERROR - 2025-06-11 13:21:43 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:43 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:44 --> Cart Class Initialized
+ERROR - 2025-06-11 13:21:44 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:44 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:46 --> Cart Class Initialized
+ERROR - 2025-06-11 13:21:46 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:21:46 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:22:28 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:22:28 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:22:34 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:22:35 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:22:36 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:22:36 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:23:38 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:23:38 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:23:38 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:23:40 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:23:40 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:23:41 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:26:37 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:26:37 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:26:37 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 13:37:20 --> Error: Class "CodeIgniterCart\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 13:41:02 --> Error: Class "CodeIgniter\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 13:41:03 --> Error: Class "CodeIgniter\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 13:41:04 --> Error: Class "CodeIgniter\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 13:41:05 --> Error: Class "CodeIgniter\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 13:41:06 --> Error: Class "CodeIgniter\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 13:41:07 --> Error: Class "CodeIgniter\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 13:41:07 --> Error: Class "CodeIgniter\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 13:41:07 --> Error: Class "CodeIgniter\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-11 13:41:08 --> Error: Class "CodeIgniter\Cart" not found
+[Method: GET, Route: todos_p]
+in APPPATH\Config\Services.php on line 35.
+ 1 SYSTEMPATH\Config\BaseService.php(251): Config\Services::cart(false)
+ 2 APPPATH\Config\Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance('cart')
+ 3 APPPATH\Controllers\carrito_controller.php(12): Config\Services::cart()
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\carrito_controller->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:21 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:24 --> Cart Class Initialized
+ERROR - 2025-06-11 13:46:24 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:46:24 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:24 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:44 --> Cart Class Initialized
+ERROR - 2025-06-11 13:46:44 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:46:44 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:45 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:46 --> Cart Class Initialized
+ERROR - 2025-06-11 13:46:46 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:46:46 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:47 --> Cart Class Initialized
+ERROR - 2025-06-11 13:46:47 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:46:47 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:47 --> Cart Class Initialized
+ERROR - 2025-06-11 13:46:47 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:46:47 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:47 --> Cart Class Initialized
+ERROR - 2025-06-11 13:46:47 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:46:47 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:47 --> Cart Class Initialized
+ERROR - 2025-06-11 13:46:47 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:46:47 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:47 --> Cart Class Initialized
+ERROR - 2025-06-11 13:46:47 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:46:47 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:47 --> Cart Class Initialized
+ERROR - 2025-06-11 13:46:47 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:46:47 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:48 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:55 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:46:55 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:55 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:57 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:46:57 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:58 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:46:59 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:46:59 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:47:00 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:47:00 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:47:00 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:47:00 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:47:01 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:47:01 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:47:01 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:47:11 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:47:11 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:47:11 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:47:13 --> Cart Class Initialized
+ERROR - 2025-06-11 13:47:13 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:47:13 --> LLEGA AL MÉTODO ADD
+DEBUG - 2025-06-11 13:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:47:13 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:52:18 --> Cart Class Initialized
+ERROR - 2025-06-11 13:52:18 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:52:18 --> Datos recibidos: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => 20,000 Leagues Under The Sea
+    [imagen] => 1749065964_62c5b81b1d64b37a05b3.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 13:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:52:18 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:53:21 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:53:23 --> Cart Class Initialized
+ERROR - 2025-06-11 13:53:23 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 13:53:23 --> Datos recibidos: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => 20,000 Leagues Under The Sea
+    [imagen] => 1749065964_62c5b81b1d64b37a05b3.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 13:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:53:24 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:54:43 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:54:43 --> Datos recibidos: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 6
+    [precio_vta] => 2000.00
+    [nombre_prod] => The Great Dictator
+    [imagen] => 1749065813_1be18e1096b0bdb84aa1.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 13:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:54:43 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:55:24 --> Cart Class Initialized
+DEBUG - 2025-06-11 13:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:55:31 --> Cart Class Initialized
+CRITICAL - 2025-06-11 13:55:31 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Productos_Model::getProducto
+[Method: POST, Route: carrito-comprar]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ventas_controller.php(29): CodeIgniter\Model->__call('getProducto', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas_controller->registrar_venta()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 13:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 13:56:28 --> Cart Class Initialized
+CRITICAL - 2025-06-11 13:56:28 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Productos_Model::getProducto
+[Method: POST, Route: carrito-comprar]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ventas_controller.php(29): CodeIgniter\Model->__call('getProducto', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas_controller->registrar_venta()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 14:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:01:44 --> Cart Class Initialized
+CRITICAL - 2025-06-11 14:01:45 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\Productos_Model::getProducto
+[Method: POST, Route: carrito-comprar]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ventas_controller.php(29): CodeIgniter\Model->__call('getProducto', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ventas_controller->registrar_venta()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 14:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:03:07 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:03:09 --> Cart Class Initialized
+ERROR - 2025-06-11 14:03:09 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 14:03:09 --> Datos recibidos: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => 20,000 Leagues Under The Sea
+    [imagen] => 1749065964_62c5b81b1d64b37a05b3.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 14:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:03:10 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:03:11 --> Cart Class Initialized
+ERROR - 2025-06-11 14:03:11 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 14:03:11 --> Datos recibidos: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => 20,000 Leagues Under The Sea
+    [imagen] => 1749065964_62c5b81b1d64b37a05b3.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 14:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:03:12 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:03:13 --> Cart Class Initialized
+ERROR - 2025-06-11 14:03:13 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 14:03:13 --> Datos recibidos: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => 20,000 Leagues Under The Sea
+    [imagen] => 1749065964_62c5b81b1d64b37a05b3.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 14:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:03:13 --> Cart Class Initialized
+ERROR - 2025-06-11 14:03:13 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 14:03:13 --> Datos recibidos: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => 20,000 Leagues Under The Sea
+    [imagen] => 1749065964_62c5b81b1d64b37a05b3.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 14:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:03:14 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:07:58 --> Cart Class Initialized
+ERROR - 2025-06-11 14:07:58 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 14:07:58 --> POST: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => 20,000 Leagues Under The Sea
+    [imagen] => 1749065964_62c5b81b1d64b37a05b3.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 14:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:07:59 --> Cart Class Initialized
+CRITICAL - 2025-06-11 14:07:59 --> ErrorException: Undefined array key "imagen"
+[Method: GET, Route: muestro]
+in APPPATH\Views\back\carrito\carrito_parte_view.php on line 50.
+ 1 APPPATH\Views\back\carrito\carrito_parte_view.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\carrito_parte_view.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\carrito_parte_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/carrito_parte_view', [], true)
+ 5 APPPATH\Controllers\carrito_controller.php(71): view('back/carrito/carrito_parte_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->muestra()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 14:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:09:55 --> Cart Class Initialized
+CRITICAL - 2025-06-11 14:09:56 --> ErrorException: Undefined variable $item
+[Method: GET, Route: todos_p]
+in APPPATH\Views\back\carrito\productos_catalogo_view.php on line 24.
+ 1 APPPATH\Views\back\carrito\productos_catalogo_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\productos_catalogo_view.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\productos_catalogo_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/productos_catalogo_view', [], true)
+ 5 APPPATH\Controllers\carrito_controller.php(58): view('back/carrito/productos_catalogo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->catalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 14:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:10:30 --> Cart Class Initialized
+CRITICAL - 2025-06-11 14:10:30 --> ErrorException: Undefined array key "options"
+[Method: GET, Route: todos_p]
+in APPPATH\Views\back\carrito\productos_catalogo_view.php on line 24.
+ 1 APPPATH\Views\back\carrito\productos_catalogo_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "options"', 'C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\productos_catalogo_view.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\productos_catalogo_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/productos_catalogo_view', [], true)
+ 5 APPPATH\Controllers\carrito_controller.php(58): view('back/carrito/productos_catalogo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->catalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 14:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:10:38 --> Cart Class Initialized
+CRITICAL - 2025-06-11 14:10:38 --> ErrorException: Undefined array key "options"
+[Method: GET, Route: todos_p]
+in APPPATH\Views\back\carrito\productos_catalogo_view.php on line 24.
+ 1 APPPATH\Views\back\carrito\productos_catalogo_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "options"', 'C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\productos_catalogo_view.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\productos_catalogo_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/productos_catalogo_view', [], true)
+ 5 APPPATH\Controllers\carrito_controller.php(58): view('back/carrito/productos_catalogo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->catalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 14:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:10:50 --> Cart Class Initialized
+CRITICAL - 2025-06-11 14:10:50 --> ErrorException: Undefined variable $item
+[Method: GET, Route: todos_p]
+in APPPATH\Views\back\carrito\productos_catalogo_view.php on line 24.
+ 1 APPPATH\Views\back\carrito\productos_catalogo_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\productos_catalogo_view.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\productos_catalogo_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/productos_catalogo_view', [], true)
+ 5 APPPATH\Controllers\carrito_controller.php(58): view('back/carrito/productos_catalogo_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->catalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 14:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:11:38 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:11:41 --> Cart Class Initialized
+ERROR - 2025-06-11 14:11:41 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 14:11:41 --> POST: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => 20,000 Leagues Under The Sea
+    [imagen] => 1749065964_62c5b81b1d64b37a05b3.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 14:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:11:41 --> Cart Class Initialized
+ERROR - 2025-06-11 14:11:41 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 14:11:41 --> POST: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => 20,000 Leagues Under The Sea
+    [imagen] => 1749065964_62c5b81b1d64b37a05b3.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 14:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:11:42 --> Cart Class Initialized
+CRITICAL - 2025-06-11 14:11:42 --> ErrorException: Undefined array key "options"
+[Method: GET, Route: muestro]
+in APPPATH\Views\back\carrito\carrito_parte_view.php on line 50.
+ 1 APPPATH\Views\back\carrito\carrito_parte_view.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "options"', 'C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\carrito_parte_view.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Views\\back\\carrito\\carrito_parte_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/carrito_parte_view', [], true)
+ 5 APPPATH\Controllers\carrito_controller.php(70): view('back/carrito/carrito_parte_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->muestra()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-11 14:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:13:53 --> Cart Class Initialized
+ERROR - 2025-06-11 14:13:53 --> An invalid name was submitted as the product name: 20,000 Leagues Under The Sea The name can only contain alpha-numeric characters, dashes, underscores, colons, and spaces
+DEBUG - 2025-06-11 14:13:53 --> POST: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => 20,000 Leagues Under The Sea
+    [imagen] => 1749065964_62c5b81b1d64b37a05b3.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 14:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:13:53 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:14:10 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:14:10 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:21:58 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:02 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:04 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:04 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:06 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:06 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:08 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:08 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:08 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:08 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:08 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:09 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:09 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:09 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:09 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:09 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:09 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:11 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:11 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:11 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:11 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:13 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:13 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:14 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:14 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:15 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:15 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:15 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:26 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:29 --> Cart Class Initialized
+DEBUG - 2025-06-11 14:22:29 --> POST: Array
+(
+    [csrf_test_name] => 55b98289dc9e8c59e4fdf33841b776b7
+    [id] => 8
+    [precio_vta] => 2000.00
+    [nombre_prod] => My Man Godfrey
+    [imagen] => 1749065894_b9e36c572dbfa9f73ed6.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 14:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 14:22:29 --> Cart Class Initialized
+DEBUG - 2025-06-11 16:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 16:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 16:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 16:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-11 16:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:35:33 --> Cart Class Initialized
+DEBUG - 2025-06-11 16:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:35:35 --> Cart Class Initialized
+DEBUG - 2025-06-11 16:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:35:37 --> Cart Class Initialized
+DEBUG - 2025-06-11 16:35:37 --> POST: Array
+(
+    [csrf_test_name] => f6e8038825774c3e37d30ecdf846e5f4
+    [id] => 8
+    [precio_vta] => 2000.00
+    [nombre_prod] => My Man Godfrey
+    [imagen] => 1749065894_b9e36c572dbfa9f73ed6.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-06-11 16:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-11 16:35:37 --> Cart Class Initialized

@@ -52,7 +52,7 @@ $routes->get('/muestro','carrito_controller::muestra',['filter' => 'auth']);
 $routes->get('/carrito_actualiza','carrito_controller::actualiza_carrito',['filter' => 'auth']);
 
 //agregar los items seleccionados
-$routes->post('carrito/add','Carrito_controller::add',['filter' => 'auth']);
+$routes->post('add','carrito_controller::add',['filter' => 'auth']);
 
 //elimina un item del carrito
 $routes->get('carrito_elimina/(:any)','carrito_controller::remove/$1',['filter' => 'auth']);
@@ -61,7 +61,7 @@ $routes->get('carrito_elimina/(:any)','carrito_controller::remove/$1',['filter' 
 $routes->get('/borrar','carrito_controller::borrar_carrito',['filter' => 'auth']);
 
 //Registrar la venta en las tablas
-$routes->get('/carrito-comprar','Ventascontroller::registrar_venta',['filter' => 'auth']);
+$routes->post('/carrito-comprar','Ventas_controller::registrar_venta',['filter' => 'auth']);
 
 //botones de sumar y restar en la vista del carrito
 $routes->get('carrito_suma/(:any)','carrito_controller::suma/$1');

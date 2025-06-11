@@ -32,7 +32,7 @@ class Services extends BaseService
         // Esta es la línea clave que crea una nueva instancia de la clase Cart del módulo.
         // Asegúrate de que el namespace \CodeIgniterCart\Cart sea el correcto
         // basado en la estructura de archivos del módulo que descargaste.
-        return new \CodeIgniterCart\Cart();
+        return new \App\Libraries\Cart();
     }
 
     // Aquí puedes agregar otros servicios personalizados si lo necesitas

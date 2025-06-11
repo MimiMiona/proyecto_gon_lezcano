@@ -46,12 +46,13 @@
                             <!-- cart es un arreglo multidimensional -->
                             <input type="hidden" name="cart[<?= esc($item['rowid']) ?>][rowid]" value="<?= esc($item['rowid']) ?>">
                             <input type="hidden" name="cart[<?= esc($item['rowid']) ?>][price]" value="<?= esc($item['price']) ?>">
-                            <input type="hidden" name="cart[<?= esc($item['rowid']) ?>][qty]" value="<?= esc($item['qty']) ?>">
-                            <input type="hidden" name="cart[<?= esc($item['rowid']) ?>][imagen]" value="<?= esc($item['imagen']) ?>">
-
+                            <input type="hidden" name="cart[<?= esc($item['rowid']) ?>][qty]" value="<?= esc($item['qty']) ?>"><input type="hidden" name="cart[<?= esc($item['rowid']) ?>][imagen]" 
+                                value="<?= isset($item['options']['imagen']) ? esc($item['options']['imagen']) : '' ?>">
                             <tr class="align-middle">
                                 <td>
-                                    <img src="<?= base_url('assets/uploads/' . $item['imagen']) ?>" width="80" height="80" alt="<?= esc($item['name']) ?>">
+                                    <img src="<?= base_url('assets/uploads/' . (isset($item['options']['imagen']) ? $item['options']['imagen'] : 'default.png')) ?>" 
+                                         width="80" height="80" alt="<?= esc($item['name']) ?>">
+
                                 </td>
                                 <td><?= esc($item['name']) ?></td>
                                 <td>$ <?= number_format($item['price'], 2) ?></td>
@@ -74,7 +75,7 @@
                             </td>
                             <td colspan="2" class="text-end">
                                 <input type="button" class="btn btn-primary btn-lg" value="Borrar Carrito" onclick="window.location='<?= base_url('borrar') ?>';">
-                                <input type="button" class="btn btn-secondary btn-lg" value="Comprar" onclick="window.location='<?= base_url('carrito-comprar') ?>';">
+                                <input type="button" class="btn btn-secondary btn-lg" value="Comprar" onclick="window.location='<?= base_url('/carrito-comprar') ?>';">
                             </td>
                         </tr>
                     </tbody>

@@ -21,7 +21,7 @@
                             <?php foreach ($producto as $row): ?>
                                 <div class="col-md-4 text-center mb-4">
                                     <div class="card p-3">
-                                        <img src="<?= base_url('assets\uploads' . $row['imagen']) ?>" class="card-img-top img-fluid" alt="Imagen del producto" style="height:150px; object-fit:contain;">
+                                        <img src="<?= base_url('assets/uploads/' . $row['imagen']) ?>" class="card-img-top img-fluid" alt="Imagen del producto" style="height:150px; object-fit:contain;">
                                         <div class="card-body">
                                             <h5 class="card-title"><?= esc($row['nombre_prod']) ?></h5>
                                             <p class="card-text">Precio: $<?= number_format($row['precio_vta'], 2, ',', '.') ?></p>
@@ -29,15 +29,16 @@
                                             <p class="card-text">Disponible: <?= $row['stock'] ?> unidades</p>
 
                                             <?php
-                                            echo form_open('/carrito-comprar');
-                                            echo form_hidden('id', $row['id']);
+                                            echo form_open(base_url('add'), ['method' => 'post']);
+                                            echo csrf_field();                                            echo form_hidden('id', $row['id']);
                                             echo form_hidden('precio_vta', $row['precio_vta']);
                                             echo form_hidden('nombre_prod', $row['nombre_prod']);
                                             echo form_hidden('imagen', $row['imagen']);
                                             $btn = [
                                                 'class' => 'btn btn-secondary fuenteBotones',
                                                 'value' => 'Agregar al Carrito',
-                                                'name'  => 'action'
+                                                'name'  => 'action',
+                                                'type'  => 'submit'
                                             ];
                                             echo form_submit($btn);
                                             echo form_close();

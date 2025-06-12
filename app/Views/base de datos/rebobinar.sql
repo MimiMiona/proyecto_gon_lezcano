@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-06-2025 a las 16:11:41
+-- Tiempo de generación: 12-06-2025 a las 02:22:04
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -133,7 +133,35 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `usuario`, `email`, 
 (1, 'Jose', 'Gomez', 'jose_gomez', 'jose123@gmail.com', '$2y$10$qirYWr4XmJKkKtx/OJQe5.cTraCqvKA6lUW1M0m1f0SAhBeKq992y', 2, 'NO'),
 (2, 'Maria', 'Maidana', 'maidanamari', 'mariamaidana33@gmail.com', '$2y$10$w3rZkNYTqq.WyFbTobRBfOaoIrfxsodOnb0Y5BkERdNS8ZA5QnI3m', 2, 'NO'),
 (3, 'Sabrina', 'Ramirez', 'Sabri_12', 'Sasabrina123@gmail.com', '$2y$10$71P0eZVmJf30aNmLALlUC.dvv8G5XM2OddQIEaiqlrXfx.DtK/PPm', 2, 'NO'),
-(4, 'Juan', 'Gomez', 'juan12345', 'juan1221@gmail.com', '$2y$10$0E1ER9hQYoEuH0ee2mqIw.QTt/Qlf9Dsdw5pF/f4YdAWDaHhnlKzy', 1, 'NO');
+(4, 'Juan', 'Gomez', 'juan12345', 'juan1221@gmail.com', '$2y$10$0E1ER9hQYoEuH0ee2mqIw.QTt/Qlf9Dsdw5pF/f4YdAWDaHhnlKzy', 1, 'NO'),
+(5, 'pepe', 'gomez', 'pepegomez@g', 'pepegomez@gmail.com', '$2y$10$suNhcgqlrplkwK2KLGvHC.FaSi0CMxeVdqoKpJm8Pse0u.zLf9AZG', 2, 'NO');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ventas_cabecera`
+--
+
+CREATE TABLE `ventas_cabecera` (
+  `id` int(11) NOT NULL,
+  `fecha` datetime DEFAULT current_timestamp(),
+  `usuario_id` int(11) NOT NULL,
+  `total_venta` float(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ventas_detalle`
+--
+
+CREATE TABLE `ventas_detalle` (
+  `id` int(11) NOT NULL,
+  `venta_id` int(11) NOT NULL,
+  `producto_id` int(11) NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  `precio` float(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Índices para tablas volcadas
@@ -171,6 +199,21 @@ ALTER TABLE `usuarios`
   ADD KEY `perfil_id` (`perfil_id`);
 
 --
+-- Indices de la tabla `ventas_cabecera`
+--
+ALTER TABLE `ventas_cabecera`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `usuario_id` (`usuario_id`);
+
+--
+-- Indices de la tabla `ventas_detalle`
+--
+ALTER TABLE `ventas_detalle`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `producto_id` (`producto_id`),
+  ADD KEY `venta_id` (`venta_id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -196,7 +239,19 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT de la tabla `ventas_cabecera`
+--
+ALTER TABLE `ventas_cabecera`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `ventas_detalle`
+--
+ALTER TABLE `ventas_detalle`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
@@ -207,6 +262,19 @@ ALTER TABLE `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`perfil_id`) REFERENCES `perfiles` (`id`);
+
+--
+-- Filtros para la tabla `ventas_cabecera`
+--
+ALTER TABLE `ventas_cabecera`
+  ADD CONSTRAINT `ventas_cabecera_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id_usuario`);
+
+--
+-- Filtros para la tabla `ventas_detalle`
+--
+ALTER TABLE `ventas_detalle`
+  ADD CONSTRAINT `ventas_detalle_ibfk_1` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`),
+  ADD CONSTRAINT `ventas_detalle_ibfk_2` FOREIGN KEY (`venta_id`) REFERENCES `ventas_cabecera` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

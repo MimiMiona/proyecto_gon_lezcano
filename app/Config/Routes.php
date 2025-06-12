@@ -66,3 +66,5 @@ $routes->get('/carrito-comprar','Ventas_controller::registrar_venta',['filter' =
 //botones de sumar y restar en la vista del carrito
 $routes->get('carrito_suma/(:any)','carrito_controller::suma/$1');
 $routes->get('carrito_resta/(:any)','carrito_controller::resta/$1');
+
+$routes->get('vista_compras/(:num)', 'Ventas_controller::ver_facturas/$1', ['filter' => 'auth']);

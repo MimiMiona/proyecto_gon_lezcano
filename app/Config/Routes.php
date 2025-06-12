@@ -61,7 +61,7 @@ $routes->get('carrito_elimina/(:any)','carrito_controller::remove/$1',['filter' 
 $routes->get('/borrar','carrito_controller::borrar_carrito',['filter' => 'auth']);
 
 //Registrar la venta en las tablas
-$routes->post('/carrito-comprar','Ventas_controller::registrar_venta',['filter' => 'auth']);
+$routes->get('/carrito-comprar','Ventas_controller::registrar_venta',['filter' => 'auth']);
 
 //botones de sumar y restar en la vista del carrito
 $routes->get('carrito_suma/(:any)','carrito_controller::suma/$1');

@@ -17,7 +17,7 @@ class Productos_controller extends Controller {
 
     public function index() {
         $productoModel = new Productos_Model();
-        $data['producto'] = $productoModel->getProductoAll();
+        $data['producto'] = $productoModel->getProducto();
 
         $dato['titulo'] = 'Crud_productos';
         echo view('front/head_view', $dato);

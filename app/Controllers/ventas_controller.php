@@ -54,7 +54,6 @@ class Ventas_controller extends Controller
             'usuario_id' => $session->get('id_usuario'),
             'total_venta' => $total
         ];
-        var_dump($ventasModel); die;
         $venta_id = $ventasModel->insert($nueva_venta);
 
         // Insertar detalle y actualizar stock
@@ -77,13 +76,13 @@ class Ventas_controller extends Controller
         return redirect()->to(base_url('vista_compras/' . $venta_id));
     }
 
-    public function ver_factura($venta_id)
+    public function ver_facturas($venta_id)
     {
         $detalle_ventas = new Ventas_detalle_model();
         $data['venta'] = $detalle_ventas->getDetalles($venta_id);
         $data['titulo'] = 'Mi compra';
 
-        echo view('front/head_view_crud', $data);
+        echo view('front/head_view', $data);
         echo view('front/nav_view');
         echo view('back/compras/vista_compras', $data);
         echo view('front/footer_view');
@@ -95,9 +94,27 @@ class Ventas_controller extends Controller
         $data['ventas'] = $ventas->getVentas($id_usuario);
         $data['titulo'] = 'Todos mis compras';
 
-        echo view('front/head_view_crud', $data);
+        echo view('front/head_view', $data);
         echo view('front/nav_view');
         echo view('back/compras/ver_factura_usuario', $data);
         echo view('front/footer_view');
     }
+
+    public function ventas() {
+        $venta_id = $this->request->getGet('id');
+        // echo $venta_id; die;
+
+        $detalle_ventas = new Ventas_detalle_model();
+        $data['venta'] = $detalle_ventas->getDetalles($venta_id);
+
+        $ventascabecera = new Ventas_cabecera_model();
+        $data['usuarios'] = $ventascabecera->getBuilderVentas_cabecera();
+
+        $dato['titulo'] = "ventas";
+        echo view('front/head_view', $dato);
+        echo view('front/nav_view');
+        echo view('back/ventas/ventas', $data);
+        echo view('front/footer_view');
+    }
+
 }

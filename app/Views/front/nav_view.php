@@ -58,6 +58,11 @@
                                 <a class="nav-link active" href="<?= base_url('/ver-usuarios') ?>">CRUD Usuarios</a>
                             </li>
                         <?php endif; ?>
+                        <?php if (session('perfil_id') == 1): ?>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('ventas') ?>">CRUD Ventas</a>
+                            </li>
+                        <?php endif; ?>
                         <?php if (in_array(session('perfil_id'), [1, 2])): ?>
                             <li class="nav-item">
                                 <a class="nav-link active" href="<?= base_url('/logout') ?>">Cerrar sesión</a>

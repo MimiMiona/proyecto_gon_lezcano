@@ -50,7 +50,7 @@ class carrito_controller extends BaseController{
 
     public function catalogo(){
         $productoModel = new Productos_Model();
-        $data['producto'] = $productoModel->orderBy('id', 'DESC')->findAll();
+        $data['producto'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
 
         $dato = ['titulo' => 'Todos los Productos'];
         echo view('front/head_view', $dato);

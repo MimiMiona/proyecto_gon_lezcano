@@ -27,9 +27,9 @@
             <tbody>
                 <?php if (!empty($producto) && is_array($producto)): ?>
                     <?php foreach ($producto as $prod): ?>
-                        <?php if ($prod['eliminado'] === 'NO'): ?>
+                        <?php if ($prod['eliminado'] != 'SI'): ?>
                             <tr>
-                                <td><?= $prod['id']; ?></td>
+                                <td><?= esc($prod['id_producto']); ?></td>
                                 <td><?= esc($prod['nombre_prod']); ?></td>
                                 <td><?= number_format($prod['precio'], 2); ?></td>
                                 <td><?= number_format($prod['precio_vta'], 2); ?></td>
@@ -42,8 +42,8 @@
                                     <?php endif; ?>
                                 </td>
                                 <td>
-                                    <a href="<?= base_url('editar/' . $prod['id']); ?>" class="btn btn-primary btn-sm">Editar</a>
-                                    <a href="<?= base_url('borrar/' . $prod['id']); ?>" class="btn btn-secondary btn-sm" onclick="return confirm('¿Está seguro de borrar este producto?');">Borrar</a>
+                                    <a href="<?= base_url('editar/' . $prod['id_producto']); ?>" class="btn btn-primary btn-sm">Editar</a>
+                                    <a href="<?= base_url('borrar_producto/' . $prod['id_producto']); ?>" class="btn btn-secondary btn-sm" onclick="return confirm('¿Está seguro de borrar este producto?');">Eliminar</a>
                                 </td>
                             </tr>
                         <?php endif; ?>

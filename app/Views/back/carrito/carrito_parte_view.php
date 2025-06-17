@@ -1,8 +1,5 @@
 <div class="container-fluid" id="carrito">
     <div class="cart">
-        <div class="heading">
-            <h2 class="text-center">Productos en tu Carrito</h2>
-        </div>
         <!-- Mostrar mensaje Flash si existe -->
         <?php if (session()->getFlashdata('mensaje')): ?>
             <div class="alert alert-warning alert-dismissible fade show mt-3 mx-3" role="alert">
@@ -14,24 +11,27 @@
 
     <div class="text-center">
         <?php if (empty($cart)): ?>
-            <p>Para agregar productos al carrito, hacé clic en:</p>
-            <a class="btn btn-warning text-dark mt-2" href="<?= base_url('/todos_p') ?>">
-                <i class="fa-solid fa-circle-chevron-left"></i> Volver al catálogo
-            </a>
+            <div class="alert alert-dark text-center" role="alert">
+                <div class="container">
+                    <h4 class="alert-heading">Productos en tu carrito</h4>
+                    <p>Para agregar productos al carrito, hacé clic en:</p>
+                    <a class="btn btn-warning my-2 w-10" href="<?php echo base_url('/todos_p') ?>">Volver al Catálogo</a>
+                </div>
+            </div>
         <?php endif; ?>
     </div>
 
     <?php if (!empty($cart)): ?>
         <form action="<?= base_url('carrito_actualiza') ?>" method="post">
             <div class="container my-3">
-                <table class="table table-hover table-dark table-responsive-md">
-                    <thead class="table-dark">
+                <table class="table custom-table table-hover table-responsive-md">
+                    <thead>
                         <tr>
-                            <th>IMAGEN</th>
-                            <th>PRODUCTO</th>
-                            <th>PRECIO</th>
-                            <th>CANTIDAD</th>
-                            <th>TOTAL</th>
+                            <th>Poster</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
                             <th>Cancelar</th>
                         </tr>
                     </thead>
@@ -58,13 +58,13 @@
                                 <td>$ <?= number_format($item['price'], 2) ?></td>
                                 <td>
                                     <a class="btn btn-success" href="<?= base_url('carrito_suma/' . $item['rowid']) ?>">+</a>
-                                    <?= number_format($item['qty'], 1) ?>
+                                    <?= number_format($item['qty'], 0) ?>
                                     <a class="btn btn-danger" href="<?= base_url('carrito_resta/' . $item['rowid']) ?>">-</a>
                                 </td>
                                 <td>$ <?= number_format($item['subtotal'], 2) ?></td>
                                 <td>
                                     <a href="<?= base_url('carrito_elimina/' . $item['rowid']) ?>">
-                                        <img src="<?= base_url('assets/img/carrito.jpg') ?>" width="40" height="40" alt="Eliminar">
+                                        <img src="<?= base_url('assets/img/cancelar.png') ?>" width="40" height="40" alt="Eliminar">
                                     </a>
                                 </td>
                             </tr>

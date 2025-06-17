@@ -136,7 +136,7 @@ class Productos_controller extends Controller {
 
     public function eliminados() {
         $productoModel = new Productos_Model();
-        $data['producto'] = $productoModel->getProductoAll();
+        $data['producto'] = $productoModel->getProducto();
 
         $dato['titulo'] = 'Productos Eliminados';
         echo view('front/head_view', $dato);

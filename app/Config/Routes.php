@@ -12,8 +12,9 @@ $routes->get('contacto', 'Home::contacto');
 $routes->get('comercializacion', 'Home::comercializacion');
 $routes->get('terminos', 'Home::terminos');
 $routes->get('privacidad', 'Home::privacidad');
-$routes->get('registro', 'Home::registro');
 $routes->get('preguntas_frecuentes', 'Home::preguntas_frecuentes');
+$routes->get('registro', 'Home::registro');
+$routes->get('datos_personales', 'Home::datos_personales');
 
 $routes->get('/contacto','consultas_controller::create');
 $routes->post('/enviar-formulario', 'consultas_controller::formValidation');
@@ -29,6 +30,7 @@ $routes->get('/logueado', 'Panel_controller::index', ['filter' => 'auth']);
 $routes->get('/logout', 'Login_controller::logout');
 
 $routes->get('/ver-consultas', 'Consultas_controller::verConsultas');
+$routes->get('/eliminadas', 'Consultas_controller::eliminadas', ['filter' => 'auth']);
 $routes->get('borrarConsulta/(:num)', 'Consultas_controller::deleteConsulta/$1');
 
 $routes->get('/crear', 'Productos_controller::index', ['filter' => 'auth']);
@@ -44,7 +46,6 @@ $routes->get('/activar_pro/(:num)', 'Productos_controller::activarproducto/$1', 
 //Rutas para el carrito*/
 //muestra todos los productos del catalogo
 $routes->get('/todos_p','carrito_controller::catalogo',['filter' => 'auth']);
-
 //carga la vista carrito_parte_view
 $routes->get('/muestro','carrito_controller::muestra',['filter' => 'auth']);
 
@@ -68,5 +69,5 @@ $routes->get('carrito_suma/(:any)','carrito_controller::suma/$1');
 $routes->get('carrito_resta/(:any)','carrito_controller::resta/$1');
 
 $routes->get('vista_compras/(:num)', 'Ventas_controller::ver_facturas/$1', ['filter' => 'auth']);
-$routes->get('ver_factura_usuario/(:num)', 'Ventas_controller::ver_facturas_usuario/$1', ['filter' => 'auth']);
+$routes->get('ver_factura_usuario/(:num)', 'Ventas_controller::ver_factura_usuario/$1', ['filter' => 'auth']);
 $routes->get('ventas', 'Ventas_controller::ventas');

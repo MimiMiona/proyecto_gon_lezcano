@@ -9,7 +9,7 @@ class Consultas_controller extends Controller{
 	}
 
 	public function create(){
-	$data['titulo']='Contacto';
+		$data['titulo']='Contacto';
         echo view('front/head_view',$data);
         echo view('front/nav_view', $data);
         echo view('front/contacto', $data);
@@ -54,6 +54,17 @@ class Consultas_controller extends Controller{
 		echo view('back/consultas/ver_consultas', $data);
 		echo view('front/footer_view', $data);
 	}
+
+	public function eliminadas() {
+        $consultasModel = new Consultas_model();
+        $data['consulta'] = $consultasModel->getConsulta();
+
+        $dato['titulo'] = 'Consultas Eliminadas';
+        echo view('front/head_view', $dato);
+        echo view('front/nav_view', $dato);
+        echo view('back/consultas/consulta_eliminada', $data);
+        echo view('front/footer_view', $dato);
+    }
 
 	public function deleteConsulta($id_usuario){
         $modelo = new \App\Models\Consultas_Model();

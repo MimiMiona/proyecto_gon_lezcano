@@ -17,7 +17,11 @@
         <?php $validation = \Config\Services::validation(); ?>
         <form method="post" action="<?php echo base_url('/enviar-formulario'); ?>">
           <h2 class="text-center mb-4">¡Contáctanos!</h2>
-          
+          <?php if (session()->getFlashdata('success')) : ?>
+            <div class="alert alert-warning">
+                    <?= session()->getFlashdata('success') ?>
+            </div>
+          <?php endif; ?>
           <div class="mb-3">
             <label for="message" class="form-label">Tu Nombre</label>
             <input id="nombre" name="nombre" type="name" placeholder="Tu Nombre" class="form-control"

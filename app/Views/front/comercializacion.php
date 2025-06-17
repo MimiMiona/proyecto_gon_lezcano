@@ -4,8 +4,8 @@
         <p class="lead">Tu rincón para descubrir y disfrutar del cine clásico en dominio público.</p>
     </div>
 
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6 mb-4 mb-lg-0">
+    <div class="d-flex flex-row align-items-center">
+        <div class="col-md-6 mb-4 mb-lg-0">
             <h2 class="h4">¿Cómo funciona nuestra tienda?</h2>
             <p>
                 ¡Bienvenido a nuestro rincón del cine clásico! Aquí te ofrecemos una forma simple y legal de acceder a películas
@@ -18,8 +18,10 @@
         </div>
     </div>
 
-    <div class="row align-items-center mb-5 flex-lg-row-reverse">
-        <div class="col-lg-6 mb-4 mb-lg-0">
+    <br>
+
+    <div class="d-flex flex-row align-items-center">
+        <div class="col-md-6 mb-4 mb-lg-0">
             <img src="<?= base_url('assets/img/correoImg.png')?>" alt="Ejemplo de correo" class="img-fluid rounded">
         </div>
         <div class="col-lg-6">
@@ -34,8 +36,10 @@
         </div>
     </div>
 
-    <div class="row align-items-center mb-5">
-        <div class="col-lg-6 mb-4 mb-lg-0">
+    <br>
+
+    <div class="d-flex flex-row align-items-center">
+        <div class="col-md-6 mb-4 mb-lg-0">
             <h2 class="h4">¿Por qué hacemos esto?</h2>
             <p>
                 Esta página forma parte de un proyecto académico con fines educativos y culturales. Facilitamos el acceso de forma ordenada, amigable y en español, para que más personas conozcan el valor del cine clásico.

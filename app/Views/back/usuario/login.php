@@ -22,11 +22,10 @@
                             </label>
                             <input name="pass" type="password" class="form-control" placeholder="Contraseña"> </div>
                             <div class="d-grid gap-2">
-                                <input class="btn btn-primary btn-block" type="submit" value="Ingresar"></input>
+                                <input class="btn btn-primary m-2" type="submit" value="Ingresar"></input>
                             </div>
                             <div class="text-center">
-                                <!--<button class="btn btn-link btn-sm" type="button">Reestablecer contraseña</button>-->
-                                <button class="btn btn-link btn-sm" type="button"><a href="<?php echo base_url('registro'); ?>">Registrarse</a></button>
+                                <a href="<?= base_url('registro') ?>" class="btn btn-secondary m-2">Registrarse</a>
                             </div>
                         </div>
                     </form>

@@ -25,20 +25,19 @@ class Ventas_cabecera_model extends Model
 	}
 
 // Esta función devuelve las ventas según si se pasa o no un $id_usuario
-public function getVentas($id_usuario = null){
-    //Si no se pasa un ID de usuario (es null)
-    if ($id_usuario === null) {
-        //La función getBuilderVentas_cabecera() devuelve el resultado de la consulta como array.
-        return $this->getBuilderVentas_cabecera();
-    } else {
-        $db = \Config\Database::connect();
-        $builder = $db->table('ventas_cabecera');
-        $builder->select('*');
-        $builder->join('usuarios', 'usuarios.id_usuario = ventas_cabecera.usuario_id');
-        $builder->where('ventas_cabecera.usuario_id', $id_usuario);
-        $query = $builder->get();
-        return $query->getResultArray();
+    public function getVentas($id_usuario = null){
+        //Si no se pasa un ID de usuario (es null)
+        if ($id_usuario === null) {
+            //La función getBuilderVentas_cabecera() devuelve el resultado de la consulta como array.
+            return $this->getBuilderVentas_cabecera();
+        } else {
+            $db = \Config\Database::connect();
+            $builder = $db->table('ventas_cabecera');
+            $builder->select('*');
+            $builder->join('usuarios', 'usuarios.id_usuario = ventas_cabecera.usuario_id');
+            $builder->where('ventas_cabecera.usuario_id', $id_usuario);
+            $query = $builder->get();
+            return $query->getResultArray();
+        }
     }
-	}
-
 }

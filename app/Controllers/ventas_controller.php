@@ -88,13 +88,13 @@ class Ventas_controller extends Controller
         echo view('front/footer_view');
     }
 
-    public function ver_facturas_usuario($id_usuario)
+    public function ver_factura_usuario($id_usuario)
     {
         $ventas = new Ventas_cabecera_model();
         $data['ventas'] = $ventas->getVentas($id_usuario);
-        $data['titulo'] = 'Todos mis compras';
+        $dato['titulo'] = 'Todos mis compras';
 
-        echo view('front/head_view', $data);
+        echo view('front/head_view', $dato);
         echo view('front/nav_view');
         echo view('back/compras/ver_factura_usuario', $data);
         echo view('front/footer_view');
@@ -110,7 +110,7 @@ class Ventas_controller extends Controller
         $ventascabecera = new Ventas_cabecera_model();
         $data['usuarios'] = $ventascabecera->getBuilderVentas_cabecera();
 
-        $dato['titulo'] = "ventas";
+        $dato['titulo'] = "Listado de Ventas";
         echo view('front/head_view', $dato);
         echo view('front/nav_view');
         echo view('back/ventas/ventas', $data);

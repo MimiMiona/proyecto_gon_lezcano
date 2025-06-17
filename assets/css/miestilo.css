@@ -78,3 +78,13 @@ h1{
     color: #777157;
 }
 
+    table.custom-table thead tr > th {
+        background-color: #777157 !important;
+        color: white !important;
+        box-shadow: none !important;
+    }
+
+    table.custom-table tbody tr > td{
+        background-color: #ddd2a6 !important;
+        box-shadow: none !important;
+    }

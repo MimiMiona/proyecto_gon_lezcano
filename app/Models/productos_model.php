@@ -19,9 +19,13 @@ class Productos_Model extends Model
 
     public function getProducto($id = null){
         $builder = $this->getBuilderProductos();
-        $builder->where('productos.id', $id);
+        if($id !== null){
+            $builder->where('productos.id', $id);
+            $query = $builder->get();
+            return $query->getRowArray();
+        }
         $query = $builder->get();
-        return $query->getRowArray();
+        return $query->getResultArray();
     }
 
     public function updateStock($id = null, $stock_actual = null){

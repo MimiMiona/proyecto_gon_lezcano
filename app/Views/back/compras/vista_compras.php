@@ -22,15 +22,15 @@ if (empty($venta)) { ?>
 <?php if (!empty($venta)) { ?>
 <div class="row">
     <div class="col-xl-12 col-xs-10">
-        <table class="table table-secondary table-responsive table-bordered table-striped rounded">
+        <table class="table custom-table table-responsive table-bordered table-striped rounded">
             <thead>
                 <tr class="text-center">
-                    <th>N° ORDEN</th>
-                    <th>NOMBRE PRODUCTO</th>
-                    <th>IMAGEN</th>
-                    <th>CANTIDAD</th>
-                    <th>COSTO</th>
-                    <th>COSTO SUB-TOTAL</th>
+                    <th>N° de orden</th>
+                    <th>Producto</th>
+                    <th>Poster</th>
+                    <th>Cantidad</th>
+                    <th>Costo</th>
+                    <th>Costo sub-total</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,7 +47,7 @@ if (empty($venta)) { ?>
                         <tr class="text-center">
                             <td><?php echo $i++; ?></td>
                             <td><?php echo $row['nombre_prod']; ?></td>
-                            <td><img width="100" height="65" src="<?php echo base_url('assets/uploads/'.$imagen); ?>"></td>
+                            <td><img width="65" height="100" src="<?php echo base_url('assets/uploads/'.$imagen); ?>"></td>
                             <td><?php echo number_format($row['cantidad'], 0); ?></td>
                             <td><?php echo $row['precio']; ?></td>
                             <td><?php echo number_format($subtotal, 2); ?></td>
@@ -56,20 +56,13 @@ if (empty($venta)) { ?>
                     }
                 }
                 ?>
-            </tbody>
-            <tfoot>
                 <tr>
                     <td colspan="5" class="text-right"><h6>Total:</h6></td>
                     <td colspan="6" class="text-center"><h6><?php echo number_format($total, 2) ?></h6></td>
                 </tr>
-            </tfoot>
+            </tbody>
         </table>
     </div>
 </div>
-
-<div class="row">
-    <div class="col-xl-12 col-xs-12 text-center">
-        <h6 class="text-warning">Gracias por su compra</h6>
-    </div>
-</div>
+        <h1 class="text-center">¡Gracias por su compra!</h1>
 <?php } ?>

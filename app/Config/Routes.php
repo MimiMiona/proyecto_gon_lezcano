@@ -46,6 +46,7 @@ $routes->get('/activar_pro/(:num)', 'Productos_controller::activarproducto/$1', 
 $routes->get('/vista', 'usuario_crud_controller::index', ['filter' => 'auth']);
 $routes->get('/usuario-form', 'usuario_crud_controller::create', ['filter' => 'auth']);
 $routes->post('/enviar-usuario', 'usuario_crud_controller::store', ['filter' => 'auth']);
+$routes->post('/update', 'usuario_crud_controller::update');
 $routes->get('/editar-usuario/(:num)', 'usuario_crud_controller::singleUser/$1', ['filter' => 'auth']);
 $routes->get('borrar_usuario/(:num)', 'usuario_crud_controller::deletelogico/$1', ['filter' => 'auth']);
 $routes->get('/activar_usuario/(:num)', 'usuario_crud_controller::activar/$1', ['filter' => 'auth']);

@@ -84,7 +84,7 @@ class Usuario_crud_controller extends Controller
         ];
         
         $userModel->update($id, $data);
-        return $this->response->redirect(site_url('users-list'));
+        return $this->response->redirect(site_url('/vista'));
     }
 
     public function deletelogico($id = null){

@@ -94,7 +94,7 @@
 
                         <div class="form-group">
                             <button type="submit" class="btn btn-success">Enviar</button>
-                            <button type="reset" class="btn btn-danger">Cancelar</button>
+                            <button type="reset" class="btn btn-danger">Borrar</button>
                             <a href="<?= base_url('crear'); ?>" class="btn btn-secondary">Volver</a>
                         </div>
                     </div>

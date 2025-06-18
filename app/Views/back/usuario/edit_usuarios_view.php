@@ -2,7 +2,7 @@
     <div class="card" style="width: 50%;" >
         <div class="card-header text-center">
             <h4>Modificación Usuarios</h4>
-            <form method="post" id="update_user" name="update_user" action="<?= site_url('/borrar'); ?>"> 
+            <form method="post" id="update_user" name="update_user" action="<?= site_url('/update'); ?>"> 
                 <input type="hidden" name="id" id="id" value="<?=$user_obj['id_usuario']; ?>">
                 <div class="form-group">
                     <label>Nombre</label>
@@ -27,7 +27,7 @@
                 <div class="form-group">
                     <input type="submit" value="guardar" class="btn btn-success"> 
                     <input type="reset" value="cancelar" class="btn btn-danger">
-                    <a href="<?php echo base_url('users-list')?>" class="btn btn-secondary">volver</a>
+                    <a href="<?php echo base_url('/vista')?>" class="btn btn-secondary">volver</a>
                 </div>
             </form>
         </div>

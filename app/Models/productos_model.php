@@ -20,7 +20,7 @@ class Productos_Model extends Model
     public function getProducto($id = null){
         $builder = $this->getBuilderProductos();
         if($id !== null){
-            $builder->where('productos.id', $id);
+            $builder->where('productos.id_producto', $id);
             $query = $builder->get();
             return $query->getRowArray();
         }
@@ -30,7 +30,7 @@ class Productos_Model extends Model
 
     public function updateStock($id = null, $stock_actual = null){
         $builder = $this->getBuilderProductos();
-        $builder->where('productos.id', $id);
+        $builder->where('productos.id_producto', $id);
         $builder->set('productos.stock', $stock_actual);
         $builder->update();
     }

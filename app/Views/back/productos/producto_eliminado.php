@@ -6,7 +6,7 @@
     <div class="row justify-content-center"> 
         <div class="col-12 col-sm-10 col-md-8 col-lg-6">
             <div class="card shadow p-4 bg-consulta">
-                <table border="1" cellpadding="5" cellspacing="0">
+                <table cellpadding="5" cellspacing="0">
                     <tr>
                         <th>Id</th>
                         <th>Producto</th>
@@ -21,7 +21,7 @@
                         <?php foreach ($producto as $prod): ?>
                             <?php if ($prod['eliminado'] === 'SI'): ?>
                                 <tr>
-                                    <td><?= esc($prod['id']) ?></td>
+                                    <td><?= esc($prod['id_producto']) ?></td>
                                     <td><?= esc($prod['nombre_prod']) ?></td>
                                     <td><?= esc($prod['precio']) ?></td>
                                     <td><?= esc($prod['precio_vta']) ?></td>
@@ -30,8 +30,8 @@
                                         <img src="<?= base_url('assets/uploads/' . $prod['imagen']) ?>" width="60">
                                     </td>
                                     <td>
-                                        <a href="<?= site_url('editar/' . $prod['id']) ?>">Editar</a>
-                                        <a href="<?= site_url('activar_pro/' . $prod['id']) ?>">Activar</a>
+                                        <a href="<?= site_url('editar/' . $prod['id_producto']) ?>">Editar</a>
+                                        <a href="<?= site_url('activar_pro/' . $prod['id_producto']) ?>">Activar</a>
                                     </td>
                                 </tr>
                             <?php endif; ?>

@@ -9,7 +9,7 @@
                     <?php if (!$producto) { ?>
                         <div class="container-fluid">
                             <div class="well">
-                                <h2 class="text-center tit">No hay Productos</h1>
+                                <h2 class="text-center tit">No hay Productos</h2>
                             </div>
                         </div>
                     <?php } else { ?>
@@ -52,7 +52,38 @@
                                             <?php else: ?>
                                                 <button class="btn btn-secondary fuenteBotones" disabled>Sin Stock</button>
                                             <?php endif; ?>
-                                            <a href="<?= base_url('producto/detalles/' . $row['id_producto']) ?>" class="d-block mt-2">Ver Detalles</a>
+
+                                            <!-- Botón que abre el modal -->
+                                            <button class="btn btn-link mt-2" data-bs-toggle="modal" data-bs-target="#modalProducto<?= $row['id_producto'] ?>">
+                                                Ver Detalles
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal para este producto -->
+                                <div class="modal fade" id="modalProducto<?= $row['id_producto'] ?>" tabindex="-1" aria-labelledby="modalLabel<?= $row['id_producto'] ?>" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalLabel<?= $row['id_producto'] ?>">Detalle del Producto</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                            </div>
+                                            <div class="modal-body text-start">
+                                                <p><strong>ID:</strong> <?= esc($row['id_producto']) ?></p>
+                                                <p><strong>Nombre:</strong> <?= esc($row['nombre_prod']) ?></p>
+                                                <p><strong>Precio compra:</strong> $<?= esc($row['precio']) ?></p>
+                                                <p><strong>Precio venta:</strong> $<?= esc($row['precio_vta']) ?></p>
+                                                <p><strong>Stock:</strong> <?= esc($row['stock']) ?></p>
+                                                <p><strong>Stock mínimo:</strong> <?= esc($row['stock_min']) ?></p>
+                                                <p><strong>Imagen:</strong><br>
+                                                    <?php if (!empty($row['imagen'])): ?>
+                                                        <img src="<?= base_url('assets/uploads/' . $row['imagen']) ?>" alt="Imagen del producto" class="img-fluid">
+                                                    <?php else: ?>
+                                                        No disponible.
+                                                    <?php endif; ?>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

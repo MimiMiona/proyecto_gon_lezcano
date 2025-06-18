@@ -21,63 +21,18 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="<?= base_url('comercializacion') ?>">Comercializacion</a>
                             </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') != 1): ?>
                             <li class="nav-item">
                                 <a class="nav-link active nav_color" href="<?= base_url('quienes_somos') ?>">Nosotros</a>
                             </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') != 1): ?>
                             <li class="nav-item">
                                 <a class="nav-link active" href="<?= base_url('/todos_p') ?>">Catalogo</a>
                             </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') == 2): ?>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('/muestro') ?>">Carrito</a>
-                            </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') != 1): ?>
                             <li class="nav-item">
                                 <a class="nav-link active" href="<?= base_url('registro') ?>">Registro</a>
                             </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') == 2): ?>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('ver_factura_usuario/' . session()->get('id_usuario')) ?>">Mis compras</a>
-                            </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') != 1): ?>
                             <li class="nav-item">
                                 <a class="nav-link active" href="<?= base_url('login') ?>">Login</a>
                             </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') == 2): ?>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
-                            </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') == 1): ?>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('/crear') ?>">CRUD Productos</a>
-                            </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') == 1): ?>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('/ver-consultas') ?>">CRUD Consultas</a>
-                            </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') == 1): ?>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('/vista') ?>">CRUD Usuarios</a>
-                            </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') == 1): ?>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('ventas') ?>">CRUD Ventas</a>
-                            </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') != 1): ?>
                             <li class="nav-item dropdown">
                             <span class="nav-link dropdown-toggle active" id="ayudaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Ayuda
@@ -87,6 +42,31 @@
                                     <li><a class="dropdown-item" href="<?= base_url('terminos') ?>">Términos y Condiciones</a></li>
                                     <li><a class="dropdown-item" href="<?= base_url('privacidad') ?>">Politica de Privacidad</a></li>
                                 </ul>
+                            </li>
+                        <?php endif; ?>
+                        <?php if (session('perfil_id') == 2): ?>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('/muestro') ?>">Carrito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('ver_factura_usuario/' . session()->get('id_usuario')) ?>">Mis compras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
+                            </li>
+                        <?php endif; ?>
+                        <?php if (session('perfil_id') == 1): ?>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('/crear') ?>">CRUD Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('/ver-consultas') ?>">CRUD Consultas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('/vista') ?>">CRUD Usuarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('ventas') ?>">CRUD Ventas</a>
                             </li>
                         <?php endif; ?>
                     </ul>
@@ -102,20 +82,14 @@
                         </li>
                     </ul>
                     <?php if (session('perfil_id') == 2): ?>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url('/muestro') ?>">
-                                <img src="<?= base_url('assets/img/carrito.png') ?>" alt="Carrito" width="67" height="67" class="rounded-circle">
-                            </a>
-                        </li>
-                    </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= base_url('/muestro') ?>">
+                                    <img src="<?= base_url('assets/img/carrito.png') ?>" alt="Carrito" width="67" height="67" class="rounded-circle">
+                                </a>
+                            </li>
+                        </ul>
                     <?php endif; ?>
-                 <!-- <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
                 </div>
-                -->
-            </div>
-        </nav>
-    </section>
+            </nav>
+        </section>

@@ -31,7 +31,7 @@ class Productos_controller extends Controller {
         $data['categorias'] = $categoriasmodel->getCategorias();
 
         $productoModel = new Productos_Model();
-        $data['obj'] = $productoModel->orderBy('id', 'DESC')->findAll();
+        $data['obj'] = $productoModel->orderBy('id_producto', 'DESC')->findAll();
 
         $dato['titulo'] = 'Alta Producto';
         echo view('front/head_view', $dato);

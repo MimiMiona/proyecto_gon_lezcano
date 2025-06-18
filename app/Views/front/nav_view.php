@@ -72,7 +72,7 @@
                     </ul>
                     <ul class="navbar-nav ms-auto"> 
                         <li class="nav-item dropdown">
-                            <ul class="dropdown-menu" aria-labelledby="perfilDropdown">
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="perfilDropdown">
                                 <li><a class="dropdown-item" href="<?= base_url('datos_personales') ?>">Datos Personales</a></li>
                                 <li><a class="dropdown-item" href="<?= base_url('/logout') ?>">Cerrar sesión</a></li>
                             </ul>
@@ -91,5 +91,6 @@
                         </ul>
                     <?php endif; ?>
                 </div>
-            </nav>
-        </section>
+            </div>
+        </nav>
+    </section>

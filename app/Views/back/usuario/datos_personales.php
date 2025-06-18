@@ -4,7 +4,6 @@
             <h1 class="display-4">Datos Personales</h1>
             <p class="lead">Tu rincón para descubrir y disfrutar del cine clásico en dominio público.</p>
         </div>
-
         <div class="row justify-content-center text-center">
             <div class="col-md-6 mb-4">
                 <h2 class="h4">Nombre</h2>

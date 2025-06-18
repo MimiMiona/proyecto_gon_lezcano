@@ -24,6 +24,7 @@
                     <label>Perfil_id</label>
                     <input type="text" name="perfil" class="form-control" value="<?php echo $user_obj['perfil_id']; ?>" autofocus> 
                 </div>
+                <br><br>
                 <div class="form-group">
                     <input type="submit" value="guardar" class="btn btn-success"> 
                     <input type="reset" value="cancelar" class="btn btn-danger">
@@ -33,7 +34,3 @@
         </div>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script> 
-<script>

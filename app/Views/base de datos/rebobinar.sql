@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-06-2025 a las 02:22:04
+-- Tiempo de generación: 18-06-2025 a las 18:04:50
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -82,7 +82,7 @@ INSERT INTO `perfiles` (`id`, `descripcion`) VALUES
 --
 
 CREATE TABLE `productos` (
-  `id` int(11) NOT NULL,
+  `id_producto` int(11) NOT NULL,
   `nombre_prod` varchar(100) NOT NULL,
   `imagen` varchar(200) NOT NULL,
   `categoria_id` int(11) NOT NULL,
@@ -97,16 +97,24 @@ CREATE TABLE `productos` (
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` (`id`, `nombre_prod`, `imagen`, `categoria_id`, `precio`, `precio_vta`, `stock`, `stock_min`, `eliminado`) VALUES
-(1, 'Things to Come', '1749065674_4a5da7da1132fea62921.jpg', 3, 1000.00, 2000.00, 10, 1, 'SI'),
-(2, 'Battle Of The Worlds', '1749065704_7e21a0fb85564b4aeffc.jpg', 3, 1000.00, 2000.00, 10, 1, 'NO'),
-(3, 'House on Haunted Hill', '1749065730_a86c680863c55b71d781.jpg', 1, 1000.00, 2000.00, 10, 1, 'NO'),
-(4, 'Nosferatu', '1749065757_2fdbc5181d92418ea40e.jpg', 1, 1000.00, 2000.00, 10, 1, 'NO'),
-(5, 'The Ghoul', '1749065785_9644cd8cff78f2a9df2b.jpg', 1, 1000.00, 2000.00, 10, 1, 'NO'),
-(6, 'The Great Dictator', '1749065813_1be18e1096b0bdb84aa1.jpg', 2, 1000.00, 2000.00, 10, 1, 'NO'),
-(7, 'Duck Soup', '1749065846_993e7737cff769c675c5.jpg', 2, 1000.00, 2000.00, 10, 1, 'NO'),
-(8, 'My Man Godfrey', '1749065894_b9e36c572dbfa9f73ed6.jpg', 2, 1000.00, 2000.00, 10, 1, 'NO'),
-(9, '20,000 Leagues Under The Sea', '1749065964_62c5b81b1d64b37a05b3.jpg', 3, 1000.00, 2000.00, 10, 1, 'NO');
+INSERT INTO `productos` (`id_producto`, `nombre_prod`, `imagen`, `categoria_id`, `precio`, `precio_vta`, `stock`, `stock_min`, `eliminado`) VALUES
+(1, 'Twenty Thousand Leagues Under The Sea', '1750257535_0dc9e4f4f6fa9937ca00.jpg', 3, 1000.00, 2000.00, 12, 1, 'NO'),
+(2, 'Battle Of The Worlds', '1750257567_71bd967f5fc57d45d8fd.jpg', 3, 1000.00, 2000.00, 12, 1, 'NO'),
+(3, 'House on Haunted Hill', '1750257589_a7923553578456a99cc5.jpg', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(4, 'Nosferatu', '1750257613_4b84c6897035a204f4b0.jpg', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(5, 'The Ghoul', '1750257637_81e4750b2b07ad83e5cd.jpg', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(6, 'The Great Dictator', '1750257660_891928af154f2cfe2585.jpg', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(7, 'Duck Soup', '1750257681_601c0165c6cede0414ed.jpg', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(8, 'My Man Godfrey', '1750257706_296a8baabc05a2de0db0.jpg', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(9, 'Carnival of Souls', '1750257816_b7a88017f3d41404d6ff.png', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(10, 'Charade', '1750257888_0499fbcf4c152d8e7824.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(11, 'Dementia 13', '1750257982_d2551d692a8116bd149c.png', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(12, 'The Gold Rush', '1750258049_33c2463ce9e4f689d514.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(13, 'Night of the Living Dead', '1750258130_825b7d531081a58ca487.png', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(14, 'Plan 9 From Outer Space', '1750258199_c1dae5d07ecc8a68ed93.png', 3, 1000.00, 2000.00, 12, 1, 'NO'),
+(15, 'The General', '1750258269_952e54968c76a180f5c8.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(16, 'Fear and Desire', '1750258355_bf5dd8b608fac1df84c0.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(17, 'Metropolis', '1750258407_a991ae146692fde2a8bb.png', 3, 1000.00, 2000.00, 12, 1, 'NO');
 
 -- --------------------------------------------------------
 
@@ -134,7 +142,11 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `usuario`, `email`, 
 (2, 'Maria', 'Maidana', 'maidanamari', 'mariamaidana33@gmail.com', '$2y$10$w3rZkNYTqq.WyFbTobRBfOaoIrfxsodOnb0Y5BkERdNS8ZA5QnI3m', 2, 'NO'),
 (3, 'Sabrina', 'Ramirez', 'Sabri_12', 'Sasabrina123@gmail.com', '$2y$10$71P0eZVmJf30aNmLALlUC.dvv8G5XM2OddQIEaiqlrXfx.DtK/PPm', 2, 'NO'),
 (4, 'Juan', 'Gomez', 'juan12345', 'juan1221@gmail.com', '$2y$10$0E1ER9hQYoEuH0ee2mqIw.QTt/Qlf9Dsdw5pF/f4YdAWDaHhnlKzy', 1, 'NO'),
-(5, 'pepe', 'gomez', 'pepegomez@g', 'pepegomez@gmail.com', '$2y$10$suNhcgqlrplkwK2KLGvHC.FaSi0CMxeVdqoKpJm8Pse0u.zLf9AZG', 2, 'NO');
+(5, 'pepe', 'gomez', 'pepegomez@g', 'pepegomez@gmail.com', '$2y$10$suNhcgqlrplkwK2KLGvHC.FaSi0CMxeVdqoKpJm8Pse0u.zLf9AZG', 2, 'NO'),
+(6, 'Sofia', 'Sosa', 'sofi1222', 'sofiasos@gmail.com', '$2y$10$LkCAiCSWCSI2iKwumQk0..QbJJh/U9PY0PyCpJ4IEdZeumCAfaiJu', 2, 'NO'),
+(7, 'Victoria', 'Sosa', 'victoria123', 'victoria123@gmail.com', '$2y$10$.DVVzrfvkV4Y.gJRZZzjeeq1Mx02OHcA2BHlVNygpW7AniXIn4aZi', 2, 'NO'),
+(8, 'Jose', 'Gomez', 'hola123', 'hola123@gmail.com', '$2y$10$1dGtgMsCsMyVQSFrWkUSQ.gYmPIcnr9kGDQ8qAq6qNX.Rqx0VkPU.', 2, 'NO'),
+(9, 'Maria', 'Gomez', 'hola123', 'hola@gmail.com', '$2y$10$HWIrTdAIhgtA5Q90mpJvyuvqYKb6avmE2gSmgWMd7th0NAG7jNtYu', 2, 'NO');
 
 -- --------------------------------------------------------
 
@@ -189,7 +201,7 @@ ALTER TABLE `perfiles`
 -- Indices de la tabla `productos`
 --
 ALTER TABLE `productos`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_producto`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -233,13 +245,13 @@ ALTER TABLE `perfiles`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas_cabecera`
@@ -273,7 +285,7 @@ ALTER TABLE `ventas_cabecera`
 -- Filtros para la tabla `ventas_detalle`
 --
 ALTER TABLE `ventas_detalle`
-  ADD CONSTRAINT `ventas_detalle_ibfk_1` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`),
+  ADD CONSTRAINT `ventas_detalle_ibfk_1` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id_producto`),
   ADD CONSTRAINT `ventas_detalle_ibfk_2` FOREIGN KEY (`venta_id`) REFERENCES `ventas_cabecera` (`id`);
 COMMIT;
 

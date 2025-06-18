@@ -11,16 +11,16 @@
 <div class="row container-fluid">
     <div class="table-responsive-sm text-center">
         <h1 class="text-center">DETALLE DE VENTAS</h1>
-        <table class="table table-secondary table-striped rounded" id="users-list">
+        <table class="table custom-table table-hover table-bordered align-middle shadow rounded text-center" id="users-list">
             <thead class="thead-dark">
                 <tr class="text-center">
-                    <th>ORDEN</th>
-                    <th>USUARIO</th>
-                    <th>NOMBRE PRODUCTO</th>
-                    <th>IMAGEN</th>
-                    <th>CANTIDAD</th>
-                    <th>COSTO</th>
-                    <th>SUB-TOTAL</th>
+                    <th>Orden</th>
+                    <th>Usuario</th>
+                    <th>Nombre Producto</th>
+                    <th>Imagen</th>
+                    <th>Cantidad</th>
+                    <th>Costo</th>
+                    <th>Sub-total</th>
                 </tr>
             </thead>
             <tbody>
@@ -44,15 +44,14 @@
                             <td>$<?php echo number_format($subtotal, 2); ?></td>
                         </tr>
                 <?php } } ?>
-            </tbody>
-            <tfoot>
                 <tr>
                     <td colspan="5" class="text-right"><h4>Total de ventas</h4></td>
                     <td colspan="6" class="text-right">
                         <h3>$<?php echo number_format($total, 2); ?></h3>
                     </td>
                 </tr>
-            </tfoot>
+
+            </tbody>
         </table>
     </div>
 </div>

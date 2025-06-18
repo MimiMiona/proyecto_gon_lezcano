@@ -54,4 +54,11 @@
             </tbody>
         </table>
     </div>
+    <div class="d-flex justify-content-center mt-3">
+        <nav>
+            <ul class="pagination">
+                <?= $pager->links('default', 'custom_pagination') ?>
+            </ul>
+        </nav>
+    </div>
 </section>

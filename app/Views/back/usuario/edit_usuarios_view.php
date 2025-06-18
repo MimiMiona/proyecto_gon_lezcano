@@ -27,7 +27,7 @@
                 <div class="form-group">
                     <input type="submit" value="guardar" class="btn btn-success"> 
                     <input type="reset" value="cancelar" class="btn btn-danger">
-                    <a href="<?php echo base_url('/vista')?>" class="btn btn-secondary">volver</a>
+                    <a href="<?php echo base_url('/vista')?>" class="btn btn-secondary">Volver</a>
                 </div>
             </form>
         </div>

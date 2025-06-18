@@ -17,9 +17,11 @@ class Productos_controller extends Controller {
 
     public function index() {
         $productoModel = new Productos_Model();
-        $data['producto'] = $productoModel->getProducto();
+        $data['producto'] = $productoModel->paginate(9);
+        $data['pager'] = $productoModel->pager;
 
-        $dato['titulo'] = 'Crud_productos';
+
+        $dato['titulo'] = 'Crud Productos';
         echo view('front/head_view', $dato);
         echo view('front/nav_view', $dato);
         echo view('back/productos/producto_nuevo_view.php', $data);

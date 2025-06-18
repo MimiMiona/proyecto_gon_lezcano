@@ -24,15 +24,16 @@
           <?php endif; ?>
           <div class="mb-3">
             <label for="message" class="form-label">Tu Nombre</label>
-            <input id="nombre" name="nombre" type="name" placeholder="Tu Nombre" class="form-control"
-            value="<?= session()->get('nombre') ?>">
+            <input id="nombre" name="nombre" type="text" placeholder="Tu Nombre" class="form-control"
+            value="<?= session()->get('nombre') ?>" readonly>
           </div>
-          
+
           <div class="mb-3">
             <label for="message" class="form-label">Tu Email</label>
             <input id="email" name="email" type="email" placeholder="Tu Gmail" class="form-control"
-            value="<?= session()->get('email') ?>">
+            value="<?= session()->get('email') ?>" readonly>
           </div>
+          
           <div class="mb-3">
             <label for="message" class="form-label">Tu mensaje</label>
             <textarea class="form-control" id="message" name="mensaje" placeholder="Por favor, ingresa tu mensaje aquí..." rows="5"></textarea>

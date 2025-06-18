@@ -5,7 +5,7 @@
                 <h3>Editar productos</h3>
             </div>
             <div class="card-body">
-                <form action="<?= base_url('modifica/' . $old['id']) ?>" method="post" enctype="multipart/form-data">
+                <form action="<?= base_url('modifica/' . $old['id_producto']) ?>" method="post" enctype="multipart/form-data">
                     
                     <div class="mb-3">
                         <label for="nombre_prod" class="form-label">Producto</label>

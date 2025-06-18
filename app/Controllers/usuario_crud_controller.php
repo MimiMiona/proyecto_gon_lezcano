@@ -15,7 +15,7 @@ class Usuario_crud_controller extends Controller
         $data['users'] = $userModel->orderBy('id_usuario', 'DESC')->findAll(); 
         
         $dato['titulo']='Crud_usuarios';
-        echo view('front/head_view_crud', $dato);
+        echo view('front/head_view', $dato);
         echo view('front/nav_view');
         echo view('back/usuario/usuario_nuevo_view',$data);
         echo view('front/footer_view');
@@ -26,7 +26,7 @@ class Usuario_crud_controller extends Controller
         $data['user_obj'] = $userModel->orderBy('id_usuario', 'DESC')->findAll();
 
         $dato['titulo']='Alta Usuario';
-        echo view('front/head_view_crud', $dato);
+        echo view('front/head_view', $dato);
         echo view('front/nav_view');
         echo view('back/usuario/usuario_crud_view',$data); 
         echo view('front/footer_view');
@@ -56,7 +56,7 @@ class Usuario_crud_controller extends Controller
                 'pass' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
             ];
             $userModel->insert($data);
-            return $this->response->redirect(site_url('users-list'));
+            return $this->response->redirect(site_url('/vista'));
         }
     }
     
@@ -65,17 +65,17 @@ class Usuario_crud_controller extends Controller
         $data['user_obj'] = $userModel->where('id_usuario', $id)->first();
         
         $dato['titulo']='Crud_usuarios';
-        echo view('front/head_view_crud', $dato);
+        echo view('front/head_view', $dato);
         echo view('front/nav_view');
         echo view('back/usuario/edit_usuarios_view', $data); 
         echo view('front/footer_view');
     }
 
     public function update(){
-        $userModel new Usuarios_Model();
+        $userModel = new Usuarios_Model();
         $id = $this->request->getVar('id');
         
-        $data [
+        $data = [
             'nombre' => $this->request->getVar('nombre'), 
             'apellido' => $this->request->getVar('apellido'), 
             'usuario' => $this->request->getVar('usuario'), 

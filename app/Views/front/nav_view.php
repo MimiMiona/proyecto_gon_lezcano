@@ -69,7 +69,7 @@
                         <?php endif; ?>
                         <?php if (session('perfil_id') == 1): ?>
                             <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('/ver-usuarios') ?>">CRUD Usuarios</a>
+                                <a class="nav-link active" href="<?= base_url('/vista') ?>">CRUD Usuarios</a>
                             </li>
                         <?php endif; ?>
                         <?php if (session('perfil_id') == 1): ?>

@@ -25,26 +25,33 @@
                                         <div class="card-body">
                                             <h5 class="card-title"><?= esc($row['nombre_prod']) ?></h5>
                                             <p class="card-text">Precio: $<?= number_format($row['precio_vta'], 2, ',', '.') ?></p>
-                                            <span class="badge bg-success mb-2">Hay Stock</span>
+                                            <?php if ($row['stock'] > 0): ?>
+                                                <span class="badge bg-success mb-2">Hay Stock</span>
+                                            <?php else: ?>
+                                                <span class="badge bg-danger mb-2">Sin Stock</span>
+                                            <?php endif; ?>
                                             <p class="card-text">Disponible: <?= $row['stock'] ?> unidades</p>
 
-                                            <?php
-                                            echo form_open(base_url('add'), ['method' => 'post']);
-                                            echo csrf_field(); 
-                                            echo form_hidden('id', $row['id_producto']);
-                                            echo form_hidden('precio_vta', $row['precio_vta']);
-                                            echo form_hidden('nombre_prod', $row['nombre_prod']);
-                                            echo form_hidden('imagen', $row['imagen']);
-                                            $btn = [
-                                                'class' => 'btn btn-secondary fuenteBotones',
-                                                'value' => 'Agregar al Carrito',
-                                                'name'  => 'action',
-                                                'type'  => 'submit'
-                                            ];
-                                            echo form_submit($btn);
-                                            echo form_close();
-                                            ?>
-
+                                            <?php if ($row['stock'] > 0): ?>
+                                                <?php
+                                                    echo form_open(base_url('add'), ['method' => 'post']);
+                                                    echo csrf_field(); 
+                                                    echo form_hidden('id', $row['id_producto']);
+                                                    echo form_hidden('precio_vta', $row['precio_vta']);
+                                                    echo form_hidden('nombre_prod', $row['nombre_prod']);
+                                                    echo form_hidden('imagen', $row['imagen']);
+                                                    $btn = [
+                                                        'class' => 'btn btn-secondary fuenteBotones',
+                                                        'value' => 'Agregar al Carrito',
+                                                        'name'  => 'action',
+                                                        'type'  => 'submit'
+                                                    ];
+                                                    echo form_submit($btn);
+                                                    echo form_close();
+                                                ?>
+                                            <?php else: ?>
+                                                <button class="btn btn-secondary fuenteBotones" disabled>Sin Stock</button>
+                                            <?php endif; ?>
                                             <a href="<?= base_url('producto/detalles/' . $row['id_producto']) ?>" class="d-block mt-2">Ver Detalles</a>
                                         </div>
                                     </div>
@@ -57,11 +64,3 @@
         </div>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('#users-list').DataTable();
-    });
-</script>

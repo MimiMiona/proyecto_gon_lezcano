@@ -1,6 +1,6 @@
 <div class="container mt-4">
     <div class="d-flex justify-content-end">
-        <a href="<?php echo site_url('/user-form') ?>" class="btn btn-success mb-2">Agregar Usuarios</a> 
+        <a href="<?php echo site_url('/usuario-form') ?>" class="btn btn-success mb-2">Agregar Usuarios</a> 
     </div>
     <?php
         if(isset($_SESSION['msg'])){
@@ -8,7 +8,7 @@
         }
     ?>
     <div class="mt-2">
-        <table class="table table-bordered table-secondary table-hover" id="users-list">
+        <table class="table custom-table table-hover table-bordered align-middle shadow rounded text-center" id="users-list">
             <thead>
                 <tr>
                     <th>Id</th>
@@ -29,9 +29,9 @@
                             <td><?php echo $user['perfil_id']; ?></td>
                             <td><?php echo $user['baja']; ?></td>
                             <td>
-                                <a href="<?php echo base_url('edit-view/'.$user['id_usuario']);?>" class="btn btn-primary btn-sm">Editar</a> 
-                                <a href="<?php echo base_url('deletelogico/'.$user['id_usuario']);?>" class="btn btn-danger btn-sm">Borrar</a> 
-                                <a href="<?php echo base_url('activar/'.$user['id_usuario']);?>" class="btn btn-secondary btn-sm">Activar</a> 
+                                <a href="<?php echo base_url('editar/'.$user['id_usuario']);?>" class="btn btn-primary btn-sm">Editar</a> 
+                                <a href="<?php echo base_url('borrarusuario/'.$user['id_usuario']);?>" class="btn btn-danger btn-sm">Borrar</a> 
+                                <a href="<?php echo base_url('activar-usuario/'.$user['id_usuario']);?>" class="btn btn-secondary btn-sm">Activar</a> 
                             </td>
                         </tr>
                     <?php endforeach; ?>

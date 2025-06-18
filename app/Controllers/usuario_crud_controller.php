@@ -92,13 +92,13 @@ class Usuario_crud_controller extends Controller
         $data['baja'] = $userModel->where('id_usuario', $id)->first(); 
         $data['baja'] = 'SI';
         $userModel->update($id, $data);
-        return $this->response->redirect(site_url('users-list'));
+        return $this->response->redirect(site_url('/vista'));
     }
     
     public function activar($id = null){
         $userModel = new Usuarios_Model();
         $data['baja'] = $userModel->where('id_usuario', $id)->first(); $data['baja'] = 'NO';
         $userModel->update($id, $data);
-        return $this->response->redirect(site_url('users-list'));
+        return $this->response->redirect(site_url('/vista'));
     }
 }

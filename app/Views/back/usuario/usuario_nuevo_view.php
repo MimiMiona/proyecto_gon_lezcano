@@ -30,8 +30,8 @@
                             <td><?php echo $user['baja']; ?></td>
                             <td>
                                 <a href="<?php echo base_url('editar-usuario/'.$user['id_usuario']);?>" class="btn btn-primary btn-sm">Editar</a> 
-                                <a href="<?php echo base_url('borrarusuario/'.$user['id_usuario']);?>" class="btn btn-danger btn-sm">Borrar</a> 
-                                <a href="<?php echo base_url('activar-usuario/'.$user['id_usuario']);?>" class="btn btn-secondary btn-sm">Activar</a> 
+                                <a href="<?php echo base_url('borrar_usuario/'.$user['id_usuario']);?>" class="btn btn-danger btn-sm">Borrar</a> 
+                                <a href="<?php echo base_url('activar_usuario/'.$user['id_usuario']);?>" class="btn btn-secondary btn-sm">Activar</a> 
                             </td>
                         </tr>
                     <?php endforeach; ?>

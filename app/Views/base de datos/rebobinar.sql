@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-06-2025 a las 06:00:24
+-- Tiempo de generación: 19-06-2025 a las 06:11:20
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -138,16 +138,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `usuario`, `email`, `pass`, `perfil_id`, `baja`) VALUES
-(1, 'Jose', 'Gomez', 'jose_gomez', 'jose123@gmail.com', '$2y$10$qirYWr4XmJKkKtx/OJQe5.cTraCqvKA6lUW1M0m1f0SAhBeKq992y', 2, 'NO'),
-(2, 'Maria', 'Maidana', 'maidanamari', 'mariamaidana33@gmail.com', '$2y$10$w3rZkNYTqq.WyFbTobRBfOaoIrfxsodOnb0Y5BkERdNS8ZA5QnI3m', 2, 'NO'),
-(3, 'Sabrina', 'Ramirez', 'Sabri_12', 'Sasabrina123@gmail.com', '$2y$10$71P0eZVmJf30aNmLALlUC.dvv8G5XM2OddQIEaiqlrXfx.DtK/PPm', 2, 'NO'),
-(4, 'Juan', 'Gomez', 'juan12345', 'juan1221@gmail.com', '$2y$10$0E1ER9hQYoEuH0ee2mqIw.QTt/Qlf9Dsdw5pF/f4YdAWDaHhnlKzy', 1, 'NO'),
-(5, 'pepe', 'gomez', 'pepegomez@g', 'pepegomez@gmail.com', '$2y$10$suNhcgqlrplkwK2KLGvHC.FaSi0CMxeVdqoKpJm8Pse0u.zLf9AZG', 2, 'NO'),
-(6, 'Sofia', 'Sosa', 'sofi1222', 'sofiasos@gmail.com', '$2y$10$LkCAiCSWCSI2iKwumQk0..QbJJh/U9PY0PyCpJ4IEdZeumCAfaiJu', 2, 'NO'),
-(7, 'Victoria', 'Sosa', 'victoria123', 'victoria123@gmail.com', '$2y$10$.DVVzrfvkV4Y.gJRZZzjeeq1Mx02OHcA2BHlVNygpW7AniXIn4aZi', 2, 'NO'),
-(8, 'Jose', 'Gomez', 'hola123', 'hola123@gmail.com', '$2y$10$1dGtgMsCsMyVQSFrWkUSQ.gYmPIcnr9kGDQ8qAq6qNX.Rqx0VkPU.', 2, 'SI'),
-(9, 'Marta', 'Gomez', 'hola123', 'hola@gmail.com', '$2y$10$HWIrTdAIhgtA5Q90mpJvyuvqYKb6avmE2gSmgWMd7th0NAG7jNtYu', 2, 'NO'),
-(10, 'Pablo', 'Ramirez', 'pablo333', 'pablo333@gmail.com', '$2y$10$PZdVnkm2I5JqklKetiMaIOND80Kj6ESD.kcEKXXOprgEz/WNGsGwW', 2, 'NO');
+(1, 'Juan', 'Ramirez', 'juan1221', 'juan1221@gmail.com', '$2y$10$1dzsOvuVIAyxGIgouoCUresXah4Sa/fzd.mtbj624mNS5arQfYgF2', 1, 'NO'),
+(2, 'Jose', 'Gomez', 'jose123', 'jose123@gmail.com', '$2y$10$8RQdmYehWTFrSwYfFmvQM.30.CTY0LrRa.YAxVzix.fhKc9PhJtJq', 2, 'NO');
 
 -- --------------------------------------------------------
 
@@ -252,7 +244,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas_cabecera`

@@ -62,11 +62,11 @@
                                 <li><a class="dropdown-item"href="<?= base_url('registro') ?>">Registro</a></li>
                                 <li><a class="dropdown-item"href="<?= base_url('login') ?>">Login</a></li>
                                 <li><a class="dropdown-item" href="<?= base_url('datos_personales') ?>">Datos Personales</a></li>
-                                <li><a class="dropdown-item" href="<?= base_url('/logout') ?>">Cerrar sesión</a></li>
-                            </li>
                                 <?php if (session('perfil_id') == 2): ?>
                                     <li><a class="dropdown-item"href="<?= base_url('ver_factura_usuario/' . session()->get('id_usuario')) ?>">Mis Compras</a></li>
                                 <?php endif; ?>
+                                <li><a class="dropdown-item" href="<?= base_url('/logout') ?>">Cerrar sesión</a></li>
+                            </li>
                             </ul>
                             <a class="nav-link dropdown-toggle active" href="#" id="perfilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="<?= base_url('assets/img/perfil.jpg') ?>" alt="Ayuda" width="67" height="67" class="rounded-circle">

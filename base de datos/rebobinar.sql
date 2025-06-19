@@ -1,0 +1,294 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 18-06-2025 a las 17:15:41
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `rebobinar`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `categorias`
+--
+
+CREATE TABLE `categorias` (
+  `id` int(11) NOT NULL,
+  `descripcion` varchar(100) NOT NULL,
+  `activo` int(2) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `categorias`
+--
+
+INSERT INTO `categorias` (`id`, `descripcion`, `activo`) VALUES
+(1, 'Terror', 1),
+(2, 'Comedia', 1),
+(3, 'Ciencia Ficcion', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `consultas`
+--
+
+CREATE TABLE `consultas` (
+  `id_usuario` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `mensaje` varchar(300) NOT NULL,
+  `eliminado` varchar(10) NOT NULL DEFAULT 'NO'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `perfiles`
+--
+
+CREATE TABLE `perfiles` (
+  `id` int(11) NOT NULL,
+  `descripcion` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `perfiles`
+--
+
+INSERT INTO `perfiles` (`id`, `descripcion`) VALUES
+(1, 'admin'),
+(2, 'usuario');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `productos`
+--
+
+CREATE TABLE `productos` (
+  `id_producto` int(11) NOT NULL,
+  `nombre_prod` varchar(100) NOT NULL,
+  `imagen` varchar(200) NOT NULL,
+  `categoria_id` int(11) NOT NULL,
+  `precio` float(10,2) NOT NULL,
+  `precio_vta` float(10,2) NOT NULL,
+  `stock` int(11) NOT NULL,
+  `stock_min` int(11) NOT NULL,
+  `eliminado` varchar(10) NOT NULL DEFAULT 'NO'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`id_producto`, `nombre_prod`, `imagen`, `categoria_id`, `precio`, `precio_vta`, `stock`, `stock_min`, `eliminado`) VALUES
+(1, 'Twenty Thousand Leagues Under The Sea', '1750257535_0dc9e4f4f6fa9937ca00.jpg', 3, 1000.00, 2000.00, 12, 1, 'NO'),
+(2, 'Battle Of The Worlds', '1750257567_71bd967f5fc57d45d8fd.jpg', 3, 1000.00, 2000.00, 12, 1, 'NO'),
+(3, 'House on Haunted Hill', '1750257589_a7923553578456a99cc5.jpg', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(4, 'Nosferatu', '1750257613_4b84c6897035a204f4b0.jpg', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(5, 'The Ghoul', '1750257637_81e4750b2b07ad83e5cd.jpg', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(6, 'The Great Dictator', '1750257660_891928af154f2cfe2585.jpg', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(7, 'Duck Soup', '1750257681_601c0165c6cede0414ed.jpg', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(8, 'My Man Godfrey', '1750257706_296a8baabc05a2de0db0.jpg', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(9, 'Carnival of Souls', '1750257816_b7a88017f3d41404d6ff.png', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(10, 'Charade', '1750257888_0499fbcf4c152d8e7824.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(11, 'Dementia 13', '1750257982_d2551d692a8116bd149c.png', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(12, 'The Gold Rush', '1750258049_33c2463ce9e4f689d514.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(13, 'Night of the Living Dead', '1750258130_825b7d531081a58ca487.png', 1, 1000.00, 2000.00, 12, 1, 'NO'),
+(14, 'Plan 9 From Outer Space', '1750258199_c1dae5d07ecc8a68ed93.png', 3, 1000.00, 2000.00, 12, 1, 'NO'),
+(15, 'The General', '1750258269_952e54968c76a180f5c8.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(16, 'Fear and Desire', '1750258355_bf5dd8b608fac1df84c0.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
+(17, 'Metropolis', '1750258407_a991ae146692fde2a8bb.png', 3, 1000.00, 2000.00, 12, 1, 'NO');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id_usuario` int(11) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `apellido` varchar(50) NOT NULL,
+  `usuario` varchar(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `pass` varchar(100) NOT NULL,
+  `perfil_id` int(11) NOT NULL DEFAULT 2,
+  `baja` varchar(2) NOT NULL DEFAULT 'NO'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `usuario`, `email`, `pass`, `perfil_id`, `baja`) VALUES
+(1, 'Jose', 'Gomez', 'jose_gomez', 'jose123@gmail.com', '$2y$10$qirYWr4XmJKkKtx/OJQe5.cTraCqvKA6lUW1M0m1f0SAhBeKq992y', 2, 'NO'),
+(2, 'Maria', 'Maidana', 'maidanamari', 'mariamaidana33@gmail.com', '$2y$10$w3rZkNYTqq.WyFbTobRBfOaoIrfxsodOnb0Y5BkERdNS8ZA5QnI3m', 2, 'NO'),
+(3, 'Sabrina', 'Ramirez', 'Sabri_12', 'Sasabrina123@gmail.com', '$2y$10$71P0eZVmJf30aNmLALlUC.dvv8G5XM2OddQIEaiqlrXfx.DtK/PPm', 2, 'NO'),
+(4, 'Juan', 'Gomez', 'juan12345', 'juan1221@gmail.com', '$2y$10$0E1ER9hQYoEuH0ee2mqIw.QTt/Qlf9Dsdw5pF/f4YdAWDaHhnlKzy', 1, 'NO'),
+(5, 'pepe', 'gomez', 'pepegomez@g', 'pepegomez@gmail.com', '$2y$10$suNhcgqlrplkwK2KLGvHC.FaSi0CMxeVdqoKpJm8Pse0u.zLf9AZG', 2, 'NO'),
+(6, 'Sofia', 'Sosa', 'sofi1222', 'sofiasos@gmail.com', '$2y$10$LkCAiCSWCSI2iKwumQk0..QbJJh/U9PY0PyCpJ4IEdZeumCAfaiJu', 2, 'NO'),
+(7, 'Victoria', 'Sosa', 'victoria123', 'victoria123@gmail.com', '$2y$10$.DVVzrfvkV4Y.gJRZZzjeeq1Mx02OHcA2BHlVNygpW7AniXIn4aZi', 2, 'NO'),
+(8, 'Jose', 'Gomez', 'hola123', 'hola123@gmail.com', '$2y$10$1dGtgMsCsMyVQSFrWkUSQ.gYmPIcnr9kGDQ8qAq6qNX.Rqx0VkPU.', 2, 'NO'),
+(9, 'Maria', 'Gomez', 'hola123', 'hola@gmail.com', '$2y$10$HWIrTdAIhgtA5Q90mpJvyuvqYKb6avmE2gSmgWMd7th0NAG7jNtYu', 2, 'NO');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ventas_cabecera`
+--
+
+CREATE TABLE `ventas_cabecera` (
+  `id` int(11) NOT NULL,
+  `fecha` datetime DEFAULT current_timestamp(),
+  `usuario_id` int(11) NOT NULL,
+  `total_venta` float(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ventas_detalle`
+--
+
+CREATE TABLE `ventas_detalle` (
+  `id` int(11) NOT NULL,
+  `venta_id` int(11) NOT NULL,
+  `producto_id` int(11) NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  `precio` float(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `categorias`
+--
+ALTER TABLE `categorias`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `consultas`
+--
+ALTER TABLE `consultas`
+  ADD PRIMARY KEY (`id_usuario`);
+
+--
+-- Indices de la tabla `perfiles`
+--
+ALTER TABLE `perfiles`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `productos`
+--
+ALTER TABLE `productos`
+  ADD PRIMARY KEY (`id_producto`);
+
+--
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id_usuario`),
+  ADD KEY `perfil_id` (`perfil_id`);
+
+--
+-- Indices de la tabla `ventas_cabecera`
+--
+ALTER TABLE `ventas_cabecera`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `usuario_id` (`usuario_id`);
+
+--
+-- Indices de la tabla `ventas_detalle`
+--
+ALTER TABLE `ventas_detalle`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `producto_id` (`producto_id`),
+  ADD KEY `venta_id` (`venta_id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `consultas`
+--
+ALTER TABLE `consultas`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `perfiles`
+--
+ALTER TABLE `perfiles`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de la tabla `productos`
+--
+ALTER TABLE `productos`
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT de la tabla `ventas_cabecera`
+--
+ALTER TABLE `ventas_cabecera`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `ventas_detalle`
+--
+ALTER TABLE `ventas_detalle`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`perfil_id`) REFERENCES `perfiles` (`id`);
+
+--
+-- Filtros para la tabla `ventas_cabecera`
+--
+ALTER TABLE `ventas_cabecera`
+  ADD CONSTRAINT `ventas_cabecera_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id_usuario`);
+
+--
+-- Filtros para la tabla `ventas_detalle`
+--
+ALTER TABLE `ventas_detalle`
+  ADD CONSTRAINT `ventas_detalle_ibfk_1` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id_producto`),
+  ADD CONSTRAINT `ventas_detalle_ibfk_2` FOREIGN KEY (`venta_id`) REFERENCES `ventas_cabecera` (`id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

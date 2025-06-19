@@ -16,7 +16,7 @@
                     <th>Email</th>
                     <th>Perfil</th>
                     <th>Baja</th>
-                    <th>Action</th>
+                    <th>Accion</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,12 +26,12 @@
                             <td><?php echo $user['id_usuario']; ?></td> 
                             <td><?php echo $user['nombre']; ?></td> 
                             <td><?php echo $user['email']; ?></td>
-                            <td><?php echo $user['perfil_id']; ?></td>
+                            <td><?php echo ($user['perfil_id'] == 1) ? 'Admin' : 'Usuario'; ?></td>
                             <td><?php echo $user['baja']; ?></td>
                             <td>
-                                <a href="<?php echo base_url('editar-usuario/'.$user['id_usuario']);?>" class="btn btn-primary btn-sm">Editar</a> 
+                                <a href="<?php echo base_url('editar-usuario/'.$user['id_usuario']);?>" class="btn btn-success btn-sm">Editar</a> 
                                 <a href="<?php echo base_url('borrar_usuario/'.$user['id_usuario']);?>" class="btn btn-danger btn-sm">Borrar</a> 
-                                <a href="<?php echo base_url('activar_usuario/'.$user['id_usuario']);?>" class="btn btn-secondary btn-sm">Activar</a> 
+                                <a href="<?php echo base_url('activar_usuario/'.$user['id_usuario']);?>" class="btn btn-primary btn-sm">Activar</a> 
                             </td>
                         </tr>
                     <?php endforeach; ?>

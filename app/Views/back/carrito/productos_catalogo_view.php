@@ -70,13 +70,10 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                                             </div>
                                             <div class="modal-body text-start">
-                                                <p><strong>ID:</strong> <?= esc($row['id_producto']) ?></p>
                                                 <p><strong>Nombre:</strong> <?= esc($row['nombre_prod']) ?></p>
-                                                <p><strong>Precio compra:</strong> $<?= esc($row['precio']) ?></p>
                                                 <p><strong>Precio venta:</strong> $<?= esc($row['precio_vta']) ?></p>
                                                 <p><strong>Stock:</strong> <?= esc($row['stock']) ?></p>
-                                                <p><strong>Stock mínimo:</strong> <?= esc($row['stock_min']) ?></p>
-                                                <p><strong>Imagen:</strong><br>
+                                                <p><strong>Poster:</strong><br>
                                                     <?php if (!empty($row['imagen'])): ?>
                                                         <img src="<?= base_url('assets/uploads/' . $row['imagen']) ?>" alt="Imagen del producto" class="img-fluid">
                                                     <?php else: ?>

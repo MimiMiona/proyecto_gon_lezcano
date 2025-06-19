@@ -28,10 +28,7 @@
                                 <a class="nav-link active" href="<?= base_url('/todos_p') ?>">Catalogo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('registro') ?>">Registro</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('login') ?>">Login</a>
+                                <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
                             </li>
                             <li class="nav-item dropdown">
                             <span class="nav-link dropdown-toggle active" id="ayudaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,17 +39,6 @@
                                     <li><a class="dropdown-item" href="<?= base_url('terminos') ?>">Términos y Condiciones</a></li>
                                     <li><a class="dropdown-item" href="<?= base_url('privacidad') ?>">Politica de Privacidad</a></li>
                                 </ul>
-                            </li>
-                        <?php endif; ?>
-                        <?php if (session('perfil_id') == 2): ?>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('/muestro') ?>">Carrito</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('ver_factura_usuario/' . session()->get('id_usuario')) ?>">Mis compras</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('contacto') ?>">Contacto</a>
                             </li>
                         <?php endif; ?>
                         <?php if (session('perfil_id') == 1): ?>
@@ -73,8 +59,14 @@
                     <ul class="navbar-nav ms-auto"> 
                         <li class="nav-item dropdown">
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="perfilDropdown">
+                                <li><a class="dropdown-item"href="<?= base_url('registro') ?>">Registro</a></li>
+                                <li><a class="dropdown-item"href="<?= base_url('login') ?>">Login</a></li>
                                 <li><a class="dropdown-item" href="<?= base_url('datos_personales') ?>">Datos Personales</a></li>
                                 <li><a class="dropdown-item" href="<?= base_url('/logout') ?>">Cerrar sesión</a></li>
+                            </li>
+                                <?php if (session('perfil_id') == 2): ?>
+                                    <li><a class="dropdown-item"href="<?= base_url('ver_factura_usuario/' . session()->get('id_usuario')) ?>">Mis Compras</a></li>
+                                <?php endif; ?>
                             </ul>
                             <a class="nav-link dropdown-toggle active" href="#" id="perfilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="<?= base_url('assets/img/perfil.jpg') ?>" alt="Ayuda" width="67" height="67" class="rounded-circle">

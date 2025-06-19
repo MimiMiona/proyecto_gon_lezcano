@@ -21,7 +21,6 @@ $routes->post('/enviar-formulario', 'consultas_controller::formValidation');
 
 $routes->get('/registro','usuario_controller::create');
 $routes->post('/enviar-form', 'usuario_controller::formValidation');
-$routes->get('/ver-usuarios', 'usuario_controller::verUsuarios');
 $routes->get('/logout', 'Usuario_controller::logout');
 
 $routes->get('/login', 'Home::login');
@@ -42,7 +41,6 @@ $routes->post('modifica/(:num)', 'Productos_controller::modifica/$1', ['filter' 
 $routes->get('borrar_producto/(:num)', 'Productos_controller::deleteproducto/$1', ['filter' => 'auth']);
 $routes->get('/eliminados', 'Productos_controller::eliminados', ['filter' => 'auth']);
 $routes->get('/activar_pro/(:num)', 'Productos_controller::activarproducto/$1', ['filter' => 'auth']);
-$routes->get('detalles/(:num)', 'Productos_controller::detalleproducto/$1');
 
 $routes->get('/vista', 'usuario_crud_controller::index', ['filter' => 'auth']);
 $routes->get('/usuario-form', 'usuario_crud_controller::create', ['filter' => 'auth']);

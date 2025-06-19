@@ -21,12 +21,11 @@
             <table class="table custom-table table-hover table-bordered align-middle shadow rounded text-center">
                 <thead>
                     <tr>
-                        <th>Nombre cliente</th>
+                        <th>Cliente</th>
                         <th>Email</th>
                         <th>Usuario</th>
                         <th>Total</th>
                         <th>Fecha</th>
-                        <th>Venta_id</th>
                         <th>Opción</th>
                     </tr>
                 </thead>
@@ -40,7 +39,6 @@
                                 <td><?= $row['usuario'] ?></td>
                                 <td><?= $row['total_venta'] ?></td>
                                 <td><?= $row['fecha'] ?></td>
-                                <td><?= $row['id'] ?></td>
                                 <td>
                                     <a href="<?= base_url('vista_compras/' . $row['id']) ?>" class="btn btn-success btn-sm">Ver Detalle</a>
                                 </td>

@@ -173,22 +173,4 @@ class Productos_controller extends Controller {
         session()->setFlashdata('success', 'Producto eliminado correctamente.');
         return redirect()->to(site_url('crear'));
     }
-
-    public function detalleproducto($id = null){
-        $productoModel = new Productos_Model();
-        $producto = $productoModel->find($id);
-
-        if (!$producto) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Producto no encontrado');
-        }
-
-        $data['producto'] = $producto;
-        $data['titulo'] = 'Detalle del Producto';
-
-        echo view('front/head_view', $data);
-        echo view('front/nav_view', $data);
-        echo view('back/productos/detalle_producto_view', $data);
-        echo view('front/footer_view', $data);
-    }
-
 }

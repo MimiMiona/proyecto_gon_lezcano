@@ -37,9 +37,10 @@ class Consultas_controller extends Controller{
 				'nombre' => $this->request->getVar('nombre'),
 				'email' => $this->request->getVar('email'),
 				'mensaje' => $this->request->getVar('mensaje'),
-				'elminado' => $this->request->getVar('eliminado')
+				'eliminado' => $this->request->getVar('eliminado')
 			]);
 			session()->setFlashdata('success', 'Consulta registrada con exito');
+			session()->setFlashdata('fail', 'Datos Incorrectos');
 			return $this->response->redirect(base_url('/contacto'));
 		}
 	}

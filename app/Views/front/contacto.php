@@ -10,6 +10,16 @@
   </div>
 </section>
 
+<?php
+  $session = session();
+  $usuarioLogueado = $session->get('id_usuario') !== null;
+  $perfil_id = $session->get('perfil_id'); 
+  $nombre = $session->get('nombre') ?? '';
+  $email = $session->get('email') ?? '';
+  $soloLectura = ($usuarioLogueado && $perfil_id == 2);
+?>
+
+
 <section class="container py-4">
   <div class="row justify-content-center"> 
     <div class="col-12 col-sm-10 col-md-8 col-lg-6">
@@ -23,25 +33,41 @@
             </div>
           <?php endif; ?>
           <div class="mb-3">
-            <label for="message" class="form-label">Tu Nombre</label>
+            <label for="nombre" class="form-label">Tu Nombre</label>
             <input id="nombre" name="nombre" type="text" placeholder="Tu Nombre" class="form-control"
-            value="<?= session()->get('nombre') ?>" readonly>
+              value="<?= esc($nombre) ?>" <?= $soloLectura ? 'readonly' : '' ?>>
+            <?php if ($validation->getError('nombre')) : ?>
+              <div class="alert alert-warning mt-2">
+                <?= $validation->getError('nombre') ?>
+              </div>
+            <?php endif; ?>
           </div>
 
           <div class="mb-3">
-            <label for="message" class="form-label">Tu Email</label>
+            <label for="email" class="form-label">Tu Email</label>
             <input id="email" name="email" type="email" placeholder="Tu Gmail" class="form-control"
-            value="<?= session()->get('email') ?>" readonly>
+              value="<?= esc($email) ?>" <?= $soloLectura ? 'readonly' : '' ?>>
+            <?php if ($validation->getError('email')) : ?>
+              <div class="alert alert-warning mt-2">
+                <?= $validation->getError('email') ?>
+              </div>
+            <?php endif; ?>
           </div>
-          
+
           <div class="mb-3">
             <label for="message" class="form-label">Tu mensaje</label>
             <textarea class="form-control" id="message" name="mensaje" placeholder="Por favor, ingresa tu mensaje aquí..." rows="5"></textarea>
+            <br>
+            <?php if ($validation->getError('mensaje')) : ?>
+              <div class="alert alert-warning mt-2'">
+                  <?= $validation->getError('mensaje') ?>
+              </div>
+            <?php endif; ?>
           </div>
 
           <div class="d-grid gap-2">
             <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-            <button type="reset" class="btn btn-secondary btn-lg">Limpiar</button>
+            <button type="reset" class="btn btn-secondary btn-lg">Borrar</button>
           </div>
         </form>
       </div>

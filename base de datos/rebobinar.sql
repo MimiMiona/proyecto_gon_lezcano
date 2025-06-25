@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-06-2025 a las 06:11:20
+-- Tiempo de generación: 18-06-2025 a las 17:15:41
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -98,7 +98,7 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id_producto`, `nombre_prod`, `imagen`, `categoria_id`, `precio`, `precio_vta`, `stock`, `stock_min`, `eliminado`) VALUES
-(1, 'T T Leagues Under The Sea', '1750299272_a92584fb1344970cdfa5.jpg', 3, 1000.00, 2000.00, 12, 1, 'NO'),
+(1, 'Twenty Thousand Leagues Under The Sea', '1750257535_0dc9e4f4f6fa9937ca00.jpg', 3, 1000.00, 2000.00, 12, 1, 'NO'),
 (2, 'Battle Of The Worlds', '1750257567_71bd967f5fc57d45d8fd.jpg', 3, 1000.00, 2000.00, 12, 1, 'NO'),
 (3, 'House on Haunted Hill', '1750257589_a7923553578456a99cc5.jpg', 1, 1000.00, 2000.00, 12, 1, 'NO'),
 (4, 'Nosferatu', '1750257613_4b84c6897035a204f4b0.jpg', 1, 1000.00, 2000.00, 12, 1, 'NO'),
@@ -109,7 +109,7 @@ INSERT INTO `productos` (`id_producto`, `nombre_prod`, `imagen`, `categoria_id`,
 (9, 'Carnival of Souls', '1750257816_b7a88017f3d41404d6ff.png', 1, 1000.00, 2000.00, 12, 1, 'NO'),
 (10, 'Charade', '1750257888_0499fbcf4c152d8e7824.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
 (11, 'Dementia 13', '1750257982_d2551d692a8116bd149c.png', 1, 1000.00, 2000.00, 12, 1, 'NO'),
-(12, 'The Gold Rush', '1750258049_33c2463ce9e4f689d514.png', 2, 1000.00, 2000.00, 11, 1, 'NO'),
+(12, 'The Gold Rush', '1750258049_33c2463ce9e4f689d514.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
 (13, 'Night of the Living Dead', '1750258130_825b7d531081a58ca487.png', 1, 1000.00, 2000.00, 12, 1, 'NO'),
 (14, 'Plan 9 From Outer Space', '1750258199_c1dae5d07ecc8a68ed93.png', 3, 1000.00, 2000.00, 12, 1, 'NO'),
 (15, 'The General', '1750258269_952e54968c76a180f5c8.png', 2, 1000.00, 2000.00, 12, 1, 'NO'),
@@ -138,8 +138,15 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `usuario`, `email`, `pass`, `perfil_id`, `baja`) VALUES
-(1, 'Juan', 'Ramirez', 'juan1221', 'juan1221@gmail.com', '$2y$10$1dzsOvuVIAyxGIgouoCUresXah4Sa/fzd.mtbj624mNS5arQfYgF2', 1, 'NO'),
-(2, 'Jose', 'Gomez', 'jose123', 'jose123@gmail.com', '$2y$10$8RQdmYehWTFrSwYfFmvQM.30.CTY0LrRa.YAxVzix.fhKc9PhJtJq', 2, 'NO');
+(1, 'Jose', 'Gomez', 'jose_gomez', 'jose123@gmail.com', '$2y$10$qirYWr4XmJKkKtx/OJQe5.cTraCqvKA6lUW1M0m1f0SAhBeKq992y', 2, 'NO'),
+(2, 'Maria', 'Maidana', 'maidanamari', 'mariamaidana33@gmail.com', '$2y$10$w3rZkNYTqq.WyFbTobRBfOaoIrfxsodOnb0Y5BkERdNS8ZA5QnI3m', 2, 'NO'),
+(3, 'Sabrina', 'Ramirez', 'Sabri_12', 'Sasabrina123@gmail.com', '$2y$10$71P0eZVmJf30aNmLALlUC.dvv8G5XM2OddQIEaiqlrXfx.DtK/PPm', 2, 'NO'),
+(4, 'Juan', 'Gomez', 'juan12345', 'juan1221@gmail.com', '$2y$10$0E1ER9hQYoEuH0ee2mqIw.QTt/Qlf9Dsdw5pF/f4YdAWDaHhnlKzy', 1, 'NO'),
+(5, 'pepe', 'gomez', 'pepegomez@g', 'pepegomez@gmail.com', '$2y$10$suNhcgqlrplkwK2KLGvHC.FaSi0CMxeVdqoKpJm8Pse0u.zLf9AZG', 2, 'NO'),
+(6, 'Sofia', 'Sosa', 'sofi1222', 'sofiasos@gmail.com', '$2y$10$LkCAiCSWCSI2iKwumQk0..QbJJh/U9PY0PyCpJ4IEdZeumCAfaiJu', 2, 'NO'),
+(7, 'Victoria', 'Sosa', 'victoria123', 'victoria123@gmail.com', '$2y$10$.DVVzrfvkV4Y.gJRZZzjeeq1Mx02OHcA2BHlVNygpW7AniXIn4aZi', 2, 'NO'),
+(8, 'Jose', 'Gomez', 'hola123', 'hola123@gmail.com', '$2y$10$1dGtgMsCsMyVQSFrWkUSQ.gYmPIcnr9kGDQ8qAq6qNX.Rqx0VkPU.', 2, 'NO'),
+(9, 'Maria', 'Gomez', 'hola123', 'hola@gmail.com', '$2y$10$HWIrTdAIhgtA5Q90mpJvyuvqYKb6avmE2gSmgWMd7th0NAG7jNtYu', 2, 'NO');
 
 -- --------------------------------------------------------
 
@@ -244,7 +251,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `ventas_cabecera`

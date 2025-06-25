@@ -1,8 +1,7 @@
 <!-- GRID -->
 <div class="container colorF">
     <div class="row">
-        <div class="col-md-1"><!-- COLUMNA IZDA. GRID --></div>
-
+        <!-- COLUMNA IZDA. GRID -->
         <div class="col"> <!-- COLUMNA CENTRAL GRID -->
             <div class="row">
                 <div class="col-md-12">

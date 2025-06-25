@@ -80,13 +80,13 @@ class Usuario_crud_controller extends Controller
             'nombre' => 'required|min_length[3]|max_length[25]',
             'apellido' => 'required|min_length[3]|max_length[25]',
             'usuario' => 'required|min_length[3]|max_length[25]',
-            'email' => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email]',
+            'email' => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email,id_usuario,'.$id.']',
             'perfil' => 'required|numeric'
         ];
 
         if (!$this->validate($validationRules)) {
             $session->setFlashdata('warning', 'Por favor revisa los campos del formulario.');
-            return redirect()->to(site_url('/editar-usuario/' . $id))->withInput()->with('validation', $this->validator);
+            return redirect()->to(site_url('editar-usuario/' . $id))->withInput()->with('validation', $this->validator);
         }
 
         if (!$userModel->find($id)) {
@@ -104,11 +104,11 @@ class Usuario_crud_controller extends Controller
         
         if ($userModel->update($id, $data)) {
             $session->setFlashdata('success', 'Usuario actualizado correctamente.');
-            return redirect()->to(site_url('/editar-usuario/' . $id));
+            return redirect()->to(site_url('editar-usuario/' . $id));
         } else {
             $session->setFlashdata('fail', 'Error al actualizar el usuario.');
         }
-        return redirect()->to(site_url('/editar-usuario/' . $id));
+        return redirect()->to(site_url('editar-usuario/' . $id));
     }
 
     public function deletelogico($id = null){

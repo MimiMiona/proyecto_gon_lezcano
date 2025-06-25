@@ -36,8 +36,7 @@ class Consultas_controller extends Controller{
 			$formModel->save([
 				'nombre' => $this->request->getVar('nombre'),
 				'email' => $this->request->getVar('email'),
-				'mensaje' => $this->request->getVar('mensaje'),
-				'eliminado' => $this->request->getVar('eliminado')
+				'mensaje' => $this->request->getVar('mensaje')
 			]);
 			session()->setFlashdata('success', 'Consulta registrada con exito');
 			session()->setFlashdata('fail', 'Datos Incorrectos');

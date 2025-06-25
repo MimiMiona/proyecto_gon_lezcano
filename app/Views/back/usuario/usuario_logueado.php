@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div class="col-6 col-sm-4 col-md-3">
-                <a href="<?= base_url('/ver-usuarios') ?>">
+                <a href="<?= base_url('/vista') ?>">
                     <img src="<?= base_url('assets/img/usuarios.png') ?>" alt="Usuarios" width="200" height="200" class="img-fluid mb-2">
                 </a>
             </div>

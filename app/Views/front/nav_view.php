@@ -43,16 +43,16 @@
                         <?php endif; ?>
                         <?php if (session('perfil_id') == 1): ?>
                             <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('ventas') ?>">Ventas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="<?= base_url('/ver-consultas') ?>">Consultas</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link active" href="<?= base_url('/crear') ?>">CRUD Productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('/ver-consultas') ?>">CRUD Consultas</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link active" href="<?= base_url('/vista') ?>">CRUD Usuarios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="<?= base_url('ventas') ?>">CRUD Ventas</a>
                             </li>
                         <?php endif; ?>
                     </ul>

@@ -38,7 +38,7 @@
                                 <a href="<?= base_url('quienes_somos') ?>" class="text-reset">¿Quienes Somos?</a>
                             </p>
                             <p>
-                                <a href="<?= base_url('catalogo') ?>" class="text-reset">Catalogo</a>
+                                <a href="<?= base_url('/todos_p') ?>" class="text-reset">Catalogo</a>
                             </p>
                             <p>
                                 <a href="<?= base_url('contacto') ?>" class="text-reset">Contacto</a>

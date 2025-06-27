@@ -75,6 +75,8 @@ $routes->get('/carrito-comprar','Ventas_controller::registrar_venta',['filter' =
 $routes->get('carrito_suma/(:any)','carrito_controller::suma/$1');
 $routes->get('carrito_resta/(:any)','carrito_controller::resta/$1');
 
+$routes->get('/buscar','carrito_controller::buscar');
+
 $routes->get('vista_compras/(:num)', 'Ventas_controller::ver_facturas/$1', ['filter' => 'auth']);
 $routes->get('ver_factura_usuario/(:num)', 'Ventas_controller::ver_factura_usuario/$1', ['filter' => 'auth']);
 $routes->get('ventas', 'Ventas_controller::ventas');

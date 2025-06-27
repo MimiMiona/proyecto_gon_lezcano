@@ -132,4 +132,23 @@ class carrito_controller extends BaseController{
         return redirect()->to('muestro');
     }
 
+    public function buscar(){
+        $productoModel = new Productos_Model();
+        $nombre = $this->request->getGet('nombre_prod');
+
+        if (!empty($nombre)) {
+            $data['productos'] = $productoModel->like('nombre_prod', $nombre)->findAll();
+        } else {
+            $data['productos'] = $productoModel->findAll();
+        }
+
+        $dato['titulo'] = 'Busqueda';
+        echo view('front/head_view', $dato);
+        echo view('front/nav_view');
+        echo view('back/productos/busqueda_productos', $data);
+        echo view('front/footer_view');
+
+    }
+
+
 }

@@ -1,0 +1,610 @@
+DEBUG - 2025-07-02 00:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:10 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:12 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:12 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 15
+    [precio_vta] => 2000.00
+    [nombre_prod] => The General
+    [imagen] => 1750258269_952e54968c76a180f5c8.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:12 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:13 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:14 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:14 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:44 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:46 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:46 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 15
+    [precio_vta] => 2000.00
+    [nombre_prod] => The General
+    [imagen] => 1750258269_952e54968c76a180f5c8.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:46 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:47 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:49 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:49 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:36:52 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:40:25 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:40:25 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 17
+    [precio_vta] => 2000.00
+    [nombre_prod] => Metropolis
+    [imagen] => 1750258407_a991ae146692fde2a8bb.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:40:25 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:40:27 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:40:28 --> Cart Class Initialized
+INFO - 2025-07-02 00:40:28 --> Entró a finalizar_compra
+DEBUG - 2025-07-02 00:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:40:28 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:42:36 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:42:37 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:42:37 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 16
+    [precio_vta] => 2000.00
+    [nombre_prod] => Fear and Desire
+    [imagen] => 1750258355_bf5dd8b608fac1df84c0.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:42:37 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:42:38 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:42:42 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:51:35 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:51:35 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 11
+    [precio_vta] => 2000.00
+    [nombre_prod] => Dementia 13
+    [imagen] => 1750257982_d2551d692a8116bd149c.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:51:35 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:51:36 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:04 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:04 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:06 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:07 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:52:07 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 16
+    [precio_vta] => 2000.00
+    [nombre_prod] => Fear and Desire
+    [imagen] => 1750258355_bf5dd8b608fac1df84c0.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:07 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:08 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:09 --> Cart Class Initialized
+CRITICAL - 2025-07-02 00:52:09 --> ErrorException: Cannot redeclare Config\Email::$protocol
+[Method: GET, Route: finalizar_compra]
+in APPPATH\Config\Email.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-07-02 00:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:52 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:53 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:52:53 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 15
+    [precio_vta] => 2000.00
+    [nombre_prod] => The General
+    [imagen] => 1750258269_952e54968c76a180f5c8.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:53 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:54 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:52:55 --> Cart Class Initialized
+CRITICAL - 2025-07-02 00:52:55 --> ErrorException: Cannot redeclare Config\Email::$SMTPHost
+[Method: GET, Route: finalizar_compra]
+in APPPATH\Config\Email.php on line 34.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-07-02 00:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:53:25 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:53:27 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:53:27 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 13
+    [precio_vta] => 2000.00
+    [nombre_prod] => Night of the Living Dead
+    [imagen] => 1750258130_825b7d531081a58ca487.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:53:27 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:53:28 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:53:30 --> Cart Class Initialized
+CRITICAL - 2025-07-02 00:53:30 --> ErrorException: Cannot redeclare Config\Email::$SMTPCrypto
+[Method: GET, Route: finalizar_compra]
+in APPPATH\Config\Email.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-07-02 00:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:53:44 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:53:47 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:53:47 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 10
+    [precio_vta] => 2000.00
+    [nombre_prod] => Charade
+    [imagen] => 1750257888_0499fbcf4c152d8e7824.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:53:47 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:53:48 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:53:49 --> Cart Class Initialized
+CRITICAL - 2025-07-02 00:53:49 --> ErrorException: Cannot redeclare Config\Email::$mailType
+[Method: GET, Route: finalizar_compra]
+in APPPATH\Config\Email.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-07-02 00:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:54:05 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:54:07 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:54:07 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 11
+    [precio_vta] => 2000.00
+    [nombre_prod] => Dementia 13
+    [imagen] => 1750257982_d2551d692a8116bd149c.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:54:07 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:54:08 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:54:09 --> Cart Class Initialized
+ERROR - 2025-07-02 00:54:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-07-02 00:54:11 --> 220 smtp.gmail.com ESMTP 6a1803df08f44-6fd772e4277sm92196466d6.70 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [190.137.8.46]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [190.137.8.46]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 6a1803df08f44-6fd772e4277sm92196466d6.70 - gsmtp
+
+DEBUG - 2025-07-02 00:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:55:05 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:55:07 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:55:07 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 13
+    [precio_vta] => 2000.00
+    [nombre_prod] => Night of the Living Dead
+    [imagen] => 1750258130_825b7d531081a58ca487.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:55:08 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:55:08 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:55:10 --> Cart Class Initialized
+ERROR - 2025-07-02 00:55:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-07-02 00:55:12 --> 220 smtp.gmail.com ESMTP af79cd13be357-7d443204feesm858520685a.56 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [190.137.8.46]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [190.137.8.46]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-7d443204feesm858520685a.56 - gsmtp
+
+DEBUG - 2025-07-02 00:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:56:55 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:56:55 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 9
+    [precio_vta] => 2000.00
+    [nombre_prod] => Carnival of Souls
+    [imagen] => 1750257816_b7a88017f3d41404d6ff.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 00:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:56:55 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:56:56 --> Cart Class Initialized
+DEBUG - 2025-07-02 00:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 00:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 00:56:57 --> Cart Class Initialized
+ERROR - 2025-07-02 00:57:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-07-02 00:57:00 --> 220 smtp.gmail.com ESMTP af79cd13be357-7d44313925dsm853273785a.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [190.137.8.46]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [190.137.8.46]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials af79cd13be357-7d44313925dsm853273785a.24 - gsmtp
+
+DEBUG - 2025-07-02 01:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:04:05 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:04:06 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:04:09 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:04:09 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 11
+    [precio_vta] => 2000.00
+    [nombre_prod] => Dementia 13
+    [imagen] => 1750257982_d2551d692a8116bd149c.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 01:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:04:09 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:04:10 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:04:11 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:04:15 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:03 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:04 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:06 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:06 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 12
+    [precio_vta] => 2000.00
+    [nombre_prod] => The Gold Rush
+    [imagen] => 1750258049_33c2463ce9e4f689d514.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 01:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:06 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:09 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:11 --> Cart Class Initialized
+CRITICAL - 2025-07-02 01:10:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "back/carrito/compra_exitosa_view.php"
+[Method: GET, Route: finalizar_compra]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/carrito/compra_exitosa_view.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/carrito/compra_exitosa_view', [], true)
+ 3 APPPATH\Controllers\carrito_controller.php(194): view('back/carrito/compra_exitosa_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->finalizar_compra()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 01:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:39 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:39 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:40 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:43 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:43 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 11
+    [precio_vta] => 2000.00
+    [nombre_prod] => Dementia 13
+    [imagen] => 1750257982_d2551d692a8116bd149c.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 01:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:43 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:44 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:10:45 --> Cart Class Initialized
+CRITICAL - 2025-07-02 01:10:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "muestro.php"
+[Method: GET, Route: finalizar_compra]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('muestro.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('muestro', [], true)
+ 3 APPPATH\Controllers\carrito_controller.php(194): view('muestro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\carrito_controller->finalizar_compra()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carrito_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 01:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-02 01:11:25 --> ParseError: Unclosed '{' on line 8
+[Method: POST, Route: add]
+in APPPATH\Controllers\carrito_controller.php on line 195.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\proyecto_gon_lezcano\\app\\Controllers\\carrito_controller.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\carrito_controller')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\carrito_controller')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\carrito_controller', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 01:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:13:58 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:13:58 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 5
+    [precio_vta] => 2000.00
+    [nombre_prod] => The Ghoul
+    [imagen] => 1750257637_81e4750b2b07ad83e5cd.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 01:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:13:58 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:13:59 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:14:00 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:14:04 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:14:21 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:14:23 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:14:23 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 13
+    [precio_vta] => 2000.00
+    [nombre_prod] => Night of the Living Dead
+    [imagen] => 1750258130_825b7d531081a58ca487.png
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 01:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:14:23 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:14:25 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:14:27 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:14:30 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:17:12 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:17:15 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:17:15 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 6
+    [precio_vta] => 2000.00
+    [nombre_prod] => The Great Dictator
+    [imagen] => 1750257660_891928af154f2cfe2585.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 01:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:17:15 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:17:16 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:17:17 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:17:22 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:20:53 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:20:56 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:20:56 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 7
+    [precio_vta] => 2000.00
+    [nombre_prod] => Duck Soup
+    [imagen] => 1750257681_601c0165c6cede0414ed.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 01:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:20:56 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:20:57 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:20:58 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:21:02 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:22:18 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:22:20 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:22:20 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 8
+    [precio_vta] => 2000.00
+    [nombre_prod] => My Man Godfrey
+    [imagen] => 1750257706_296a8baabc05a2de0db0.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 01:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:22:20 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:22:21 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:22:23 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:22:26 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:23:05 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:23:08 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:23:08 --> POST: Array
+(
+    [csrf_test_name] => cc2bd21bfd15fe67321f279da2bb05ae
+    [id] => 2
+    [precio_vta] => 2000.00
+    [nombre_prod] => Battle Of The Worlds
+    [imagen] => 1750257567_71bd967f5fc57d45d8fd.jpg
+    [action] => Agregar al Carrito
+)
+
+DEBUG - 2025-07-02 01:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:23:08 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:23:10 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 01:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:23:11 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:23:14 --> Cart Class Initialized
+DEBUG - 2025-07-02 01:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 01:23:17 --> Cart Class Initialized

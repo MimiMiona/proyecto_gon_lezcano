@@ -80,3 +80,4 @@ $routes->get('/buscar','carrito_controller::buscar');
 $routes->get('vista_compras/(:num)', 'Ventas_controller::ver_facturas/$1', ['filter' => 'auth']);
 $routes->get('ver_factura_usuario/(:num)', 'Ventas_controller::ver_factura_usuario/$1', ['filter' => 'auth']);
 $routes->get('ventas', 'Ventas_controller::ventas');
+$routes->get('finalizar_compra', 'carrito_controller::finalizar_compra');

@@ -65,4 +65,5 @@ if (empty($venta)) { ?>
     </div>
 </div>
         <h1 class="text-center">¡Gracias por su compra!</h1>
+        <a href="<?= base_url('finalizar_compra') ?>" class="btn btn-success">Finalizar compra</a>
 <?php } ?>

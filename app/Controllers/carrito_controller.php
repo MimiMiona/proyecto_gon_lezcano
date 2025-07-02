@@ -114,8 +114,7 @@ class carrito_controller extends BaseController{
         return redirect()->to('muestro');
     }
 
-    public function resta($rowid)
-    {
+    public function resta($rowid) {
         // resta 1 a la cantidad del producto
         $cart = \Config\Services::cart();
         $item = $cart->getItem($rowid);
@@ -133,22 +132,54 @@ class carrito_controller extends BaseController{
     }
 
     public function buscar(){
-        $productoModel = new Productos_Model();
-        $nombre = $this->request->getGet('nombre_prod');
+            $productoModel = new Productos_Model();
+            $nombre = $this->request->getGet('nombre_prod');
 
-        if (!empty($nombre)) {
-            $data['productos'] = $productoModel->like('nombre_prod', $nombre)->findAll();
-        } else {
-            $data['productos'] = $productoModel->findAll();
+            if (!empty($nombre)) {
+                $data['productos'] = $productoModel->like('nombre_prod', $nombre)->findAll();
+            } else {
+                $data['productos'] = $productoModel->findAll();
+            }
+
+            $dato['titulo'] = 'Busqueda';
+            echo view('front/head_view', $dato);
+            echo view('front/nav_view');
+            echo view('back/productos/busqueda_productos', $data);
+            echo view('front/footer_view');
+
         }
 
-        $dato['titulo'] = 'Busqueda';
-        echo view('front/head_view', $dato);
-        echo view('front/nav_view');
-        echo view('back/productos/busqueda_productos', $data);
-        echo view('front/footer_view');
+    public function finalizar_compra(){
+        $cart = \Config\Services::cart();
+        $session = session();
 
+        $usuarioEmail = $session->get('email');
+        $usuarioNombre = $session->get('nombre');
+
+        if (!$usuarioEmail || !$usuarioNombre) {
+            return redirect()->to('muestro')->with('error', 'Faltan datos del usuario.');
+        }
+
+        $mensaje = "<p>Gracias por tu compra, " . esc($usuarioNombre) . ".</p>";
+        $mensaje .= "<p>Tu pedido fue recibido y está siendo procesado.</p>";
+
+        $email = \Config\Services::email();
+
+        $email->setFrom('rebobinar92@gmail.com', 'Rebobinar');
+        $email->setTo($usuarioEmail);
+        $email->setSubject('Confirmación de compra');
+        $email->setMessage($mensaje);
+
+        if ($email->send()) {
+            $cart->destroy();
+            return redirect()->to('muestro')->with('mensaje', 'Compra finalizada y correo enviado.');
+        } else {
+            echo $email->printDebugger(['headers']);
+            exit;
+        }
     }
+
+
 
 
 }

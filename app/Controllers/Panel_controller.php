@@ -1,9 +1,14 @@
 <?php
+// Importa el namespace del controlador
 namespace App\Controllers;
+
+// Importamos el controlador base
 use CodeIgniter\Controller;
 
+// Definimos la clase Panel_controller que hereda de BaseController
 class Panel_controller extends BaseController
 {
+    // Pagina de inicio al usuario logueado
     public function index()
     {
         $data['titulo'] = 'Bienvenido';

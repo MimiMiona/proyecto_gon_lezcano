@@ -5,9 +5,9 @@
     </div>
 
      <!-- Contenido de preguntas y respuestas -->
-    <div class="text-justify">
+    <div style="text-align: justify;">
 
-        <!-- Pregunta 1: Métodos de envío -->
+        <!-- Pregunta 1: Metodos de envío -->
         <h2 class="h4">1. Métodos de envío</h2>
         <p>- Realizamos envíos a todo el país mediante <strong>Andreani</strong>.</p>
         <p>- También ofrecemos <strong>envíos digitales</strong>, enviando la llave de acceso directamente a tu correo electrónico.</p>
@@ -42,7 +42,7 @@
         <p>- Factura de compra (impresa o electrónica).</p>
         <p>- Artículo de igual o mayor valor (pagando diferencia).</p>
 
-        <!-- Pregunta 6: Métodos de pago aceptados -->
+        <!-- Pregunta 6: Metodos de pago aceptados -->
         <h2 class="h4">6. Métodos de pago aceptados</h2>
         <p>- Tarjetas: Visa, MasterCard, ArgenCard, y otras.</p>
         <p>- Paypal.</p>
@@ -64,7 +64,7 @@
         <p>- Podés cancelar tu orden antes de confirmar tu compra vía correo.</p>
         <p>- Después de confirmarla, no será posible cancelar.</p>
 
-        <!-- Pregunta 9: Visita a la tienda física -->
+        <!-- Pregunta 9: Visita a la tienda fisica -->
         <h2 class="h4">9. Visita a nuestra tienda física</h2>
         <p>- ¡Te esperamos! De lunes a viernes de 8:00 a 12:00 hs y de 16:00 a 20:00 hs.</p>
 

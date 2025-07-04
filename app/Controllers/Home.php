@@ -1,8 +1,12 @@
 <?php
+// Importa el namespace del controlador
 namespace App\Controllers;
 
+
+// La clase extiende BaseController, que incluye helpers y configuración base
 class Home extends BaseController
 {
+    // Pagina de inicio
     public function index()
     {
         $data['titulo'] = 'Inicio';
@@ -12,6 +16,7 @@ class Home extends BaseController
         echo view('front/footer_view', $data); 
     }
 
+    // Pagina de ¿Quienes somos?
     public function quienes_somos()
     {
         $data['titulo'] = '¿Quiénes Somos?';
@@ -21,6 +26,7 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
+    // Pagina de contacto
     public function contacto()
     {
         $data['titulo'] = 'Contacto';
@@ -30,6 +36,7 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
+    // Pagina de comercializacion
     public function comercializacion()
     {
         $data['titulo'] = 'Comercialización';
@@ -39,6 +46,7 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
+    // Pagina de terminos y condiciones
     public function terminos()
     {
         $data['titulo'] = 'Terminos y Condiciones';
@@ -48,6 +56,7 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
+    // Pagina de politica de privacidad
     public function privacidad()
     {
         $data['titulo'] = 'Privacidad';
@@ -57,6 +66,7 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
+    // Pagina de preguntas frecuentes
     public function preguntas_frecuentes()
     {
         $data['titulo'] = 'Preguntas Frecuentes';
@@ -66,6 +76,7 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
+    // Pagina de datos personales
     public function datos_personales()
     {
         $data['titulo'] = 'Datos Personales';
@@ -75,6 +86,7 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
+    // Pagina de registro
     public function registro()
     {
         $data['titulo'] = 'Registro';
@@ -84,6 +96,7 @@ class Home extends BaseController
         echo view('front/footer_view', $data);
     }
 
+    // Pagina de login
     public function login()
     {
         $data['titulo'] = 'Login';

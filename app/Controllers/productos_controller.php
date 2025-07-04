@@ -1,20 +1,28 @@
 <?php
+// Importa el namespace del controlador
 namespace App\Controllers;
 
+// Importamos los modelos que se usaran
 use App\Models\Productos_Model;
 use App\Models\Usuario_Model;
 use App\Models\Ventas_cabecera_model;
 use App\Models\Ventas_detalle_model;
 use App\Models\Categorias_model;
+
+// Importamos el controlador base
 use CodeIgniter\Controller;
 
+// Definimos la clase Productos_controller que hereda de BaseController
 class Productos_controller extends Controller {
 
+    // Metodo constructor: se ejecuta cuando se crea la instancia del controlador
     public function __construct() {
+        // Carga helpers de formulario y URL
         helper(['form', 'url']);
         $this->session = session();
     }
 
+    // Muestra listado paginado de productos
     public function index() {
         $productoModel = new Productos_Model();
         $data['producto'] = $productoModel->paginate(9);
@@ -28,6 +36,7 @@ class Productos_controller extends Controller {
         echo view('front/footer_view', $dato);
     }
 
+    // Muestra formulario para crear un producto
     public function crearproducto() {
         $categoriasmodel = new Categorias_model();
         $data['categorias'] = $categoriasmodel->getCategorias();
@@ -42,7 +51,9 @@ class Productos_controller extends Controller {
         echo view('front/footer_view');
     }
 
+    // Guarda nuevo producto en la base de datos
     public function store() {
+        // Validar campos
         $input = $this->validate([
             'nombre_prod' => 'required|min_length[3]',
             'categoria' => 'required|is_natural_no_zero',
@@ -53,6 +64,7 @@ class Productos_controller extends Controller {
             'imagen' => 'uploaded[imagen]|is_image[imagen]|max_size[imagen,2048]',
         ]);
 
+        // Si la validacion falla, volver a la vista con errores
         if (!$input) {
             $categoria_model = new Categorias_model();
             $data = [
@@ -80,14 +92,17 @@ class Productos_controller extends Controller {
                 'stock_min' => $this->request->getVar('stock_min'),
             ];
 
+            // Insertar producto
             $productoModel = new Productos_Model();
             $productoModel->insert($data);
 
+            // Mensaje de exito
             session()->setFlashdata('success', 'Alta Exitosa...');
             return redirect()->to(site_url('crear'));
         }
     }
 
+    // Muestra formulario para editar un producto específico
     public function singleproducto($id = null) {
         $productoModel = new Productos_Model();
         $data['old'] = $productoModel->find($id);
@@ -106,6 +121,7 @@ class Productos_controller extends Controller {
         echo view('front/footer_view', $data);
     }
 
+    // Guarda cambios de un producto
     public function modifica($id) {
         $productoModel = new Productos_Model();
         $producto = $productoModel->find($id);
@@ -114,8 +130,8 @@ class Productos_controller extends Controller {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Producto no encontrado');
         }
 
+        // Procesar datos del formulario
         $img = $this->request->getFile('imagen');
-
         $data = [
             'nombre_prod' => $this->request->getVar('nombre_prod'),
             'categoria_id' => $this->request->getVar('categoria'),
@@ -125,17 +141,21 @@ class Productos_controller extends Controller {
             'stock_min' => $this->request->getVar('stock_min'),
         ];
 
+        
+        // Si subio imagen nueva, se reemplaza
         if ($img && $img->isValid() && !$img->hasMoved()) {
             $nombre_aleatorio = $img->getRandomName();
             $img->move(ROOTPATH . 'assets/uploads', $nombre_aleatorio);
             $data['imagen'] = $nombre_aleatorio;
         }
 
+        // Actualizar
         $productoModel->update($id, $data);
         session()->setFlashdata('success', 'Modificación Exitosa...');
         return redirect()->to(site_url('crear'));
     }
 
+    //  Muestra productos eliminados
     public function eliminados() {
         $productoModel = new Productos_Model();
         $data['producto'] = $productoModel->getProducto();
@@ -147,6 +167,7 @@ class Productos_controller extends Controller {
         echo view('front/footer_view', $dato);
     }
 
+    // Reactiva un producto eliminado
     public function activarproducto($id) {
         $productoModel = new Productos_Model();
         $producto = $productoModel->find($id);
@@ -160,6 +181,7 @@ class Productos_controller extends Controller {
         return redirect()->to(site_url('crear'));
     }
 
+    // Marca un producto como eliminado (borrado logico)
     public function deleteproducto($id){
         $productoModel = new \App\Models\Productos_Model();
         $producto = $productoModel->find($id);

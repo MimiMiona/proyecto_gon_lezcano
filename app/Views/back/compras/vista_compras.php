@@ -11,7 +11,7 @@ if (empty($venta)) { ?>
 </div>
 <?php } ?>
 
-<!-- Mostrar mensaje Flash si existe -->
+<!-- Mostrar mensaje exito si existe -->
 <?php if ($session->getFlashdata('mensaje')) { ?>
 <div class="alert alert-warning alert-dismissible fade show mt-3 mx-3" role="alert">
     <?= $session->getFlashdata('mensaje') ?>
@@ -19,9 +19,12 @@ if (empty($venta)) { ?>
 </div>
 <?php } ?>
 
+<!-- Si hay ventas registradas -->
 <?php if (!empty($venta)) { ?>
 <div class="row">
     <div class="col-xl-12 col-xs-10">
+
+        <!-- Tabla que lista los usuarios -->
         <table class="table custom-table table-responsive table-bordered table-striped rounded">
             <thead>
                 <tr class="text-center">
@@ -39,6 +42,8 @@ if (empty($venta)) { ?>
                 $total = 0;
                 // Si es array de ventas y no está vacío
                 if (!empty($venta) && is_array($venta)) {
+                    
+                    // Recorremos todas las compras
                     foreach ($venta as $row) {
                         $imagen = $row['imagen'];
                         $subtotal = $row['precio'] * $row['cantidad'];
@@ -56,6 +61,8 @@ if (empty($venta)) { ?>
                     }
                 }
                 ?>
+
+                <!-- Fila final con el total -->
                 <tr>
                     <td colspan="5" class="text-right"><h6>Total:</h6></td>
                     <td colspan="6" class="text-center"><h6><?php echo number_format($total, 2) ?></h6></td>
@@ -65,5 +72,6 @@ if (empty($venta)) { ?>
     </div>
 </div>
         <h1 class="text-center">¡Gracias por su compra!</h1>
+        <!-- Botón para finalizar compra -->
         <a href="<?= base_url('finalizar_compra') ?>" class="btn btn-success">Finalizar compra</a>
 <?php } ?>

@@ -1,5 +1,9 @@
 <?php
+    
+    // Inicia la sesión para usar mensajes flash o variables de sesión
     $session = session();
+
+    // Verifica si la variable $venta está vacía (no hay ventas registradas)
     if (empty($venta)) { ?>
         <div class="container">
             <div class="alert alert-dark text-center" role="alert">
@@ -7,8 +11,11 @@
             </div>
         </div>
 <?php } else { ?>
+<!-- Si hay ventas, mostrar tabla con detalles -->
 
 <div class="row container-fluid">
+
+    <!-- Tabla que lista las ventas -->
     <div class="table-responsive-sm text-center">
         <h1 class="text-center">DETALLE DE VENTAS</h1>
         <table class="table custom-table table-hover table-bordered align-middle shadow rounded text-center" id="users-list">
@@ -25,25 +32,39 @@
             </thead>
             <tbody>
                 <?php
-                $i = 0; $total = 0;
-                // Si es array de ventas y no está vacío -->
+                // Inicializa contador y total de ventas
+                $i = 0; 
+                $total = 0;
+
+                // Verifica que $venta sea un array y no esté vacío
                 if (!empty($venta) && is_array($venta)) {
+
+                    // Recorre el arreglo de usuarios y muestra cada registro en una fila -->
                     foreach ($venta as $row) {
                         $imagen = $row['imagen'];
-                        $i++;
+                        $i++; // Incrementa el contador de filas
+                        // Calcula el subtotal: precio x cantidad
                         $subtotal = $row['precio'] * $row['cantidad'];
+                        // Acumula el total general de ventas
                         $total += $subtotal;
                 ?>
                         <tr>
                             <td><?php echo $i; ?></td>
+                            <!-- Nombre del cliente-->
                             <td class="text-center"><h6><?php echo $row['nombre']; ?></h6></td>
+                            <!-- Nombre del producto-->
                             <td><?php echo $row['nombre_prod']; ?></td>
+                            <!-- Imagen del producto-->
                             <td><img width="55" height="55" src="<?php echo base_url('assets/uploads/' . $imagen); ?>"></td>
+                            <!-- Cantidad del producto-->
                             <td><?php echo number_format($row['cantidad']); ?></td>
+                            <!-- Precio del producto-->
                             <td>$<?php echo number_format($row['precio'], 2); ?></td>
+                            <!-- Subtotal de las compras-->
                             <td>$<?php echo number_format($subtotal, 2); ?></td>
                         </tr>
                 <?php } } ?>
+                <!-- Fila con total acumulado -->
                 <tr>
                     <td colspan="5" class="text-right"><h4>Total de ventas</h4></td>
                     <td colspan="6" class="text-right">
@@ -56,12 +77,3 @@
     </div>
 </div>
 <?php } ?>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('#users-list').DataTable();
-    });
-</script>

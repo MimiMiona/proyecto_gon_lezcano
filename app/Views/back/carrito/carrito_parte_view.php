@@ -1,6 +1,8 @@
+<!-- Contenedor principal del formulario -->
 <div class="container-fluid" id="carrito">
     <div class="cart">
-        <!-- Mostrar mensaje Flash si existe -->
+        
+        <!-- Muestra un mensaje de error si no se agrego el producto-->
         <?php if (session()->getFlashdata('mensaje')): ?>
             <div class="alert alert-warning alert-dismissible fade show mt-3 mx-3" role="alert">
                 <?= session()->getFlashdata('mensaje') ?>
@@ -15,15 +17,20 @@
                 <div class="container">
                     <h4 class="alert-heading">Productos en tu carrito</h4>
                     <p>Para agregar productos al carrito, hacé clic en:</p>
+                    
+                    <!-- Botón para volver al catálogo de productos -->
                     <a class="btn btn-warning my-2 w-10" href="<?php echo base_url('/todos_p') ?>">Volver al Catálogo</a>
                 </div>
             </div>
         <?php endif; ?>
     </div>
 
+    <!-- Si el carrito NO está vacío, se muestra la tabla con productos -->
     <?php if (!empty($cart)): ?>
         <form action="<?= base_url('carrito_actualiza') ?>" method="post">
             <div class="container my-3">
+
+                <!-- Tabla que lista los productos por comprar -->
                 <table class="table custom-table table-hover table-responsive-md">
                     <thead>
                         <tr>
@@ -38,6 +45,7 @@
                     <tbody>
                         <?php $gran_total = 0; ?>
                         <?php foreach ($cart as $item): ?>
+                            <!-- Recorre el arreglo de productos y muestra cada registro en una fila -->
                             <?php $gran_total += $item['price'] * $item['qty']; ?>
 
                             <!-- con inputs ocultos, el usuario no ve esos datos pero el formulario los envía. -->
@@ -57,12 +65,20 @@
                                 <td><?= esc($item['name']) ?></td>
                                 <td>$ <?= number_format($item['price'], 2) ?></td>
                                 <td>
+
+                                    <!-- Botón para aumentar cantidad -->
                                     <a class="btn btn-success" href="<?= base_url('carrito_suma/' . $item['rowid']) ?>">+</a>
+                                    
+                                    <!-- Cantidad actual -->
                                     <?= number_format($item['qty'], 0) ?>
+                                    
+                                    <!-- Botón para disminuir cantidad -->
                                     <a class="btn btn-danger" href="<?= base_url('carrito_resta/' . $item['rowid']) ?>">-</a>
                                 </td>
                                 <td>$ <?= number_format($item['subtotal'], 2) ?></td>
                                 <td>
+
+                                    <!-- Botón para eliminar este producto -->
                                     <a href="<?= base_url('carrito_elimina/' . $item['rowid']) ?>">
                                         <img src="<?= base_url('assets/img/cancelar.png') ?>" width="40" height="40" alt="Eliminar">
                                     </a>
@@ -74,7 +90,9 @@
                                 <strong>Total: $ <?= number_format($gran_total, 2) ?></strong>
                             </td>
                             <td colspan="2" class="text-end">
+                                <!-- Botón para borrar todo el carrito -->
                                 <input type="button" class="btn btn-primary btn-lg" value="Borrar Carrito" onclick="window.location='<?= base_url('borrar') ?>';">
+                                <!-- Botón para ir a la compra -->
                                 <input type="button" class="btn btn-secondary btn-lg" value="Comprar" onclick="window.location='<?= base_url('/carrito-comprar') ?>';">
                             </td>
                         </tr>

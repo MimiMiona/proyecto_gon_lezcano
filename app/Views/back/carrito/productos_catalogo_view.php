@@ -1,44 +1,58 @@
-<!-- GRID -->
+<!-- Contenedor principal del formulario -->
 <div class="container colorF">
     <div class="row">
-        <!-- COLUMNA IZDA. GRID -->
-        <div class="col"> <!-- COLUMNA CENTRAL GRID -->
+        <div class="col">
             <div class="row">
                 <div class="col-md-12">
+
+                    <!-- Si NO hay productos, muestra un mensaje centrado -->
                     <?php if (!$producto) { ?>
                         <div class="container-fluid">
                             <div class="well">
                                 <h2 class="text-center tit">No hay Productos</h2>
                             </div>
                         </div>
+                    
+                    <!-- Si SÍ hay productos, se muestran en la grilla -->
                     <?php } else { ?>
                         <div class="container-fluid mt-2 mb-3">
                             <h2 class="text-center tit">Todos los Productos</h2>
                         </div>
 
                         <div class="row">
+                            <!-- Recorre el arreglo de productos y muestra cada registro en una fila -->
                             <?php foreach ($producto as $row): ?>
                                 <div class="col-md-4 text-center mb-4">
                                     <div class="card p-3">
+                                        <!-- Imagen del producto -->
                                         <img src="<?= base_url('assets/uploads/' . $row['imagen']) ?>" class="card-img-top img-fluid" alt="Imagen del producto" style="height:150px; object-fit:contain;">
+                                        
+                                        <!-- Cuerpo de la tarjeta -->
                                         <div class="card-body">
+                                            <!-- Nombre del producto -->
                                             <h5 class="card-title"><?= esc($row['nombre_prod']) ?></h5>
+                                            <!-- Precio del producto -->
                                             <p class="card-text">Precio: $<?= number_format($row['precio_vta'], 2, ',', '.') ?></p>
+                                            <!-- Badge según stock -->
                                             <?php if ($row['stock'] > 0): ?>
                                                 <span class="badge bg-success mb-2">Hay Stock</span>
                                             <?php else: ?>
                                                 <span class="badge bg-danger mb-2">Sin Stock</span>
                                             <?php endif; ?>
+                                            <!-- Cantidad disponible -->
                                             <p class="card-text">Disponible: <?= $row['stock'] ?> unidades</p>
 
+                                            <!-- Si hay stock, muestra formulario para agregar al carrito -->
                                             <?php if ($row['stock'] > 0): ?>
                                                 <?php
                                                     echo form_open(base_url('add'), ['method' => 'post']);
+                                                    // Campo CSRF para evitar ataques de tipo Cross-Site Request Forgery
                                                     echo csrf_field(); 
                                                     echo form_hidden('id', $row['id_producto']);
                                                     echo form_hidden('precio_vta', $row['precio_vta']);
                                                     echo form_hidden('nombre_prod', $row['nombre_prod']);
                                                     echo form_hidden('imagen', $row['imagen']);
+                                                    // Botón submit
                                                     $btn = [
                                                         'class' => 'btn btn-secondary fuenteBotones',
                                                         'value' => 'Agregar al Carrito',
@@ -49,6 +63,7 @@
                                                     echo form_close();
                                                 ?>
                                             <?php else: ?>
+                                                <!-- Si no hay stock, botón deshabilitado -->
                                                 <button class="btn btn-secondary fuenteBotones" disabled>Sin Stock</button>
                                             <?php endif; ?>
 

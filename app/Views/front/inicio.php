@@ -1,16 +1,23 @@
 <div>
+    <!-- Muestra un mensaje error de sesión si existe-->
     <?php if (session()->getFlashdata('msg')) : ?>
         <div class="alert alert-warning">
-                <?= session()->getFlashdata('msg') ?>
+            <?= session()->getFlashdata('msg') ?>
         </div>
-    <?php endif; ?>
+        <?php endif; ?>
 </div>
+
+<!-- Sección principal de bienvenida e información de la tienda -->
 <div id="carouselExampleCaptions" class="carousel slide">
+    
+    <!-- Indicadores de navegación del carrusel (círculos) -->
     <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+
+    <!-- Contenido del carrusel -->
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="<?= base_url('assets/img/nosferatu_gif.gif') ?>" class="d-block w-100" alt="nosferatu_carrusel">
@@ -40,15 +47,19 @@
             </div>
         </div>
     </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    
+    <!-- Botones de navegación -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
+
+<!-- Animacion principal de la empresa -->
 <section id="hero" class="hero section custom-hero">
     <div class="container-fluid">
         <div class="row gy-4 justify-content-between">
@@ -62,10 +73,13 @@
         </div>
     </div>
 </section>
+
+<!-- Seccion de peliculas mas vistas-->
 <section class="carrusel-personalizado">
     <div>
         <h1 style="color: #ddd2a6;">¡Los más vendidos!</h1>
     </div>
+    <!-- Carrusel Bootstrap -->
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <!-- Primer slide -->

@@ -3,6 +3,7 @@
         <h1 class="display-4 text-center">Términos y Condiciones</h1>
     </div>
 
+    <!-- Contenido de los términos y condiciones, con texto justificado -->
     <div class="text-justify">
         <p class="mb-4">
             <strong>Última actualización:</strong> 23/04/2025<br>

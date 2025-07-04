@@ -1,9 +1,11 @@
+<!--Sección principal de bienvenida e información de la tienda -->
 <section class="container py-5" style="max-width: 1200px; margin: 0 auto; padding: 20px;"> 
     <div class="mb-5 text-center">
         <h1 class="display-4">📽️ Bienvenido a Rebobinar</h1>
         <p class="lead">Tu rincón para descubrir y disfrutar del cine clásico en dominio público.</p>
     </div>
 
+     <!-- Primera fila: ¿Cómo funciona nuestra tienda? -->
     <div class="d-flex flex-row align-items-center">
         <div class="col-md-6 mb-4 mb-lg-0">
             <h2 class="h4">¿Cómo funciona nuestra tienda?</h2>
@@ -20,6 +22,7 @@
 
     <br>
 
+    <!-- Segunda fila: ¿Cómo consigo una película? -->
     <div class="d-flex flex-row align-items-center">
         <div class="col-md-6 mb-4 mb-lg-0">
             <img src="<?= base_url('assets/img/correoImg.png')?>" alt="Ejemplo de correo" class="img-fluid rounded">
@@ -38,6 +41,7 @@
 
     <br>
 
+    <!-- Tercera fila: ¿Por qué hacemos esto? -->
     <div class="d-flex flex-row align-items-center">
         <div class="col-md-6 mb-4 mb-lg-0">
             <h2 class="h4">¿Por qué hacemos esto?</h2>
@@ -50,6 +54,7 @@
         </div>
     </div>
 
+    <!-- Bloque final con mensaje de contacto -->
     <div class="mb-4 text-center">
         <h2 class="h4">¿Algo más?</h2>
         <p>

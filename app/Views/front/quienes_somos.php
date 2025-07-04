@@ -1,3 +1,4 @@
+<!-- Sección HERO con información de presentación de la empresa -->
 <section id="hero" class="hero section custom-hero">
     <div class="container-fluid">
         <div class="row gy-4 justify-content-between">
@@ -11,6 +12,8 @@
         </div>
     </div>
 </section>
+
+<!-- Sección HERO sobre el equipo -->
 <section id="hero" class="hero section custom-hero">
     <div class="container-fluid">
         <div class="row gy-4 justify-content-between">
@@ -26,7 +29,9 @@
             </div>
         </div>
     </div>
-</section>
+</section> 
+
+<!-- Sección HERO con los objetivos del proyecto -->
 <section id="hero" class="hero section custom-hero">
     <div class="container-fluid">
         <div class="row gy-4 justify-content-between">

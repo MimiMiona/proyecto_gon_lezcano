@@ -1,20 +1,34 @@
+<!-- Sección principal del formulario-->
 <section>
     <div class="container mt-1 mb-1 d-flex justify-content-center">
+        
+        <!-- Tarjeta que contiene el formulario -->    
         <div class="card shadow-lg rounded-4 p-3" style="width: 75%;">
             <div class="card-header bg-productos text-center">
                 <h2>Alta de Productos</h2>
             </div>
             <div>
+
+                <!-- Muestra un mensaje de error si no se registro el producto -->
                 <?php if (!empty(session()->getFlashdata('fail'))): ?>
                     <div class="alert alert-danger"><?= session()->getFlashdata('fail'); ?></div>
                 <?php endif; ?>
+
+                <!-- Muestra un mensaje de exito si no se registro el producto -->
                 <?php if(!empty(session()->getFlashdata('success'))): ?> 
                     <div class="alert alert-success"><?= session()->getFlashdata('success'); ?></div> 
                 <?php endif ?> 
 
-                <?php $validation = \Config\Services::validation(); ?>
+                <?php 
+                    // Se obtiene la instancia del servicio de validación de CodeIgniter
+                    $validation = \Config\Services::validation(); 
+                ?>
+
+                <!-- Formulario de envío de datos -->
                 <form action="<?= base_url('/enviar-produ') ?>" method="post" enctype="multipart/form-data">
                     <div class="card-body">
+
+                        <!-- Campo: Nombre-->
                         <div class="mb-2"> 
                             <label for="nombre_prod" class="form-label">Producto</label> 
                             <input class="form-control" type="text" name="nombre_prod" id="nombre_prod" value="<?= set_value('nombre_prod'); ?>" placeholder="Nombre del Producto" autofocus> 
@@ -24,7 +38,8 @@
                                 </div> 
                             <?php endif; ?> 
                         </div>
-
+                         
+                        <!-- Campo: Categoria -->
                         <div class="mb-2"> 
                             <label for="categoria" class="form-label">Categoría</label>
                             <select class="form-control" name="categoria" id="categoria"> 
@@ -41,7 +56,8 @@
                                 </div> 
                             <?php endif; ?> 
                         </div>
-
+                        
+                        <!-- Campo: Precio compra-->
                         <div class="mb-2"> 
                             <label for="precio" class="form-label">Precio de Costo</label> 
                             <input class="form-control" type="text" name="precio" id="precio" value="<?= set_value('precio'); ?>"> 
@@ -52,6 +68,7 @@
                             <?php endif; ?> 
                         </div>
 
+                        <!-- Campo: Precio venta-->
                         <div class="mb-2"> 
                             <label for="precio_vta" class="form-label">Precio de Venta</label> 
                             <input class="form-control" type="text" name="precio_vta" id="precio_vta" value="<?= set_value('precio_vta'); ?>"> 
@@ -62,6 +79,7 @@
                             <?php endif; ?> 
                         </div>
 
+                        <!-- Campo: Stock-->
                         <div class="mb-2"> 
                             <label for="stock" class="form-label">Stock</label> 
                             <input class="form-control" type="text" name="stock" id="stock" value="<?= set_value('stock'); ?>"> 
@@ -72,6 +90,7 @@
                             <?php endif; ?> 
                         </div>
 
+                        <!-- Campo: Stock Minimo-->
                         <div class="mb-2"> 
                             <label for="stock_min" class="form-label">Stock Mínimo</label> 
                             <input class="form-control" type="text" name="stock_min" id="stock_min" value="<?= set_value('stock_min'); ?>"> 
@@ -82,6 +101,7 @@
                             <?php endif; ?> 
                         </div>
 
+                        <!-- Campo: Imagen-->
                         <div class="mb-2"> 
                             <label for="imagen" class="form-label">Imagen</label> 
                             <input class="form-control" type="file" name="imagen" id="imagen"> 
@@ -93,8 +113,11 @@
                         </div>
 
                         <div class="form-group">
+                            <!-- Botón para guardar producto -->
                             <button type="submit" class="btn btn-success">Enviar</button>
+                            <!-- Botón para resetear proceso -->
                             <button type="reset" class="btn btn-danger">Borrar</button>
+                            <!-- Botón para volver a vista anterior -->
                             <a href="<?= base_url('crear'); ?>" class="btn btn-secondary">Volver</a>
                         </div>
                     </div>

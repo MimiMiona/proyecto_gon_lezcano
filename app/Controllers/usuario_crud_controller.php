@@ -131,7 +131,7 @@ class Usuario_crud_controller extends Controller
         return redirect()->to(site_url('editar-usuario/' . $id));
     }
 
-    // Baja logica de un usuario (marcar como inactivo)
+    // Marca un usuario como eliminado (borrado logico)
     public function deletelogico($id = null){
         $userModel = new Usuarios_Model();
         $data['baja'] = $userModel->where('id_usuario', $id)->first(); 
